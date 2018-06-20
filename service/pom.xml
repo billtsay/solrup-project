@@ -4,19 +4,18 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-
-	<parent>
-		<groupId>org.apache.karaf.demos</groupId>
-		<artifactId>demos</artifactId>
-		<version>4.2.0</version>
-		<relativePath>../pom.xml</relativePath>
-	</parent>
+    <parent>
+        <groupId>com.solrup.yitian</groupId>
+        <artifactId>yitian-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../parent/pom.xml</relativePath>
+    </parent>
 
 	<groupId>com.solrup.yitian</groupId>
-	<artifactId>com.solrup.yitian.service</artifactId>
+	<artifactId>yitian-service</artifactId>
 	<packaging>bundle</packaging>
 	<version>1.0.0</version>
-	<name>Apache Karaf :: Demos :: Command :: Extend Console</name>
+	<name>Solrup Yitian :: Service</name>
 
 	<dependencies>
 

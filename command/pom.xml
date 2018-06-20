@@ -22,19 +22,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.apache.karaf.demos</groupId>
-        <artifactId>demos</artifactId>
-        <version>4.2.0</version>
-        <relativePath>../pom.xml</relativePath>
+        <groupId>com.solrup.yitian</groupId>
+        <artifactId>yitian-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../parent/pom.xml</relativePath>
     </parent>
 
     <groupId>com.solrup.yitian</groupId>
-    <artifactId>com.solrup.yitian.command</artifactId>
+    <artifactId>yitian-command</artifactId>
     <packaging>bundle</packaging>
-    <name>Apache Karaf :: Demos :: Command :: Extend Console</name>
+    <name>Solrup Yitian :: Command</name>
 
     <dependencies>
-
         <dependency>
             <groupId>org.osgi</groupId>
             <artifactId>org.osgi.core</artifactId>
@@ -46,7 +45,6 @@
             <artifactId>org.apache.karaf.shell.core</artifactId>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
 
     <build>

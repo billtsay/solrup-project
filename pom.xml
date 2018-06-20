@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.solrup.yitian</groupId>
   <artifactId>yitian</artifactId>
@@ -9,34 +12,34 @@
   <description>SCXML based DevOp</description>
   <url>http://yitian.solrup.com</url>
   <inceptionYear>2018</inceptionYear>
-    <repositories>
-        <repository>
-            <id>apache.snapshots</id>
-            <url>https://repository.apache.org/snapshots/</url>
-            <name>Apache Snapshot Repo</name>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>apache.snapshots</id>
-            <url>https://repository.apache.org/snapshots/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </pluginRepository>
-    </pluginRepositories>
+  <repositories>
+    <repository>
+      <id>apache.snapshots</id>
+      <url>https://repository.apache.org/snapshots/</url>
+      <name>Apache Snapshot Repo</name>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>apache.snapshots</id>
+      <url>https://repository.apache.org/snapshots/</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </pluginRepository>
+  </pluginRepositories>
 
   <modules>
-   <module>parent</module>
+    <module>parent</module>
     <module>command</module>
     <module>core</module>
     <module>service</module>
@@ -45,4 +48,37 @@
     <module>osgi</module>
   </modules>
 
+  <build>
+    <pluginManagement>
+      <plugins>
+        <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+        <plugin>
+          <groupId>org.eclipse.m2e</groupId>
+          <artifactId>lifecycle-mapping</artifactId>
+          <version>1.0.0</version>
+          <configuration>
+            <lifecycleMappingMetadata>
+              <pluginExecutions>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.apache.cxf.build-utils</groupId>
+                    <artifactId>cxf-xml2fastinfoset-plugin</artifactId>
+                    <versionRange>
+                      [${cxf.build-utils.version},)
+                    </versionRange>
+                    <goals>
+                      <goal>xml2fastinfoset</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <ignore></ignore>
+                  </action>
+                </pluginExecution>
+              </pluginExecutions>
+            </lifecycleMappingMetadata>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
 </project>

@@ -27,10 +27,10 @@ import org.apache.karaf.shell.api.console.Session;
 import org.apache.karaf.shell.support.completers.StringsCompleter;
 
 /**
-* <p>
-* My completer.
-* </p>
-*/
+ * <p>
+ * My completer.
+ * </p>
+ */
 
 @Service
 public class PasswordCompleter implements Completer {

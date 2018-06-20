@@ -27,7 +27,7 @@ import org.apache.karaf.shell.api.action.lifecycle.Service;
 import org.apache.karaf.shell.api.console.Session;
 import org.osgi.framework.BundleContext;
 
-@Command(scope = "yitian", name = "login", description="Login Yitian")
+@Command(scope = "yitian", name = "login", description = "Login Yitian")
 @Service
 public class LoginCommand implements Action {
 
@@ -43,7 +43,7 @@ public class LoginCommand implements Action {
 
     @Reference
     BundleContext bundleContext;
-    
+
     @Override
     public Object execute() throws Exception {
         System.out.println("Executing My Command Demo");

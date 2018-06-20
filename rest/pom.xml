@@ -13,7 +13,7 @@
   <artifactId>yitian-rest</artifactId>
   <packaging>bundle</packaging>
 
-  <name>Solrup Yitian :: Core</name>
+  <name>Solrup Yitian :: REST</name>
   <url>http://yitian.solrup.com</url>
   <description></description>
   <inceptionYear>2018</inceptionYear>

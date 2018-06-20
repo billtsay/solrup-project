@@ -13,7 +13,6 @@
 
   <artifactId>yitian-service</artifactId>
   <packaging>bundle</packaging>
-  <version>1.0.0</version>
   <name>Solrup Yitian :: Service</name>
 
   <dependencies>

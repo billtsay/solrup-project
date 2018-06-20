@@ -31,22 +31,22 @@ import org.osgi.framework.BundleContext;
 @Service
 public class LoginCommand implements Action {
 
-    @Argument(index = 0, name = "username", description = "User name argument", required = true, multiValued = false)
+    @Argument(index = 0, name = "username", description = "User name argument", required = false, multiValued = false)
     String username = null;
 
-    @Argument(index = 1, name = "password", description = "Password argument", required = true, multiValued = false)
+    @Argument(index = 1, name = "password", description = "Password argument", required = false, multiValued = false)
     @Completion(PasswordCompleter.class)
     String password = null;
+    
+    @Reference
+    BundleContext bundleContext;
 
     @Reference
     Session session;
 
-    @Reference
-    BundleContext bundleContext;
-
     @Override
     public Object execute() throws Exception {
-        System.out.println("Executing My Command Demo");
+        System.out.println(session.currentDir());
         return null;
     }
 }

@@ -11,7 +11,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>yitian-parent</artifactId>
-  <name>Solrup Yitian Parent</name>
+  <name>Solrup Yitian :: Parent</name>
   <description>Solrup Yitian Parent POM</description>
   <url>http://yitian.apache.org</url>
   <packaging>pom</packaging>
@@ -232,25 +232,14 @@
     <pluginManagement>
       <plugins>
         <plugin>
-          <groupId>org.apache.servicemix.tooling</groupId>
-          <artifactId>depends-maven-plugin</artifactId>
-          <version>1.4.0</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-source-plugin</artifactId>
-          <configuration>
-            <archive>
-              <manifestEntries>
-                <Bundle-SymbolicName>${cxf.osgi.symbolic.name}.source</Bundle-SymbolicName>
-                <Eclipse-SourceBundle>${cxf.osgi.symbolic.name};version="${cxf.osgi.version.clean}"</Eclipse-SourceBundle>
-              </manifestEntries>
-            </archive>
-          </configuration>
+          <groupId>org.apache.karaf.tooling</groupId>
+          <artifactId>karaf-services-maven-plugin</artifactId>
+          <version>4.2.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
+          <version>3.1.0</version>
           <configuration>
             <archive>
               <manifestEntries>
@@ -269,6 +258,7 @@
       <plugin>
         <groupId>org.apache.felix</groupId>
         <artifactId>maven-bundle-plugin</artifactId>
+        <version>3.5.0</version>
         <extensions>true</extensions>
         <executions>
           <execution>

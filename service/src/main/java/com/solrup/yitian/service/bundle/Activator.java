@@ -18,8 +18,12 @@
  */
 package com.solrup.yitian.service.bundle;
 
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.config.IniSecurityManagerFactory;
+import org.apache.shiro.util.Factory;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
+import org.apache.shiro.mgt.SecurityManager;
 
 public class Activator implements BundleActivator {
 

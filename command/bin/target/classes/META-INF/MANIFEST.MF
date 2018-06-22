@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1529699038687
+Build-Jdk: 1.8.0_171
+Built-By: jitsay
+Bundle-Description: Solrup Yitian Parent POM
+Bundle-ManifestVersion: 2
+Bundle-Name: Solrup Yitian :: Command
+Bundle-SymbolicName: com.solrup.yitian.command
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.solrup.yitian.authz;version="1.0.0"
+Import-Package: org.apache.karaf.shell.api.action;version="[4.2,5)",org.
+ apache.karaf.shell.api.action.lifecycle;version="[4.2,5)",org.apache.ka
+ raf.shell.api.console;version="[4.2,5)",org.apache.karaf.shell.support.
+ completers;version="[4.2,5)",org.osgi.framework;version="[1.8,2)"
+Karaf-Commands: *
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Tool: Bnd-3.5.0.201709291849

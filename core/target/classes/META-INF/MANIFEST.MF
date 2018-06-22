@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1529699040564
+Build-Jdk: 1.8.0_171
+Built-By: jitsay
+Bundle-ManifestVersion: 2
+Bundle-Name: Solrup Yitian :: Core
+Bundle-SymbolicName: com.solrup.yitian.core
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.solrup.yitian.core.bundle;version="1.0.0"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Tool: Bnd-3.5.0.201709291849

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1529699041479
+Build-Jdk: 1.8.0_171
+Built-By: jitsay
+Bundle-ManifestVersion: 2
+Bundle-Name: Solrup Yitian :: REST
+Bundle-SymbolicName: com.solrup.yitian.rest
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Tool: Bnd-3.5.0.201709291849

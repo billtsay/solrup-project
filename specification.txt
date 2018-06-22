@@ -1,0 +1,73 @@
+REST Specification: https://swagger.io/specification/
+
+// template installs application  
+  application:switch
+  application:list  --filter
+  application:current
+  
+//     
+  instance:application
+  instance:application <app-name>  
+  instance:initialize <name>
+  instance:instantiate
+  instance:switch <name or uuid>
+  instance:current
+  instance:materialize
+  instance:modify
+  instance:destantiate
+  instance:remove
+  instance:ownership
+  instance:list --filter
+  instance:list-attributes
+  instance:list-attrs
+  instance:list-values <attribute>
+  instance:set <attribute> <value or $item>
+  
+  
+  
+  
+
+
+
+
+
+Account:
+  GET /account/abc
+  
+  POST /account
+    {
+      "userid": "abc", "password": "xyz"
+    }
+    
+    {
+      "uuid": "......"
+    }
+    
+  PUT /account/abc
+    {
+      "lastname": "abc", "firstname": "123"
+    }
+  
+  DELETE /account/abc
+  
+  account:new abc
+  account:switch abc --details (-d)
+  account:list
+  account:set password xyz
+  account:set lastname tsay
+  account:set firstname bill
+  account:set roll abc123
+  account:set group abgroup
+  account:remove abc
+  
+  
+  account:list --filter abc* (-f abc*)
+  account:list-roll
+  account:list-group
+  account:list-attribute
+
+
+  
+  
+  
+  

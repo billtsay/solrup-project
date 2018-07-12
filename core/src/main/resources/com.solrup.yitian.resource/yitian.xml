@@ -1,64 +1,64 @@
 <?xml version="1.0"?>
 <scxml xmlns="http://www.w3.org/2005/07/scxml"
        version="1.0"
-       initial="blank">
+       initial="initialize">
 
-    <state id="blank">
-        <transition event="instantiate"   target="instantiated"/>
-        <transition event="synchronize"   target="synchronized"/>
+    <state id="initialize">
+        <transition event="instantiate"   target="instantiate"/>
+        <transition event="synchronize"   target="synchronize"/>
     </state>
 
-    <state id="instantiated">
+    <state id="instantiate">
         <onentry>
             <send event="persist" />
         </onentry>
-        <transition event="materialize"   target="materialized"/>
-        <transition event="request"    target="requested"/>
+        <transition event="materialize"   target="materialize"/>
+        <transition event="request"    target="request"/>
     </state>
 
-    <state id="synchronized">
+    <state id="synchronize">
         <onentry>
             <send event="persist" />
         </onentry>
     </state>
 
-    <state id="materialized">
+    <state id="materialize">
         <onentry>
             <send event="persist" />
         </onentry>
-        <transition event="destantiate" target="destantiated"/>
-        <transition event="modify"    target="modified"/>
+        <transition event="destantiate" target="destantiate"/>
+        <transition event="modify"    target="modify"/>
     </state>
 
-    <state id="modified">
+    <state id="modify">
         <onentry>
             <send event="persist" />
         </onentry>
-        <transition event="materialize"   target="materialized"/>
+        <transition event="materialize"   target="materialize"/>
     </state>
 
-    <state id="requested">
+    <state id="request">
         <onentry>
             <send event="persist" />
         </onentry>
-        <transition event="approve"   target="approved"/>
+        <transition event="approve"   target="approve"/>
     </state>
 
-    <state id="approved">
+    <state id="approve">
         <onentry>
             <send event="persist" />
         </onentry>
-        <transition event="materialize"   target="materialized"/>
+        <transition event="materialize"   target="materialize"/>
     </state>
 
-    <state id="destantiated">
+    <state id="destantiate">
         <onentry>
             <send event="persist" />
         </onentry>
-        <transition event="delete"   target="removed"/>
+        <transition event="delete"   target="remove"/>
     </state>
 
-    <state id="removed">
+    <state id="remove">
         <onentry>
             <send event="persist" />
         </onentry>

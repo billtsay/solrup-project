@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml"
+       version="1.0"
+       initial="blank">
+
+    <state id="blank">
+        <transition event="instantiate"   target="instantiated"/>
+        <transition event="synchronize"   target="synchronized"/>
+    </state>
+
+    <state id="instantiated">
+        <onentry>
+            <send event="persist" />
+        </onentry>
+        <transition event="materialize"   target="materialized"/>
+        <transition event="request"    target="requested"/>
+    </state>
+
+    <state id="synchronized">
+        <onentry>
+            <send event="persist" />
+        </onentry>
+    </state>
+
+    <state id="materialized">
+        <onentry>
+            <send event="persist" />
+        </onentry>
+        <transition event="destantiate" target="destantiated"/>
+        <transition event="modify"    target="modified"/>
+    </state>
+
+    <state id="modified">
+        <onentry>
+            <send event="persist" />
+        </onentry>
+        <transition event="materialize"   target="materialized"/>
+    </state>
+
+    <state id="requested">
+        <onentry>
+            <send event="persist" />
+        </onentry>
+        <transition event="approve"   target="approved"/>
+    </state>
+
+    <state id="approved">
+        <onentry>
+            <send event="persist" />
+        </onentry>
+        <transition event="materialize"   target="materialized"/>
+    </state>
+
+    <state id="destantiated">
+        <onentry>
+            <send event="persist" />
+        </onentry>
+        <transition event="delete"   target="removed"/>
+    </state>
+
+    <state id="removed">
+        <onentry>
+            <send event="persist" />
+        </onentry>
+    </state>
+
+
+</scxml>

@@ -14,12 +14,14 @@
         </onentry>
         <transition event="materialize"   target="materialize"/>
         <transition event="request"    target="request"/>
+        <state id="instantiated" />
     </state>
 
     <state id="synchronize">
         <onentry>
             <send event="persist" />
         </onentry>
+        <state id="synchronized" />
     </state>
 
     <state id="materialize">
@@ -28,6 +30,7 @@
         </onentry>
         <transition event="destantiate" target="destantiate"/>
         <transition event="modify"    target="modify"/>
+        <state id="materialized" />
     </state>
 
     <state id="modify">
@@ -42,6 +45,7 @@
             <send event="persist" />
         </onentry>
         <transition event="approve"   target="approve"/>
+        <state id="requested" />
     </state>
 
     <state id="approve">
@@ -49,6 +53,7 @@
             <send event="persist" />
         </onentry>
         <transition event="materialize"   target="materialize"/>
+        <state id="approved" />
     </state>
 
     <state id="destantiate">
@@ -56,6 +61,7 @@
             <send event="persist" />
         </onentry>
         <transition event="delete"   target="remove"/>
+        <state id="destantiated" />
     </state>
 
     <state id="remove">

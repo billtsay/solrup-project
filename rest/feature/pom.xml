@@ -10,8 +10,8 @@
     <version>1.0.0</version>
     <relativePath>../parent/pom.xml</relativePath>
   </parent>
-  <artifactId>yitian-rest</artifactId>
-  <packaging>bundle</packaging>
+  <artifactId>yitian-rest-feature</artifactId>
+  <packaging>feature</packaging>
 
   <name>Solrup Yitian :: REST</name>
   <url>http://yitian.solrup.com</url>

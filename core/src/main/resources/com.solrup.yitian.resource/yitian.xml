@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml"
+       version="1.0"
+       initial="initialize">
+
+    <state id="initialize">
+        <transition event="instantiate"   target="instantiate"/>
+        <transition event="synchronize"   target="synchronize"/>
+    </state>
+
+    <state id="instantiate">
+        <onentry>
+            <send event="persist" />
+        </onentry>
+        <transition event="materialize"   target="materialize"/>
+        <transition event="request"    target="request"/>
+        <state id="instantiated" />
+    </state>
+
+    <state id="synchronize">
+        <onentry>
+            <send event="persist" />
+        </onentry>
+        <state id="synchronized" />
+    </state>
+
+    <state id="materialize">
+        <onentry>
+            <send event="persist" />
+        </onentry>
+        <transition event="destantiate" target="destantiate"/>
+        <transition event="modify"    target="modify"/>
+        <state id="materialized" />
+    </state>
+
+    <state id="modify">
+        <onentry>
+            <send event="persist" />
+        </onentry>
+        <transition event="materialize"   target="materialize"/>
+    </state>
+
+    <state id="request">
+        <onentry>
+            <send event="persist" />
+        </onentry>
+        <transition event="approve"   target="approve"/>
+        <state id="requested" />
+    </state>
+
+    <state id="approve">
+        <onentry>
+            <send event="persist" />
+        </onentry>
+        <transition event="materialize"   target="materialize"/>
+        <state id="approved" />
+    </state>
+
+    <state id="destantiate">
+        <onentry>
+            <send event="persist" />
+        </onentry>
+        <transition event="delete"   target="remove"/>
+        <state id="destantiated" />
+    </state>
+
+    <state id="remove">
+        <onentry>
+            <send event="persist" />
+        </onentry>
+    </state>
+
+
+</scxml>

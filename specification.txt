@@ -1,5 +1,15 @@
 REST Specification: https://swagger.io/specification/
 
+
+System -> multiple applications: root, yitian, yitian-dev, yitian-debug, yitian-stage
+Application -> multiple templates
+  root -> system, log
+  yitian -> account(ldap), approver
+Template -> multiple instance
+  account -> admin, bill
+  system -> ?
+
+
 // template installs application  
   application:switch
   application:list  --filter
@@ -24,11 +34,6 @@ REST Specification: https://swagger.io/specification/
   instance:set <attribute> <value or $item>
   
   
-  
-  
-
-
-
 
 
 Account:
@@ -49,7 +54,8 @@ Account:
     }
   
   DELETE /account/abc
-  
+
+  account:login jitsay
   account:new abc
   account:switch abc --details (-d)
   account:list

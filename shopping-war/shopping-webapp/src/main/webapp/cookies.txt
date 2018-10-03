@@ -1,0 +1,9 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+klbtheme.com	TRUE	/groci/	FALSE	1999999999	wordpress_test_cookie	WP+Cookie+check
+klbtheme.com	TRUE	/groci/	FALSE	1999999999	woocommerce_items_in_cart	1
+klbtheme.com	TRUE	/groci/	FALSE	1999999999	woocommerce_cart_hash	c590ab1a6c6300b2536c6cdb1c9e0174
+klbtheme.com	TRUE	/groci/	FALSE	1999999999	wp_woocommerce_session_0b33e2391f61b0ce38000121d9e44472	3eae25721854f72dac81792a2532632f%7C%7C1538399554%7C%7C1538395954%7C%7Cc0fb05216f74bc109f99f711c4cfe816
+klbtheme.com	TRUE	/	FALSE	1999999999	woocommerce_items_in_cart	0
+klbtheme.com	TRUE	/	FALSE	1999999999	woocommerce_cart_hash	deleted
+

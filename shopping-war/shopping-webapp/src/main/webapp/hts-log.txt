@@ -1,0 +1,102 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 29 Sep 2018 06:09:28 at http://klbtheme.com/groci/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://klbtheme.com/groci/ -O1 "C:\My Web Sites\grocery template" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+06:09:29	Warning: 	Note: due to klbtheme.com remote robots.txt rules, links beginning with these path will be forbidden: /wp-admin/ (see in the options to disable this)
+06:14:00	Error: 	"Method Not Allowed" (405) at link klbtheme.com/groci/xmlrpc.php (from klbtheme.com/groci/)
+06:19:58	Warning: 	Moved Temporarily for klbtheme.com/groci/checkout/
+06:19:58	Warning: 	File has moved from klbtheme.com/groci/checkout/ to http://klbtheme.com/groci/cart/
+06:46:52	Error: 	"Not Found" (404) at link klbtheme.com/groci/wp-content/themes/groci/img/login.jpg (from klbtheme.com/groci/wp-content/themes/groci/css/stylem.css?ver=1.0)
+06:46:52	Error: 	"Not Found" (404) at link klbtheme.com/groci/wp-content/themes/groci/vendor/owl-carousel/AjaxLoader.gif (from klbtheme.com/groci/wp-content/themes/groci/vendor/owl-carousel/owl.theme.css?ver=1.0)
+06:48:18	Warning: 	Moved Permanently for klbtheme.com/groci/?p=57
+06:48:18	Warning: 	File has moved from klbtheme.com/groci/?p=57 to http://klbtheme.com/groci/my-account/
+06:48:19	Error: 	"Not Found" (404) at link klbtheme.com/groci/?page_id=3 (from klbtheme.com/groci/my-account/)
+06:48:19	Warning: 	Moved Permanently for klbtheme.com/groci/?p=101
+06:48:19	Warning: 	File has moved from klbtheme.com/groci/?p=101 to http://klbtheme.com/groci/about-us/
+06:48:32	Warning: 	Moved Permanently for klbtheme.com/groci/?p=29
+06:48:32	Warning: 	File has moved from klbtheme.com/groci/?p=29 to http://klbtheme.com/groci/product/jumbo-rainier-cherries/
+06:50:25	Warning: 	Moved Permanently for klbtheme.com/groci/?p=55
+06:50:25	Warning: 	File has moved from klbtheme.com/groci/?p=55 to http://klbtheme.com/groci/cart/
+06:53:10	Warning: 	Moved Permanently for klbtheme.com/groci/?p=154
+06:53:10	Warning: 	File has moved from klbtheme.com/groci/?p=154 to http://klbtheme.com/groci/blog/2018/08/12/restaurant-employer-read-clients-orders-on-his-ipad/
+06:53:11	Warning: 	Moved Permanently for klbtheme.com/groci/?p=212
+06:53:11	Warning: 	File has moved from klbtheme.com/groci/?p=212 to http://klbtheme.com/groci/faq/
+06:53:11	Warning: 	Moved Permanently for klbtheme.com/groci/?p=161
+06:53:11	Warning: 	File has moved from klbtheme.com/groci/?p=161 to http://klbtheme.com/groci/contact-us/
+06:53:11	Warning: 	Moved Permanently for klbtheme.com/groci/?p=68
+06:53:11	Warning: 	File has moved from klbtheme.com/groci/?p=68 to http://klbtheme.com/groci/product/green-seedless-grapes/
+06:55:17	Warning: 	Moved Permanently for klbtheme.com/groci/?p=63
+06:55:17	Warning: 	File has moved from klbtheme.com/groci/?p=63 to http://klbtheme.com/groci/product/organic-broccoli/
+06:58:12	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?remove_item=03afdbd66e7929b125f8597834fa83a4&_wpnonce=ba6e7ed3a5
+06:58:12	Warning: 	File has moved from klbtheme.com/groci/cart/?remove_item=03afdbd66e7929b125f8597834fa83a4&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/?removed_item=1
+06:59:02	Warning: 	Moved Permanently for klbtheme.com/groci/?p=61
+06:59:02	Warning: 	File has moved from klbtheme.com/groci/?p=61 to http://klbtheme.com/groci/product/washed-sugar-snap-peas/
+07:00:51	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?remove_item=7f39f8317fbdb1988ef4c628eba02591&_wpnonce=ba6e7ed3a5
+07:00:51	Warning: 	File has moved from klbtheme.com/groci/cart/?remove_item=7f39f8317fbdb1988ef4c628eba02591&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/?removed_item=1
+07:01:39	Warning: 	Moved Permanently for klbtheme.com/groci/?p=60
+07:01:39	Warning: 	File has moved from klbtheme.com/groci/?p=60 to http://klbtheme.com/groci/product/organic-italian-parsley/
+07:03:13	Warning: 	Moved Permanently for klbtheme.com/groci/?p=59
+07:03:13	Warning: 	File has moved from klbtheme.com/groci/?p=59 to http://klbtheme.com/groci/product/organic-strawberry/
+07:04:32	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?remove_item=093f65e080a295f8076b1c5722a46aa2&_wpnonce=ba6e7ed3a5
+07:04:32	Warning: 	File has moved from klbtheme.com/groci/cart/?remove_item=093f65e080a295f8076b1c5722a46aa2&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/?removed_item=1
+07:04:32	Warning: 	Moved Permanently for klbtheme.com/groci/?p=58
+07:04:32	Warning: 	File has moved from klbtheme.com/groci/?p=58 to http://klbtheme.com/groci/product/organic-vegetable/
+07:06:39	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?remove_item=6ea9ab1baa0efb9e19094440c317e21b&_wpnonce=ba6e7ed3a5
+07:06:39	Warning: 	File has moved from klbtheme.com/groci/cart/?remove_item=6ea9ab1baa0efb9e19094440c317e21b&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/?removed_item=1
+07:07:07	Warning: 	Moved Permanently for klbtheme.com/groci/?p=72
+07:07:07	Warning: 	File has moved from klbtheme.com/groci/?p=72 to http://klbtheme.com/groci/product/organic-sweet-corn/
+07:08:40	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?remove_item=32bb90e8976aab5298d5da10fe66f21d&_wpnonce=ba6e7ed3a5
+07:08:40	Warning: 	File has moved from klbtheme.com/groci/cart/?remove_item=32bb90e8976aab5298d5da10fe66f21d&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/?removed_item=1
+07:08:40	Warning: 	Moved Permanently for klbtheme.com/groci/?p=71
+07:08:40	Warning: 	File has moved from klbtheme.com/groci/?p=71 to http://klbtheme.com/groci/product/organic-gold-creamer-potatoes/
+07:11:32	Warning: 	Moved Permanently for klbtheme.com/groci/?p=70
+07:11:32	Warning: 	File has moved from klbtheme.com/groci/?p=70 to http://klbtheme.com/groci/product/native-organic-papaya/
+07:14:18	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?remove_item=7cbbc409ec990f19c78c75bd1e06f215&_wpnonce=ba6e7ed3a5
+07:14:18	Warning: 	File has moved from klbtheme.com/groci/cart/?remove_item=7cbbc409ec990f19c78c75bd1e06f215&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/?removed_item=1
+07:14:18	Warning: 	Moved Permanently for klbtheme.com/groci/?p=69
+07:14:18	Warning: 	File has moved from klbtheme.com/groci/?p=69 to http://klbtheme.com/groci/product/fresh-red-seedless-grapes/
+07:16:52	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?remove_item=14bfa6bb14875e45bba028a21ed38046&_wpnonce=ba6e7ed3a5
+07:16:52	Warning: 	File has moved from klbtheme.com/groci/cart/?remove_item=14bfa6bb14875e45bba028a21ed38046&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/?removed_item=1
+07:16:52	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?remove_item=a3f390d88e4c41f2747bfa2f1b5f87db&_wpnonce=ba6e7ed3a5
+07:16:52	Warning: 	File has moved from klbtheme.com/groci/cart/?remove_item=a3f390d88e4c41f2747bfa2f1b5f87db&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/?removed_item=1
+07:16:52	Warning: 	Moved Permanently for klbtheme.com/groci/?p=66
+07:16:52	Warning: 	File has moved from klbtheme.com/groci/?p=66 to http://klbtheme.com/groci/product/organic-grape-tomatoes/
+07:19:38	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?remove_item=3295c76acbf4caaed33c36b1b5fc2cb1&_wpnonce=ba6e7ed3a5
+07:19:38	Warning: 	File has moved from klbtheme.com/groci/cart/?remove_item=3295c76acbf4caaed33c36b1b5fc2cb1&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/?removed_item=1
+07:19:39	Warning: 	Moved Permanently for klbtheme.com/groci/shop/page/1/
+07:19:39	Warning: 	File has moved from klbtheme.com/groci/shop/page/1/ to http://klbtheme.com/groci/shop/
+07:19:39	Warning: 	Moved Permanently for klbtheme.com/groci/product-category/fruits-vegetables/page/1/
+07:19:39	Warning: 	File has moved from klbtheme.com/groci/product-category/fruits-vegetables/page/1/ to http://klbtheme.com/groci/product-category/fruits-vegetables/
+07:20:46	Warning: 	Moved Permanently for klbtheme.com/groci/?p=152
+07:20:46	Warning: 	File has moved from klbtheme.com/groci/?p=152 to http://klbtheme.com/groci/blog/2018/08/12/amazing-classic-interior-design-with-perfect-lighting/
+07:20:46	Warning: 	Moved Permanently for klbtheme.com/groci/?p=148
+07:20:46	Warning: 	File has moved from klbtheme.com/groci/?p=148 to http://klbtheme.com/groci/blog/2018/08/12/english-breakfast-tea-with-tasty-donut-desserts/
+07:20:47	Warning: 	Moved Permanently for klbtheme.com/groci/?p=146
+07:20:47	Warning: 	File has moved from klbtheme.com/groci/?p=146 to http://klbtheme.com/groci/blog/2018/08/12/co-founder-trying-to-explain-his-idea-to-his-employers/
+07:20:47	Warning: 	Moved Permanently for klbtheme.com/groci/?p=211
+07:20:47	Warning: 	File has moved from klbtheme.com/groci/?p=211 to http://klbtheme.com/groci/blog/2018/08/04/restaurant-employer-read-clients-orders-on-his-ipad-1/
+07:21:27	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?undo_item=03afdbd66e7929b125f8597834fa83a4&_wpnonce=ba6e7ed3a5
+07:21:27	Warning: 	File has moved from klbtheme.com/groci/cart/?undo_item=03afdbd66e7929b125f8597834fa83a4&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/product/washed-sugar-snap-peas/?add-to-cart=66
+07:25:29	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?undo_item=7f39f8317fbdb1988ef4c628eba02591&_wpnonce=ba6e7ed3a5
+07:25:29	Warning: 	File has moved from klbtheme.com/groci/cart/?undo_item=7f39f8317fbdb1988ef4c628eba02591&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/product/organic-italian-parsley/?add-to-cart=29
+07:28:08	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?undo_item=093f65e080a295f8076b1c5722a46aa2&_wpnonce=ba6e7ed3a5
+07:28:08	Warning: 	File has moved from klbtheme.com/groci/cart/?undo_item=093f65e080a295f8076b1c5722a46aa2&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/product/organic-vegetable/?add-to-cart=70
+07:28:39	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?undo_item=6ea9ab1baa0efb9e19094440c317e21b&_wpnonce=ba6e7ed3a5
+07:28:39	Warning: 	File has moved from klbtheme.com/groci/cart/?undo_item=6ea9ab1baa0efb9e19094440c317e21b&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/product/organic-sweet-corn/?add-to-cart=59
+07:28:39	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?undo_item=32bb90e8976aab5298d5da10fe66f21d&_wpnonce=ba6e7ed3a5
+07:28:39	Warning: 	File has moved from klbtheme.com/groci/cart/?undo_item=32bb90e8976aab5298d5da10fe66f21d&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/product/organic-gold-creamer-potatoes/?add-to-cart=70
+07:28:40	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?undo_item=7cbbc409ec990f19c78c75bd1e06f215&_wpnonce=ba6e7ed3a5
+07:28:40	Warning: 	File has moved from klbtheme.com/groci/cart/?undo_item=7cbbc409ec990f19c78c75bd1e06f215&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/product/fresh-red-seedless-grapes/?add-to-cart=61
+07:28:40	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?undo_item=14bfa6bb14875e45bba028a21ed38046&_wpnonce=ba6e7ed3a5
+07:28:40	Warning: 	File has moved from klbtheme.com/groci/cart/?undo_item=14bfa6bb14875e45bba028a21ed38046&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/product/organic-grape-tomatoes/?add-to-cart=68
+07:28:40	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?undo_item=a3f390d88e4c41f2747bfa2f1b5f87db&_wpnonce=ba6e7ed3a5
+07:28:40	Warning: 	File has moved from klbtheme.com/groci/cart/?undo_item=a3f390d88e4c41f2747bfa2f1b5f87db&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/product/organic-grape-tomatoes/?add-to-cart=68
+07:28:41	Warning: 	Moved Temporarily for klbtheme.com/groci/cart/?undo_item=3295c76acbf4caaed33c36b1b5fc2cb1&_wpnonce=ba6e7ed3a5
+07:28:41	Warning: 	File has moved from klbtheme.com/groci/cart/?undo_item=3295c76acbf4caaed33c36b1b5fc2cb1&_wpnonce=ba6e7ed3a5 to http://klbtheme.com/groci/shop/page/2/?add-to-cart=72
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 hours 20 minutes 46 seconds : 532 links scanned, 484 files written (23207191 bytes overall) [24010077 bytes received at 4954 bytes/sec], 211606 bytes transferred using HTTP compression in 2 files, ratio 38%, 1.9 requests per connection
+(4 errors, 87 warnings, 0 messages)

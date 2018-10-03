@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="shopping-war-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.4.0">
+
+    <feature name="grocery" version="${project.version}">
+        <feature prerequisite="true">war</feature>
+        <bundle>webbundle:mvn:com.solrup.webapp/grocery/${project.version}/war?Web-ContextPath=grocery</bundle>
+    </feature>
+
+    <feature name="home" version="${project.version}">
+        <feature prerequisite="true">war</feature>
+        <bundle>webbundle:mvn:com.solrup.webapp/home/${project.version}/war?Web-ContextPath=home</bundle>
+    </feature>
+
+</features>

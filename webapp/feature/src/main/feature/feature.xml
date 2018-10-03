@@ -6,6 +6,16 @@
         <bundle>webbundle:mvn:com.solrup.webapp/grocery/${project.version}/war?Web-ContextPath=grocery</bundle>
     </feature>
 
+    <feature name="login" version="${project.version}">
+        <feature prerequisite="true">war</feature>
+        <bundle>webbundle:mvn:com.solrup.webapp/login/${project.version}/war?Web-ContextPath=login</bundle>
+    </feature>
+
+    <feature name="directory" version="${project.version}">
+        <feature prerequisite="true">war</feature>
+        <bundle>webbundle:mvn:com.solrup.webapp/directory/${project.version}/war?Web-ContextPath=directory</bundle>
+    </feature>
+
     <feature name="home" version="${project.version}">
         <feature prerequisite="true">war</feature>
         <bundle>webbundle:mvn:com.solrup.webapp/home/${project.version}/war?Web-ContextPath=home</bundle>

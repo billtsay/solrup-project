@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>The Directory - Directory & Listing Template</title>
+	<link rel="shortcut icon" href="demo/fav.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand:500|Raleway|Righteous" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	html, body {
+     background: #e6e4e0;
+     background-attachment: fixed;
+     background-size: cover;
+     padding: 0;
+     margin: 0;
+     background: linear-gradient(to top, rgb(230, 228, 224) 18%, rgba(234, 234, 228, 0) 85%);
+}
+ body:before {
+     background: #333;
+     width: 100%;
+     height: 100%;
+     bottom: 0px;
+     position: absolute;
+}
+ .logo {
+     text-align: center;
+     padding: 50px;
+     margin-bottom: 50px;
+}
+ .logo img {
+}
+ .description {
+     text-align: center;
+     color: #000000;
+     font-size: 44px;
+     font-family: 'Quicksand', sans-serif;
+     text-transform: uppercase;
+     letter-spacing: 4px;
+     padding: 0 0 0 .4em;
+     margin: 0;
+}
+ .description1 {
+     text-align: center;
+     color: #000000;
+     font-size: 15px;
+     font-family: Raleway;
+     text-transform: uppercase;
+     letter-spacing: .4em;
+     padding: 0 0 0 .4em;
+     margin: 0;
+}
+ .description1 span {
+     color: #ea426f;
+}
+ .demos {
+     padding: 0;
+     margin: 0;
+     list-style-type: none;
+     text-align: center;
+}
+ .demos li {
+     display: inline-block;
+     width: 40%;
+     padding: 50px;
+     text-align: center;
+}
+ .demos li img {
+     width: 97%;
+     box-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
+     transition: box-shadow .3s 
+}
+ .demos li:hover img {
+     box-shadow: 7px 7px 30px rgba(0, 0, 0, .8);
+}
+ .demos li a {
+     color: #ccc;
+     font-family: Montserrat;
+     font-size: 12px;
+     text-transform: uppercase;
+     text-decoration: none;
+     letter-spacing: .5em;
+}
+ .demos li p {
+     margin-top: 20px;
+     padding: 0 0 0 .5em;
+     color: #000;
+     font-size: 16px;
+     letter-spacing: 2px;
+}
+ .footer-2 {
+     width: 100%;
+     background: #111;
+     color: #fff;
+     text-align: center;
+     padding: 0;
+     height: 70px;
+     line-height: 70px;
+     font-family: Montserrat;
+     text-transform: uppercase;
+     font-size: 11px;
+     letter-spacing: .15em;
+}
+ .footer-2 p {
+     margin: 0 
+}
+ .footer-2 span {
+     color: #05adff 
+}
+ .home-part {
+     margin-top: 40px;
+}
+ .home-part h2 {
+}
+ .home-part ul {
+     margin-top: 0px;
+}
+ .home-part ul li {
+     padding: 25px;
+}
+ .all-demos {
+     padding: 0;
+     margin: 0 auto;
+     list-style-type: none;
+     text-align: center;
+     position: relative;
+     overflow: hidden;
+     width: 80%;
+     display: table;
+     margin-top: 50px !important;
+     margin-bottom: 50px;
+}
+ .all-demos li {
+     float: left;
+     padding: 0px !important;
+     display: inline-block;
+     width: 15%;
+     margin-bottom: 15px;
+     margin-right: 15px;
+}
+ .all-demos li a {
+     color: #5f5e5e;
+     background: #fff;
+     padding: 12px;
+     text-decoration: none;
+     border-radius: 2px;
+     display: block;
+     font-family: Montserrat;
+     font-weight: 300;
+     text-transform: capitalize;
+     font-size: 14.5px;
+}
+ .all-demos li a:hover {
+     background: #887855;
+     color: #fff;
+}
+ .update{
+     font-family: 'Quicksand', sans-serif;
+     background: #f23a65;
+     color: #fff;
+     font-size: 10px;
+     border-radius: 50px;
+     padding: 2px 6px;
+    /* margin-left: -208px;
+     */
+     text-align: center;
+     display: table;
+     margin: 0 auto;
+}
+ @media (max-width: 1200px) {
+     .all-demos li {
+         width: 18%;
+    }
+}
+ @media (max-width: 1024px) {
+     .logo {
+         padding: 30px 0 0px 0;
+    }
+     .logo img {
+         width: 250px;
+    }
+     .demos li {
+         width: 80% 
+    }
+     .demos li a {
+         font-size: 16px;
+    }
+     .demos li p {
+         margin-top: 30px;
+    }
+     .all-demos li {
+         width: 31%;
+    }
+}
+ @media (max-width: 768px) {
+     .logo {
+         padding: 30px 0 0px 0;
+    }
+     .logo img {
+         width: 250px 
+    }
+     .description {
+         font-size: 22px;
+         width: 70%;
+         margin: auto;
+         line-height: 2em 
+    }
+     .demos li {
+         padding: 0;
+         width: 90%;
+         margin-bottom: 40px 
+    }
+     .demos li p {
+         margin-top: 15px;
+    }
+     .all-demos li {
+         width: 100%;
+    }
+}
+ .new-cl{
+     width: 54px;
+}
+
+	</style>
+</head>
+
+<body>
+	<div class="logo"> <img src="demo/logo.png" alt="PULSE"> <span class="update">Version 4.4(updated date:12th Aug 2018)</span></div>
+	<p class="description">Select Demo</p>
+	<p class="description1"><span>FrontEnd, User Dashboard and Admin Panel</span>
+		<ul class="demos">
+			<li>
+				<a href="index-1.html" target="_blank">
+					<p>Frontend 33</p> <img src="demo/p1.jpg" alt="preview"> </a>
+			</li>
+			<li>
+				<a href="dashboard.html" target="_blank">
+					<p>User Dashboard 16</p> <img src="demo/p2.jpg" alt="preview"> </a>
+			</li>
+			<li>
+				<a href="admin.html" target="_blank">
+					<p>Admin Panel 29</p> <img src="demo/p3.jpg" alt="preview"> </a>
+			</li>
+		</ul>
+		<div class="home-part">
+			<p class="description">3 Different Home Pages</p>
+			<p class="description1">Total Pages <span>80+</span> Home Pages <span>03</span>
+			</p>
+			<ul class="demos">
+				<li>
+					<a href="index-1.html" target="_blank">
+						<p>Home Pages 1</p> <img src="demo/p1.jpg" alt="preview"> </a>
+				</li>
+				<li>
+					<a href="index-2.html" target="_blank">
+						<p>Home Pages 2</p> <img src="demo/p16.jpg" alt="preview"> </a>
+				</li>
+				<li>
+					<a href="index-3.html" target="_blank">
+						<p>Home Pages 3</p> <img src="demo/p4.jpg" alt="preview"> </a>
+				</li>
+			</ul>
+		</div>
+		<div class="home-part">
+			<p class="description">03 Different Listing Pages</p>
+			<p class="description1">Total Pages <span>80+</span> All Listing Pages <span>03</span>
+			</p>
+			<ul class="demos">
+				<li>
+					<a href="list.html" target="_blank">
+						<p>All Listing</p> <img src="demo/p5.jpg" alt="preview"> </a>
+				</li>
+				<li>
+					<a href="list-lead.html" target="_blank">
+						<p>All Listing with Lead Capture</p> <img src="demo/p6.jpg" alt="preview"> </a>
+				</li>
+				<li>
+					<a href="list-grid.html" target="_blank">
+						<p>All Listing Grid View</p> <img src="demo/p7.jpg" alt="preview"> </a>
+				</li>
+			</ul>
+		</div>
+		<div class="home-part">
+			<p class="description">Listing Detail Pages</p>
+			<p class="description1">Total Pages <span>80+</span> Listing Detail Pages <span>04</span>
+			</p>
+			<ul class="demos">
+				<li>
+					<a href="listing-details.html" target="_blank">
+						<p>Listing Detail</p> <img src="demo/p8.jpg" alt="preview"> </a>
+				</li>
+				<li>
+					<a href="property-listing-details.html" target="_blank">
+						<p>Property Listing Details</p> <img src="demo/p9.jpg" alt="preview"> </a>
+				</li>
+				<li>
+					<a href="automobile-listing-details.html" target="_blank">
+						<p>Automobile Listing Details</p> <img src="demo/p10.jpg" alt="preview"> </a>
+				</li>
+				<li>
+					<a href="shop-listing-details.html" target="_blank">
+						<p>Shop Listing Details</p> <img src="demo/p11.jpg" alt="preview"> </a>
+				</li>
+			</ul>
+		</div>
+		<div class="home-part">
+			<p class="description">User Dashboard</p>
+			<p class="description1">Total Pages <span>80+</span> User Dashboard Pages <span>16</span>
+			</p>
+			<ul class="demos">
+				<li>
+					<a href="db-listing-add.html" target="_blank">
+						<p>Add New Listing</p> <img src="demo/p12.jpg" alt="preview"> </a>
+				</li>
+				<li>
+					<a href="db-invoice.html" target="_blank">
+						<p>Invoice</p> <img src="demo/p13.jpg" alt="preview"> </a>
+				</li>
+			</ul>
+		</div>
+		<div class="home-part">
+			<p class="description">Main Admin</p>
+			<p class="description1">Total Pages <span>80+</span> User Dashboard Pages <span>16</span>
+			</p>
+			<ul class="demos">
+				<li>
+					<a href="admin-all-listing.html" target="_blank">
+						<p>All Listing</p> <img src="demo/p14.jpg" alt="preview"> </a>
+				</li>
+				<li>
+					<a href="admin-setting.html" target="_blank">
+						<p>Site Setting</p> <img src="demo/p15.jpg" alt="preview"> </a>
+				</li>
+			</ul>
+		</div>
+		<div class="home-part">
+			<p class="description">All Frontend Pages</p>
+			<p class="description1">Frontend <span>33 Pages</span>
+			</p>
+			<ul class="all-demos">
+				<li><a href="index-1.html" target="_blank">Home</a>
+				</li>
+				<li><a href="index-2.html" target="_blank">Home 1</a>
+				</li>
+				<li><a href="add-listing.html" target="_blank">Add Listing</a>
+				</li>
+				<li><a href="about-us.html" target="_blank">About Us</a>
+				</li>
+				<li><a href="advertise.html" target="_blank">Advertising</a>
+				</li>
+				<li><a href="blog.html" target="_blank">Blog</a>
+				</li>
+				<li><a href="blog-content.html" target="_blank">Blog Inner</a>
+				</li>
+				<li><a href="contact-us.html" target="_blank">Contact Us</a>
+				</li>
+				<li><a href="customer-reviews.html" target="_blank">Customer Reviews</a>
+				</li>
+				<li><a href="login.html" target="_blank">login</a>
+				</li>
+				<li><a href="register.html" target="_blank">register</a>
+				</li>
+				<li><a href="elements.html" target="_blank">elements</a>
+				</li>
+				<li><a href="forgot-pass.html" target="_blank">forgot pass</a>
+				</li>
+				<li><a href="how-it-work.html" target="_blank">how it works</a>
+				</li>
+				<li><a href="list.html" target="_blank">All Listing</a>
+				</li>
+				<li><a href="list-grid.html" target="_blank">Listing grid</a>
+				</li>
+				<li><a href="list-lead.html" target="_blank">list lead</a>
+				</li>
+				<li><a href="price.html" target="_blank">price</a>
+				</li>
+				<li><a href="new-business.html" target="_blank">new business</a>
+				</li>
+				<li><a href="nearby-listings.html" target="_blank">nearby listings</a>
+				</li>
+				<li><a href="listing-details.html" target="_blank">listing details</a>
+				</li>
+				<li><a href="hotels-listing-details.html" target="_blank">hotels listing</a>
+				</li>
+				<li><a href="property-listing-details.html" target="_blank">property listing</a>
+				</li>
+				<li><a href="automobile-listing-details.html" target="_blank">Automobile Listing</a>
+				</li>
+				<li><a href="shop-listing-details.html" target="_blank">shop listing</a>
+				</li>
+				<li><a href="trendings.html" target="_blank">Top trendings</a>
+				</li>
+			</ul>
+		</div>
+		<div class="home-part">
+			<p class="description">All User Dashboard Pages</p>
+			<p class="description1">Frontend <span>16 Pages</span>
+			</p>
+			<ul class="all-demos">
+				<li><a href="dashboard.html" target="_blank">dashboard</a>
+				</li>
+				<li><a href="db-all-listing.html" target="_blank">all listing</a>
+				</li>
+				<li><a href="db-claim.html" target="_blank">claim business</a>
+				</li>
+				<li><a href="db-invoice-all.html" target="_blank">All Invoice</a>
+				</li>
+				<li><a href="db-invoice.html" target="_blank">Invoice</a>
+				</li>
+				<li><a href="db-invoice-download.html" target="_blank">Invoice Download</a>
+				</li>
+				<li><a href="db-listing-add.html" target="_blank">Add Listing</a>
+				</li>
+				<li><a href="db-listing-edit.html" target="_blank"> Edit Listing</a>
+				</li>
+				<li><a href="db-listing-more-info.html" target="_blank">Update Listing</a>
+				</li>
+				<li><a href="db-message.html" target="_blank">Messages</a>
+				</li>
+				<li><a href="db-my-profile.html" target="_blank">My Profile</a>
+				</li>
+				<li><a href="db-my-profile-edit.html" target="_blank">edit profile</a>
+				</li>
+				<li><a href="db-payment.html" target="_blank">Payment</a>
+				</li>
+				<li><a href="db-post-ads.html" target="_blank">Post ads</a>
+				</li>
+				<li><a href="db-review.html" target="_blank">Reviews</a>
+				</li>
+				<li><a href="db-setting.html" target="_blank">Profile Setting</a>
+				</li>
+			</ul>
+		</div>
+		<div class="home-part">
+			<p class="description">All Admin Pages</p>
+			<p class="description1">Frontend <span>29 Pages</span>
+			</p>
+			<ul class="all-demos">
+				<li><a href="admin.html" target="_blank">Admin</a>
+				</li>
+				<li><a href="admin-login.html" target="_blank">Admin Login</a></li>
+				<li><a href="admin-register.html" target="_blank">Admin Register</a></li>
+				<li><a href="admin-pass.html" target="_blank">Admin Forgot Pass</a></li>
+				<li><a href="admin-ads.html" target="_blank">All ads</a>
+				</li>
+				<li><a href="admin-ads-create.html" target="_blank">Post ads</a>
+				</li>
+				<li><a href="admin-all-listing.html" target="_blank">All listing</a>
+				</li>
+				<li><a href="admin-all-users.html" target="_blank">all users</a>
+				</li>
+				<li><a href="admin-analytics.html" target="_blank">analytics</a>
+				</li>
+				<li><a href="admin-blog.html" target="_blank">all blogs</a>
+				</li>
+				<li><a href="admin-blog-add.html" target="_blank">add blog</a>
+				</li>
+				<li><a href="admin-blog-edit.html" target="_blank">Edit blog</a>
+				</li>
+				<li><a href="admin-earnings.html" target="_blank">Earnings</a>
+				</li>
+				<li><a href="admin-list-add.html" target="_blank">Add listing</a>
+				</li>
+				<li><a href="admin-list-category-add.html" target="_blank">Add category</a>
+				</li>
+				<li><a href="admin-list-category-edit.html" target="_blank">edit category</a>
+				</li>
+				<li><a href="admin-list-edit.html" target="_blank">listing edit</a>
+				</li>
+				<li><a href="admin-listing-category.html" target="_blank">listing category</a>
+				</li>
+				<li><a href="admin-list-users-add.html" target="_blank">Add new user</a>
+				</li>
+				<li><a href="admin-list-view.html" target="_blank">view listing</a>
+				</li>
+				<li><a href="admin-notifications.html" target="_blank">notifications</a>
+				</li>
+				<li><a href="admin-notifications-push-add.html" target="_blank">push notifications</a>
+				</li>
+				<li><a href="admin-notifications-user-add.html" target="_blank">user notifications</a>
+				</li>
+				<li><a href="admin-payment.html" target="_blank">payment</a>
+				</li>
+				<li><a href="admin-price.html" target="_blank">Listing Price</a>
+				</li>
+				<li><a href="admin-price-list.html" target="_blank">Add Listing Price</a>
+				</li>
+				<li><a href="admin-price-list-edit.html" target="_blank">Listing Price Edit</a>
+				</li>
+				<li><a href="admin-setting.html" target="_blank">Admin setting</a>
+				</li>
+				<li><a href="admin-social-media.html" target="_blank">social media</a>
+				</li>
+			</ul>
+		</div>
+		<div class="home-part">
+			<p class="description"><img src="demo/new.png" alt="" class="new-cl">Email Template Pages</p>
+			<p class="description1">Frontend <span>06 Pages</span>
+			</p>
+			<ul class="all-demos">
+				<li><a href="email-template-register.html" target="_blank">Register</a> </li>
+				<li><a href="email-template-invoice.html" target="_blank">Invoice</a> </li>
+				<li><a href="email-listing-submited.html" target="_blank">Listing Submit</a> </li>
+				<li><a href="email-subscribe.html" target="_blank">Subscripe</a> </li>
+				<li><a href="email-template-email-verification.html" target="_blank">Email Verification</a> </li>
+				<li><a href="email-template-forgot-pass.html" target="_blank">Forgot Password</a> </li>
+			</ul>
+		</div>		
+		<div class="footer-2">
+			<p>Created with by RN53 Themes</p>
+		</div>
+</body>
+
+</html>

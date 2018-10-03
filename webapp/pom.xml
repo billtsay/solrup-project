@@ -9,6 +9,8 @@
 
     <modules>
         <module>home</module>
+        <module>login</module>
+        <module>directory</module>
         <module>grocery</module>
         <module>feature</module>
     </modules>

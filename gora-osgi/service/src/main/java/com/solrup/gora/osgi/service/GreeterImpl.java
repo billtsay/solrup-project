@@ -1,4 +1,4 @@
-package com.solrup.gora.osgi.service.impl;
+package com.solrup.gora.osgi.service;
 
 import com.solrup.gora.osgi.service.definition.Greeter;
 import org.osgi.framework.BundleActivator;

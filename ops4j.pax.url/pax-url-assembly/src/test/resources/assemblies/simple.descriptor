@@ -1,0 +1,26 @@
+// Some comment
+
+/*
+   Some other comment
+*/
+
+{
+  "manifest" : "./foo/MANIFEST.MF",
+  "assembly" :
+  {
+    "directory" :
+    {
+      "path" : "/some/path",
+      "include" : "*.class",
+      "include" : "*.xml",
+      "exclude" : "*.java"
+    },
+    "jar" :
+    {
+      "path" : "jar:file:/some/other/path",
+      "include" : "*.class",
+      "exclude" : "*.java",
+      "exclude" : ".*"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+Bundle-Activator:\
+  ${bundle.namespace}.internal.Activator
+
+Bundle-Version:\
+  ${pom.version}
+
+Bundle-SymbolicName:\
+  ${bundle.symbolicName}; singleton:=true
+
+Export-Service:\
+  org.osgi.service.url.URLStreamHandlerService; url.handler.protocol=war, \
+  org.osgi.service.url.URLStreamHandlerService; url.handler.protocol=war-i, \
+  org.osgi.service.url.URLStreamHandlerService; url.handler.protocol=warref, \
+  org.osgi.service.url.URLStreamHandlerService; url.handler.protocol=webbundle
+
+Import-Package:\
+  javax.net.ssl,\
+  javax.xml.transform; resolution:=optional,\
+  javax.xml.transform.stream; resolution:=optional,\
+  aQute.service.scripting;version="[3.5,4)";resolution:=optional,\
+  javax.xml.parsers; resolution:=optional,\
+  org.osgi.service.log; resolution:=optional,\
+  org.w3c.dom; resolution:=optional,\
+  org.xml.sax; resolution:=optional,\
+  org.osgi.service.cm; resolution:=optional,\
+  org.osgi.service; resolution:=optional,\
+  !org.slf4j.impl,\
+  *
+  
+Export-Package:\
+  ${bundle.namespace}; version="${pom.version}",\
+  ${bundle.namespace}ref; version="${pom.version}"
+  
+Private-Package:\
+  ${bundle.namespace}.internal.*
+
+-removeheaders:\
+  Include-Resource,\
+  Private-Package,\
+  Embed-Dependency,\
+  Embed-Transitive,\
+  Ignore-Package

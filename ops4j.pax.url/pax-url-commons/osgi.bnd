@@ -1,0 +1,15 @@
+Bundle-Version:\
+  ${pom.version}
+
+Bundle-SymbolicName:\
+  ${bundle.symbolicName}  
+  
+Import-Package:\
+  org.osgi.service.cm;resolution:=optional,\
+  *
+  
+-removeheaders:\
+  Include-Resource,\
+  Private-Package,\
+  Embed-Dependency,\
+  Embed-Transitive

@@ -1,0 +1,42 @@
+Bundle-Activator:\
+  ${bundle.namespace}.internal.Activator
+
+Bundle-Version:\
+  ${pom.version}
+
+Bundle-SymbolicName:\
+  ${bundle.symbolicName}; singleton:=true
+  
+Export-Service:\
+  org.osgi.service.url.URLStreamHandlerService; url.handler.protocol=wrap
+
+Import-Package:\
+  org.osgi.service.url,\
+  !org.osgi.service,\
+  !org.osgi.service*,\
+  *
+
+Export-Package:\
+  ${bundle.namespace}; version="${pom.version}"
+  
+Private-Package:\
+  ${bundle.namespace}.internal.*,\
+  !aQute.bnd.test*,\
+  aQute.*;version="[3.5,4)",\
+  org.ops4j.lang,\
+  org.ops4j.monitors,\
+  org.ops4j.monitors.exception,\
+  org.ops4j.net,\
+  org.ops4j.pax.swissbox.bnd,\
+  org.ops4j.pax.swissbox.property,\
+  org.ops4j.util.property,\
+  org.ops4j.pax.url.commons.handler
+
+
+-removeheaders:\
+  Ignore-Package,\
+  Include-Resource,\
+  Private-Package,\
+  Embed-Dependency,\
+  Embed-Transitive,\
+  Ignore-Package

@@ -1,0 +1,983 @@
+Oct 06, 2018 11:37:33 PM org.apache.karaf.main.Main launch
+INFO: Installing and starting initial bundles
+Oct 06, 2018 11:37:33 PM org.apache.karaf.main.Main launch
+INFO: All initial bundles installed and set to start
+Oct 06, 2018 11:37:33 PM org.apache.karaf.main.lock.SimpleFileLock lock
+INFO: Trying to lock /home/bill/solrup/apache-karaf-4.2.1/lock
+Oct 06, 2018 11:37:33 PM org.apache.karaf.main.lock.SimpleFileLock lock
+INFO: Lock acquired
+Oct 06, 2018 11:37:33 PM org.apache.karaf.main.Main$KarafLockCallback lockAcquired
+INFO: Lock acquired. Setting startlevel to 100
+2018-10-06T23:37:33,732 | INFO  | FelixStartLevel  | fileinstall                      | 10 - org.apache.felix.fileinstall - 3.6.4 | Creating configuration from org.ops4j.pax.url.war.cfg
+2018-10-06T23:37:33,746 | INFO  | FelixStartLevel  | fileinstall                      | 10 - org.apache.felix.fileinstall - 3.6.4 | Creating configuration from jmx.acl.org.apache.karaf.bundle.cfg
+2018-10-06T23:37:34,607 | INFO  | activator-1-thread-2 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Adding features: kar/[4.2.1,4.2.1],instance/[4.2.1,4.2.1],shell/[4.2.1,4.2.1],jaas/[4.2.1,4.2.1],package/[4.2.1,4.2.1],service/[4.2.1,4.2.1],system/[4.2.1,4.2.1],deployer/[4.2.1,4.2.1],bundle/[4.2.1,4.2.1],diagnostic/[4.2.1,4.2.1],feature/[4.2.1,4.2.1],wrap/[2.5.4,2.5.4],management/[4.2.1,4.2.1],cave/[4.1.1,4.1.1],framework/[4.2.1,4.2.1],eventadmin/[4.2.1,4.2.1],war/[4.2.1,4.2.1],ssh/[4.2.1,4.2.1],log/[4.2.1,4.2.1],config/[4.2.1,4.2.1]
+2018-10-06T23:37:34,861 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Changes to perform:
+2018-10-06T23:37:34,862 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   Region: root
+2018-10-06T23:37:34,863 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     Bundles to install:
+2018-10-06T23:37:34,863 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:javax.annotation/javax.annotation-api/1.2
+2018-10-06T23:37:34,863 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:javax.mail/mail/1.4.4
+2018-10-06T23:37:34,863 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:javax.servlet/javax.servlet-api/3.1.0
+2018-10-06T23:37:34,863 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.aries.spifly/org.apache.aries.spifly.dynamic.bundle/1.0.10
+2018-10-06T23:37:34,864 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.aries/org.apache.aries.util/1.1.0
+2018-10-06T23:37:34,864 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.felix/org.apache.felix.scr/2.1.2
+2018-10-06T23:37:34,864 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.geronimo.specs/geronimo-jaspic_1.0_spec/1.1
+2018-10-06T23:37:34,864 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1
+2018-10-06T23:37:34,865 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.http/org.apache.karaf.http.core/4.2.1
+2018-10-06T23:37:34,865 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.xbean/xbean-bundleutils/4.6
+2018-10-06T23:37:34,865 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.xbean/xbean-finder/4.6
+2018-10-06T23:37:34,865 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-client/9.4.11.v20180605
+2018-10-06T23:37:34,865 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-continuation/9.4.11.v20180605
+2018-10-06T23:37:34,866 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-deploy/9.4.11.v20180605
+2018-10-06T23:37:34,866 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-http/9.4.11.v20180605
+2018-10-06T23:37:34,866 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-io/9.4.11.v20180605
+2018-10-06T23:37:34,867 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-jaas/9.4.11.v20180605
+2018-10-06T23:37:34,867 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-jmx/9.4.11.v20180605
+2018-10-06T23:37:34,867 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-jndi/9.4.11.v20180605
+2018-10-06T23:37:34,867 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-plus/9.4.11.v20180605
+2018-10-06T23:37:34,867 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-rewrite/9.4.11.v20180605
+2018-10-06T23:37:34,868 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-security/9.4.11.v20180605
+2018-10-06T23:37:34,868 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-jaspi/9.4.11.v20180605
+2018-10-06T23:37:34,868 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-server/9.4.11.v20180605
+2018-10-06T23:37:34,868 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-servlet/9.4.11.v20180605
+2018-10-06T23:37:34,869 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-servlets/9.4.11.v20180605
+2018-10-06T23:37:34,869 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-util/9.4.11.v20180605
+2018-10-06T23:37:34,869 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-util-ajax/9.4.11.v20180605
+2018-10-06T23:37:34,869 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-webapp/9.4.11.v20180605
+2018-10-06T23:37:34,869 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty/jetty-xml/9.4.11.v20180605
+2018-10-06T23:37:34,870 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.ow2.asm/asm/6.2
+2018-10-06T23:37:34,870 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.ow2.asm/asm-commons/6.2
+2018-10-06T23:37:34,870 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.ow2.asm/asm-tree/6.2
+2018-10-06T23:37:34,870 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.ops4j.pax.web/pax-web-api/7.2.3
+2018-10-06T23:37:34,871 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.ops4j.pax.web/pax-web-jetty/7.2.3
+2018-10-06T23:37:34,871 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.ops4j.pax.web/pax-web-runtime/7.2.3
+2018-10-06T23:37:34,871 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.ops4j.pax.web/pax-web-spi/7.2.3
+2018-10-06T23:37:34,872 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Stopping bundles:
+2018-10-06T23:37:34,874 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.ops4j.pax.logging.pax-logging-log4j2/1.10.1
+2018-10-06T23:37:35,254 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.server/9.4.11.v20180605
+2018-10-06T23:37:35,259 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.security/9.4.11.v20180605
+2018-10-06T23:37:35,260 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.jaas/9.4.11.v20180605
+2018-10-06T23:37:35,262 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.rewrite/9.4.11.v20180605
+2018-10-06T23:37:35,263 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.servlet/9.4.11.v20180605
+2018-10-06T23:37:35,264 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.continuation/9.4.11.v20180605
+2018-10-06T23:37:35,266 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.jndi/9.4.11.v20180605
+2018-10-06T23:37:35,267 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.geronimo.specs.geronimo-jta_1.1_spec/1.1.1
+2018-10-06T23:37:35,268 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.xml/9.4.11.v20180605
+2018-10-06T23:37:35,270 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.webapp/9.4.11.v20180605
+2018-10-06T23:37:35,271 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.plus/9.4.11.v20180605
+2018-10-06T23:37:35,272 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.security.jaspi/9.4.11.v20180605
+2018-10-06T23:37:35,273 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.ops4j.pax.web.pax-web-api/7.2.3
+2018-10-06T23:37:35,275 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.ops4j.pax.web.pax-web-spi/7.2.3
+2018-10-06T23:37:35,276 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   javax.annotation-api/1.2.0
+2018-10-06T23:37:35,277 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.deploy/9.4.11.v20180605
+2018-10-06T23:37:35,278 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.client/9.4.11.v20180605
+2018-10-06T23:37:35,280 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.servlets/9.4.11.v20180605
+2018-10-06T23:37:35,281 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.util.ajax/9.4.11.v20180605
+2018-10-06T23:37:35,282 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.ops4j.pax.web.pax-web-jetty/7.2.3
+2018-10-06T23:37:35,315 | INFO  | features-3-thread-1 | log                              | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | Logging initialized @3515ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-10-06T23:37:35,322 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.ops4j.pax.web.pax-web-runtime/7.2.3
+2018-10-06T23:37:35,330 | INFO  | features-3-thread-1 | Activator                        | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | EventAdmin support enabled, servlet events will be postet to topics.
+2018-10-06T23:37:35,331 | INFO  | features-3-thread-1 | Activator                        | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | LogService support enabled, log events will be created.
+2018-10-06T23:37:35,333 | INFO  | features-3-thread-1 | Activator                        | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | Pax Web started
+2018-10-06T23:37:35,334 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.http.core/4.2.1
+2018-10-06T23:37:35,352 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.felix.scr/2.1.2
+2018-10-06T23:37:35,565 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   javax.mail/1.4.4
+2018-10-06T23:37:35,570 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.objectweb.asm/6.2.0
+2018-10-06T23:37:35,571 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.objectweb.asm.tree/6.2.0
+2018-10-06T23:37:35,572 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.objectweb.asm.commons/6.2.0
+2018-10-06T23:37:35,573 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.xbean.bundleutils/4.6.0
+2018-10-06T23:37:35,575 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.xbean.finder/4.6.0
+2018-10-06T23:37:35,576 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Done.
+2018-10-06T23:37:35,668 | INFO  | paxweb-config-1-thread-1 | JettyFactoryImpl                 | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | No ALPN class available
+2018-10-06T23:37:35,668 | INFO  | paxweb-config-1-thread-1 | JettyFactoryImpl                 | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | HTTP/2 not available, creating standard ServerConnector for Http
+2018-10-06T23:37:35,715 | INFO  | paxweb-config-1-thread-1 | JettyServerImpl                  | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | Pax Web available at [0.0.0.0]:[8181]
+2018-10-06T23:37:35,721 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Changes to perform:
+2018-10-06T23:37:35,722 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   Region: root
+2018-10-06T23:37:35,722 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     Bundles to install:
+2018-10-06T23:37:35,722 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:commons-codec/commons-codec/1.10
+2018-10-06T23:37:35,722 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.httpcomponents/httpclient-osgi/4.2.5
+2018-10-06T23:37:35,723 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.httpcomponents/httpcore-osgi/4.2.5
+2018-10-06T23:37:35,723 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.cave.deployer/org.apache.karaf.cave.deployer.api/4.1.1
+2018-10-06T23:37:35,723 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.cave.deployer/org.apache.karaf.cave.deployer.service/4.1.1
+2018-10-06T23:37:35,724 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.cave.server/org.apache.karaf.cave.server.api/4.1.1
+2018-10-06T23:37:35,724 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.cave.server/org.apache.karaf.cave.server.http/4.1.1
+2018-10-06T23:37:35,724 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.cave.server/org.apache.karaf.cave.server.maven/4.1.1
+2018-10-06T23:37:35,724 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.cave.server/org.apache.karaf.cave.server.storage/4.1.1
+2018-10-06T23:37:35,724 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.jsoup/jsoup/1.7.3
+2018-10-06T23:37:35,725 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Installing bundles:
+2018-10-06T23:37:35,725 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   mvn:commons-codec/commons-codec/1.10
+2018-10-06T23:37:35,728 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   mvn:org.apache.httpcomponents/httpclient-osgi/4.2.5
+2018-10-06T23:37:35,728 | INFO  | paxweb-config-1-thread-1 | HttpServiceFactoryImpl           | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | Binding bundle: [org.apache.karaf.http.core [21]] to http service
+2018-10-06T23:37:35,732 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   mvn:org.apache.httpcomponents/httpcore-osgi/4.2.5
+2018-10-06T23:37:35,735 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   mvn:org.apache.karaf.cave.deployer/org.apache.karaf.cave.deployer.api/4.1.1
+2018-10-06T23:37:35,737 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   mvn:org.apache.karaf.cave.deployer/org.apache.karaf.cave.deployer.service/4.1.1
+2018-10-06T23:37:35,745 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   mvn:org.apache.karaf.cave.server/org.apache.karaf.cave.server.api/4.1.1
+2018-10-06T23:37:35,747 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   mvn:org.apache.karaf.cave.server/org.apache.karaf.cave.server.http/4.1.1
+2018-10-06T23:37:35,750 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   mvn:org.apache.karaf.cave.server/org.apache.karaf.cave.server.maven/4.1.1
+2018-10-06T23:37:35,752 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   mvn:org.apache.karaf.cave.server/org.apache.karaf.cave.server.storage/4.1.1
+2018-10-06T23:37:35,755 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   mvn:org.jsoup/jsoup/1.7.3
+2018-10-06T23:37:35,775 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Starting bundles:
+2018-10-06T23:37:35,777 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.httpcomponents.httpcore/4.2.5
+2018-10-06T23:37:35,778 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.httpcomponents.httpclient/4.2.5
+2018-10-06T23:37:35,780 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.commons.codec/1.10.0
+2018-10-06T23:37:35,781 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.cave.server.api/4.1.1
+2018-10-06T23:37:35,782 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.jsoup/1.7.3
+2018-10-06T23:37:35,783 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.cave.server.storage/4.1.1
+2018-10-06T23:37:35,793 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.cave.server.http/4.1.1
+2018-10-06T23:37:35,798 | INFO  | features-3-thread-1 | HttpServiceFactoryImpl           | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | Binding bundle: [org.apache.karaf.cave.server.http [56]] to http service
+2018-10-06T23:37:35,802 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.cave.server.maven/4.1.1
+2018-10-06T23:37:35,808 | INFO  | features-3-thread-1 | HttpServiceFactoryImpl           | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | Binding bundle: [org.apache.karaf.cave.server.maven [57]] to http service
+2018-10-06T23:37:35,811 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.cave.deployer.api/4.1.1
+2018-10-06T23:37:35,813 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.cave.deployer.service/4.1.1
+2018-10-06T23:37:35,884 | INFO  | pool-2-thread-1  | HttpServiceContext               | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | registering context DefaultHttpContext [bundle=org.apache.karaf.cave.server.http [56], contextID=default], with context-name: 
+2018-10-06T23:37:35,895 | INFO  | pool-3-thread-1  | HttpServiceContext               | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | registering context DefaultHttpContext [bundle=org.apache.karaf.cave.server.maven [57], contextID=default], with context-name: 
+2018-10-06T23:37:35,916 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Done.
+2018-10-06T23:37:35,941 | INFO  | pool-3-thread-1  | session                          | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | DefaultSessionIdManager workerName=node0
+2018-10-06T23:37:35,941 | INFO  | pool-3-thread-1  | session                          | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | No SessionScavenger set, using defaults
+2018-10-06T23:37:35,944 | INFO  | pool-3-thread-1  | session                          | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | node0 Scavenging every 600000ms
+2018-10-06T23:37:35,970 | INFO  | pool-2-thread-1  | ContextHandler                   | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=org.apache.karaf.cave.server.http [56], contextID=default]}
+2018-10-06T23:37:35,970 | INFO  | pool-3-thread-1  | ContextHandler                   | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=org.apache.karaf.cave.server.maven [57], contextID=default]}
+2018-10-06T23:37:35,979 | INFO  | pool-2-thread-1  | Server                           | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_181-b13
+2018-10-06T23:37:36,061 | INFO  | pool-2-thread-1  | AbstractConnector                | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | Started default@1b87aa17{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2018-10-06T23:37:36,062 | INFO  | pool-2-thread-1  | Server                           | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | Started @4263ms
+2018-10-06T23:37:36,313 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Changes to perform:
+2018-10-06T23:37:36,313 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   Region: root
+2018-10-06T23:37:36,314 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     Bundles to update:
+2018-10-06T23:37:36,314 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       org.apache.aries.util/1.1.0 with mvn:org.apache.aries/org.apache.aries.util/1.1.3
+2018-10-06T23:37:36,314 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     Bundles to install:
+2018-10-06T23:37:36,314 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:biz.aQute.bnd/biz.aQute.bndlib/3.5.0
+2018-10-06T23:37:36,314 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:com.fasterxml.jackson.core/jackson-annotations/2.4.6
+2018-10-06T23:37:36,315 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:com.fasterxml.jackson.core/jackson-core/2.4.6
+2018-10-06T23:37:36,315 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:com.fasterxml.jackson.core/jackson-databind/2.4.6
+2018-10-06T23:37:36,315 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.4.6
+2018-10-06T23:37:36,315 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.4.6
+2018-10-06T23:37:36,315 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:javax.el/javax.el-api/3.0.0
+2018-10-06T23:37:36,315 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:javax.websocket/javax.websocket-api/1.1
+2018-10-06T23:37:36,316 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.aries.jmx/org.apache.aries.jmx.api/1.1.5
+2018-10-06T23:37:36,316 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.aries.jmx/org.apache.aries.jmx.core/1.1.8
+2018-10-06T23:37:36,316 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.aries.jmx/org.apache.aries.jmx.whiteboard/1.2.0
+2018-10-06T23:37:36,316 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.cxf/cxf-core/3.1.6
+2018-10-06T23:37:36,316 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.cxf/cxf-rt-frontend-jaxrs/3.1.6
+2018-10-06T23:37:36,316 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.cxf/cxf-rt-management/3.1.6
+2018-10-06T23:37:36,316 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.cxf/cxf-rt-rs-client/3.1.6
+2018-10-06T23:37:36,317 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.cxf/cxf-rt-rs-extension-providers/3.1.6
+2018-10-06T23:37:36,317 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.cxf/cxf-rt-rs-extension-search/3.1.6
+2018-10-06T23:37:36,317 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.cxf/cxf-rt-rs-service-description/3.1.6
+2018-10-06T23:37:36,317 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.cxf/cxf-rt-transports-http/3.1.6
+2018-10-06T23:37:36,317 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.geronimo.specs/geronimo-osgi-registry/1.1
+2018-10-06T23:37:36,317 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.bundle/org.apache.karaf.bundle.core/4.2.1
+2018-10-06T23:37:36,318 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.cave.deployer/org.apache.karaf.cave.deployer.command/4.1.1
+2018-10-06T23:37:36,318 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.cave/org.apache.karaf.cave.rest/4.1.1
+2018-10-06T23:37:36,318 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.cave.server/org.apache.karaf.cave.server.command/4.1.1
+2018-10-06T23:37:36,318 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.cave.server/org.apache.karaf.cave.server.management/4.1.1
+2018-10-06T23:37:36,318 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.config/org.apache.karaf.config.core/4.2.1
+2018-10-06T23:37:36,318 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.deployer/org.apache.karaf.deployer.features/4.2.1
+2018-10-06T23:37:36,318 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.deployer/org.apache.karaf.deployer.kar/4.2.1
+2018-10-06T23:37:36,319 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.deployer/org.apache.karaf.deployer.wrap/4.2.1
+2018-10-06T23:37:36,319 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.diagnostic/org.apache.karaf.diagnostic.core/4.2.1
+2018-10-06T23:37:36,319 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf/org.apache.karaf.event/4.2.1
+2018-10-06T23:37:36,319 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.features/org.apache.karaf.features.command/4.2.1
+2018-10-06T23:37:36,319 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.instance/org.apache.karaf.instance.core/4.2.1
+2018-10-06T23:37:36,319 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.jaas/org.apache.karaf.jaas.command/4.2.1
+2018-10-06T23:37:36,320 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.jaas/org.apache.karaf.jaas.config/4.2.1
+2018-10-06T23:37:36,320 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.jaas/org.apache.karaf.jaas.modules/4.2.1
+2018-10-06T23:37:36,320 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.kar/org.apache.karaf.kar.core/4.2.1
+2018-10-06T23:37:36,320 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.log/org.apache.karaf.log.core/4.2.1
+2018-10-06T23:37:36,320 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.management/org.apache.karaf.management.server/4.2.1
+2018-10-06T23:37:36,320 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.package/org.apache.karaf.package.core/4.2.1
+2018-10-06T23:37:36,320 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.scr/org.apache.karaf.scr.management/4.2.1
+2018-10-06T23:37:36,321 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.scr/org.apache.karaf.scr.state/4.2.1
+2018-10-06T23:37:36,321 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.service/org.apache.karaf.service.core/4.2.1
+2018-10-06T23:37:36,321 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.shell/org.apache.karaf.shell.commands/4.2.1
+2018-10-06T23:37:36,321 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.shell/org.apache.karaf.shell.core/4.2.1
+2018-10-06T23:37:36,321 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.shell/org.apache.karaf.shell.ssh/4.2.1
+2018-10-06T23:37:36,321 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.system/org.apache.karaf.system.core/4.2.1
+2018-10-06T23:37:36,321 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.karaf.web/org.apache.karaf.web.core/4.2.1
+2018-10-06T23:37:36,321 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.fastinfoset/1.2.13_1
+2018-10-06T23:37:36,321 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jaxb-xjc/2.2.11_1
+2018-10-06T23:37:36,322 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.not-yet-commons-ssl/0.3.11_1
+2018-10-06T23:37:36,322 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xmlresolver/1.2_5
+2018-10-06T23:37:36,322 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jsr339-api-2.0.1/2.6.0
+2018-10-06T23:37:36,322 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.sshd/sshd-core/1.7.0
+2018-10-06T23:37:36,322 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.apache.ws.xmlschema/xmlschema-core/2.2.1
+2018-10-06T23:37:36,322 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.codehaus.jettison/jettison/1.3.7
+2018-10-06T23:37:36,322 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jdt.core.compiler/ecj/4.5.1
+2018-10-06T23:37:36,323 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty.websocket/websocket-api/9.4.11.v20180605
+2018-10-06T23:37:36,323 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty.websocket/websocket-client/9.4.11.v20180605
+2018-10-06T23:37:36,323 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty.websocket/websocket-common/9.4.11.v20180605
+2018-10-06T23:37:36,323 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty.websocket/javax-websocket-client-impl/9.4.11.v20180605
+2018-10-06T23:37:36,323 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty.websocket/javax-websocket-server-impl/9.4.11.v20180605
+2018-10-06T23:37:36,323 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty.websocket/websocket-server/9.4.11.v20180605
+2018-10-06T23:37:36,323 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.eclipse.jetty.websocket/websocket-servlet/9.4.11.v20180605
+2018-10-06T23:37:36,323 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.jline/jline-builtins/3.9.0
+2018-10-06T23:37:36,324 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.jline/jline-reader/3.9.0
+2018-10-06T23:37:36,324 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.jline/jline-terminal/3.9.0
+2018-10-06T23:37:36,324 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.jline/jline-terminal-jansi/3.9.0
+2018-10-06T23:37:36,324 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.ops4j.pax.url/pax-url-war/2.5.4/jar/uber
+2018-10-06T23:37:36,324 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.ops4j.pax.url/pax-url-wrap/2.5.4/jar/uber
+2018-10-06T23:37:36,324 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.ops4j.pax.web/pax-web-deployer/7.2.3
+2018-10-06T23:37:36,324 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.ops4j.pax.web/pax-web-descriptor/7.2.3
+2018-10-06T23:37:36,324 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.ops4j.pax.web/pax-web-extender-war/7.2.3
+2018-10-06T23:37:36,325 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.ops4j.pax.web/pax-web-extender-whiteboard/7.2.3
+2018-10-06T23:37:36,325 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.ops4j.pax.web/pax-web-jsp/7.2.3
+2018-10-06T23:37:36,325 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.codehaus.woodstox/stax2-api/3.1.4
+2018-10-06T23:37:36,325 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       mvn:org.codehaus.woodstox/woodstox-core-asl/4.4.1
+2018-10-06T23:37:36,325 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Stopping bundles:
+2018-10-06T23:37:36,326 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.xml/9.4.11.v20180605
+2018-10-06T23:37:36,327 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.webapp/9.4.11.v20180605
+2018-10-06T23:37:36,328 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.util.ajax/9.4.11.v20180605
+2018-10-06T23:37:36,328 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.util/9.4.11.v20180605
+2018-10-06T23:37:36,329 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.servlets/9.4.11.v20180605
+2018-10-06T23:37:36,329 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.servlet/9.4.11.v20180605
+2018-10-06T23:37:36,330 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.server/9.4.11.v20180605
+2018-10-06T23:37:36,330 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.security.jaspi/9.4.11.v20180605
+2018-10-06T23:37:36,331 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.security/9.4.11.v20180605
+2018-10-06T23:37:36,331 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.rewrite/9.4.11.v20180605
+2018-10-06T23:37:36,331 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.plus/9.4.11.v20180605
+2018-10-06T23:37:36,332 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.jndi/9.4.11.v20180605
+2018-10-06T23:37:36,332 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.jmx/9.4.11.v20180605
+2018-10-06T23:37:36,333 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.jaas/9.4.11.v20180605
+2018-10-06T23:37:36,334 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.io/9.4.11.v20180605
+2018-10-06T23:37:36,334 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.http/9.4.11.v20180605
+2018-10-06T23:37:36,335 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.deploy/9.4.11.v20180605
+2018-10-06T23:37:36,336 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.client/9.4.11.v20180605
+2018-10-06T23:37:36,336 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.geronimo.specs.geronimo-jaspic_1.0_spec/1.1.0
+2018-10-06T23:37:36,337 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.felix.scr/2.1.2
+2018-10-06T23:37:36,341 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.aries.util/1.1.0
+2018-10-06T23:37:36,342 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.aries.spifly.dynamic.bundle/1.0.10
+2018-10-06T23:37:36,343 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.http.core/4.2.1
+2018-10-06T23:37:36,344 | INFO  | features-3-thread-1 | HttpServiceFactoryImpl           | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | Unbinding bundle: [org.apache.karaf.http.core [21]]
+2018-10-06T23:37:36,348 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.ops4j.pax.web.pax-web-runtime/7.2.3
+2018-10-06T23:37:36,353 | INFO  | paxweb-config-1-thread-1 | HttpServiceFactoryImpl           | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | Unbinding bundle: [org.apache.karaf.cave.server.http [56]]
+2018-10-06T23:37:36,357 | INFO  | paxweb-config-1-thread-1 | ContextHandler                   | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | Stopped HttpServiceContext{httpContext=DefaultHttpContext [bundle=org.apache.karaf.cave.server.http [56], contextID=default]}
+2018-10-06T23:37:36,358 | INFO  | paxweb-config-1-thread-1 | HttpServiceFactoryImpl           | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | Unbinding bundle: [org.apache.karaf.cave.server.maven [57]]
+2018-10-06T23:37:36,359 | INFO  | paxweb-config-1-thread-1 | ContextHandler                   | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | Stopped HttpServiceContext{httpContext=DefaultHttpContext [bundle=org.apache.karaf.cave.server.maven [57], contextID=default]}
+2018-10-06T23:37:36,366 | INFO  | paxweb-config-1-thread-1 | AbstractConnector                | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | Stopped default@1b87aa17{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2018-10-06T23:37:36,367 | INFO  | paxweb-config-1-thread-1 | session                          | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | node0 Stopped scavenging
+2018-10-06T23:37:36,369 | INFO  | paxweb-config-1-thread-1 | Activator                        | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | ServerControllerFactory is gone, HTTP Service is not available now.
+2018-10-06T23:37:36,371 | INFO  | features-3-thread-1 | Activator                        | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | Pax Web stopped
+2018-10-06T23:37:36,373 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.ops4j.pax.web.pax-web-jetty/7.2.3
+2018-10-06T23:37:36,374 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.servicemix.bundles.jaxb-impl/2.2.11.1
+2018-10-06T23:37:36,375 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.ops4j.pax.logging.pax-logging-log4j2/1.10.1
+2018-10-06T23:37:36,963 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.servicemix.bundles.xmlresolver/1.2.0.5
+2018-10-06T23:37:36,969 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.deployer.features/4.2.1
+2018-10-06T23:37:37,054 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.jaas.config/4.2.1
+2018-10-06T23:37:37,063 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.jline.terminal/3.9.0
+2018-10-06T23:37:37,065 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.codehaus.jettison.jettison/1.3.7
+2018-10-06T23:37:37,068 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.aries.spifly.dynamic.bundle/1.0.10
+2018-10-06T23:37:37,084 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.util/9.4.11.v20180605
+2018-10-06T23:37:37,085 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.io/9.4.11.v20180605
+2018-10-06T23:37:37,085 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.http/9.4.11.v20180605
+2018-10-06T23:37:37,089 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.jmx/9.4.11.v20180605
+2018-10-06T23:37:37,090 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.server/9.4.11.v20180605
+2018-10-06T23:37:37,091 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.ops4j.pax.web.pax-web-descriptor/7.2.3
+2018-10-06T23:37:37,092 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jdt.core.compiler.batch/3.11.1.v20150902-1521
+2018-10-06T23:37:37,092 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   javax.el-api/3.0.0
+2018-10-06T23:37:37,093 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.ops4j.pax.web.pax-web-jsp/7.2.3
+2018-10-06T23:37:37,094 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.ops4j.pax.web.pax-web-extender-war/7.2.3
+2018-10-06T23:37:37,115 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.jline.reader/3.9.0
+2018-10-06T23:37:37,117 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.jline.builtins/3.9.0
+2018-10-06T23:37:37,118 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.shell.core/4.2.1
+2018-10-06T23:37:37,153 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.deployer.kar/4.2.1
+2018-10-06T23:37:38,317 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.log.core/4.2.1
+2018-10-06T23:37:38,364 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.log.core/4.2.1
+2018-10-06T23:37:38,377 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.security/9.4.11.v20180605
+2018-10-06T23:37:38,379 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.jaas/9.4.11.v20180605
+2018-10-06T23:37:38,380 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   javax.websocket-api/1.1.0
+2018-10-06T23:37:38,383 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.servlet/9.4.11.v20180605
+2018-10-06T23:37:38,386 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.xml/9.4.11.v20180605
+2018-10-06T23:37:38,390 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.websocket.common/9.4.11.v20180605
+2018-10-06T23:37:38,417 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.websocket.api/9.4.11.v20180605
+2018-10-06T23:37:38,422 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.client/9.4.11.v20180605
+2018-10-06T23:37:38,423 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.websocket.client/9.4.11.v20180605
+2018-10-06T23:37:38,425 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.websocket.javax.websocket/9.4.11.v20180605
+2018-10-06T23:37:38,428 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.websocket.servlet/9.4.11.v20180605
+2018-10-06T23:37:38,429 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.websocket.server/9.4.11.v20180605
+2018-10-06T23:37:38,432 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.websocket.javax.websocket.server/9.4.11.v20180605
+2018-10-06T23:37:38,436 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.webapp/9.4.11.v20180605
+2018-10-06T23:37:38,461 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.deploy/9.4.11.v20180605
+2018-10-06T23:37:38,463 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.rewrite/9.4.11.v20180605
+2018-10-06T23:37:38,463 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.geronimo.specs.geronimo-jaspic_1.0_spec/1.1.0
+2018-10-06T23:37:38,466 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.security.jaspi/9.4.11.v20180605
+2018-10-06T23:37:38,467 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.jndi/9.4.11.v20180605
+2018-10-06T23:37:38,468 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.plus/9.4.11.v20180605
+2018-10-06T23:37:38,469 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.servlets/9.4.11.v20180605
+2018-10-06T23:37:38,471 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.eclipse.jetty.util.ajax/9.4.11.v20180605
+2018-10-06T23:37:38,472 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.ops4j.pax.web.pax-web-jetty/7.2.3
+2018-10-06T23:37:38,493 | INFO  | features-3-thread-1 | log                              | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | Logging initialized @6694ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-10-06T23:37:38,500 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.ops4j.pax.web.pax-web-runtime/7.2.3
+2018-10-06T23:37:38,513 | INFO  | features-3-thread-1 | Activator                        | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | EventAdmin support enabled, servlet events will be postet to topics.
+2018-10-06T23:37:38,517 | INFO  | features-3-thread-1 | Activator                        | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | LogService support enabled, log events will be created.
+2018-10-06T23:37:38,528 | INFO  | features-3-thread-1 | Activator                        | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | Pax Web started
+2018-10-06T23:37:38,531 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.http.core/4.2.1
+2018-10-06T23:37:38,562 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Command registration delayed for bundle org.apache.karaf.http.core/4.2.1. Missing dependencies: [org.apache.karaf.http.core.ProxyService, org.apache.karaf.http.core.ServletService]
+2018-10-06T23:37:38,565 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.system.core/4.2.1
+2018-10-06T23:37:38,611 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.system.core/4.2.1
+2018-10-06T23:37:38,612 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.aries.jmx.whiteboard/1.2.0
+2018-10-06T23:37:38,625 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.diagnostic.core/4.2.1
+2018-10-06T23:37:38,642 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.diagnostic.core/4.2.1
+2018-10-06T23:37:38,643 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.bundle.core/4.2.1
+2018-10-06T23:37:38,711 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.bundle.core/4.2.1
+2018-10-06T23:37:38,712 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   biz.aQute.bndlib/3.5.0.201709291849
+2018-10-06T23:37:38,723 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.felix.scr/2.1.2
+2018-10-06T23:37:38,950 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.scr.state/4.2.1
+2018-10-06T23:37:38,961 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.scr.state/4.2.1
+2018-10-06T23:37:38,962 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.service.core/4.2.1
+2018-10-06T23:37:38,993 | INFO  | paxweb-config-4-thread-1 | JettyFactoryImpl                 | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | No ALPN class available
+2018-10-06T23:37:39,001 | INFO  | paxweb-config-4-thread-1 | JettyFactoryImpl                 | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | HTTP/2 not available, creating standard ServerConnector for Http
+2018-10-06T23:37:39,013 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.service.core/4.2.1
+2018-10-06T23:37:39,014 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.ws.xmlschema.core/2.2.1
+2018-10-06T23:37:39,016 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.ops4j.pax.web.pax-web-extender-whiteboard/7.2.3
+2018-10-06T23:37:39,053 | INFO  | paxweb-config-4-thread-1 | JettyServerImpl                  | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | Pax Web available at [0.0.0.0]:[8181]
+2018-10-06T23:37:39,061 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.features.command/4.2.1
+2018-10-06T23:37:39,086 | INFO  | paxweb-config-4-thread-1 | HttpServiceFactoryImpl           | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | Binding bundle: [org.apache.karaf.cave.server.maven [57]] to http service
+2018-10-06T23:37:39,089 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.features.command/4.2.1
+2018-10-06T23:37:39,090 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.instance.core/4.2.1
+2018-10-06T23:37:39,110 | INFO  | paxweb-config-4-thread-1 | HttpServiceFactoryImpl           | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | Binding bundle: [org.ops4j.pax.web.pax-web-extender-whiteboard [133]] to http service
+2018-10-06T23:37:39,118 | INFO  | paxweb-config-4-thread-1 | HttpServiceFactoryImpl           | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | Binding bundle: [org.apache.karaf.http.core [21]] to http service
+2018-10-06T23:37:39,121 | INFO  | paxweb-config-4-thread-1 | HttpServiceFactoryImpl           | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | Binding bundle: [org.apache.karaf.cave.server.http [56]] to http service
+2018-10-06T23:37:39,135 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.instance.core/4.2.1
+2018-10-06T23:37:39,146 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.config.core/4.2.1
+2018-10-06T23:37:39,147 | INFO  | activator-1-thread-2 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.http.core/4.2.1
+2018-10-06T23:37:39,158 | INFO  | pool-2-thread-3  | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | will add org.eclipse.jetty.websocket.server.NativeWebSocketServletContainerInitializer to ServletContainerInitializers
+2018-10-06T23:37:39,159 | INFO  | pool-2-thread-3  | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | added ServletContainerInitializer: org.eclipse.jetty.websocket.server.NativeWebSocketServletContainerInitializer
+2018-10-06T23:37:39,160 | INFO  | pool-2-thread-3  | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | will add org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer to ServletContainerInitializers
+2018-10-06T23:37:39,174 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.config.core/4.2.1
+2018-10-06T23:37:39,227 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.kar.core/4.2.1
+2018-10-06T23:37:39,242 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Command registration delayed for bundle org.apache.karaf.kar.core/4.2.1. Missing dependencies: [org.apache.karaf.kar.KarService]
+2018-10-06T23:37:39,242 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.management.server/4.2.1
+2018-10-06T23:37:39,250 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.aries.jmx.api/1.1.5
+2018-10-06T23:37:39,252 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.package.core/4.2.1
+2018-10-06T23:37:39,258 | INFO  | activator-1-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.kar.core/4.2.1
+2018-10-06T23:37:39,275 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.package.core/4.2.1
+2018-10-06T23:37:39,281 | INFO  | pool-2-thread-3  | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | added ServletContainerInitializer: org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer
+2018-10-06T23:37:39,281 | INFO  | pool-2-thread-3  | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | will add org.apache.jasper.servlet.JasperInitializer to ServletContainerInitializers
+2018-10-06T23:37:39,282 | INFO  | pool-2-thread-3  | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | Skipt org.apache.jasper.servlet.JasperInitializer, because specialized handler will be present
+2018-10-06T23:37:39,289 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.servicemix.bundles.fastinfoset/1.2.13.1
+2018-10-06T23:37:39,290 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.ops4j.pax.url.war/2.5.4
+2018-10-06T23:37:39,309 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.scr.management/4.2.1
+2018-10-06T23:37:39,337 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.sshd.core/1.7.0
+2018-10-06T23:37:39,343 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.web.core/4.2.1
+2018-10-06T23:37:39,358 | INFO  | activator-1-thread-1 | ServiceComponentRuntimeMBeanImpl | 100 - org.apache.karaf.scr.management - 4.2.1 | Activating the Apache Karaf ServiceComponentRuntime MBean
+2018-10-06T23:37:39,375 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.web.core/4.2.1
+2018-10-06T23:37:39,376 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.jaas.modules/4.2.1
+2018-10-06T23:37:39,415 | INFO  | pool-2-thread-3  | HttpServiceContext               | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | registering context DefaultHttpContext [bundle=org.apache.karaf.cave.server.http [56], contextID=default], with context-name: 
+2018-10-06T23:37:39,434 | INFO  | pool-3-thread-3  | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | will add org.eclipse.jetty.websocket.server.NativeWebSocketServletContainerInitializer to ServletContainerInitializers
+2018-10-06T23:37:39,434 | INFO  | pool-3-thread-3  | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | added ServletContainerInitializer: org.eclipse.jetty.websocket.server.NativeWebSocketServletContainerInitializer
+2018-10-06T23:37:39,435 | INFO  | pool-3-thread-3  | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | will add org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer to ServletContainerInitializers
+2018-10-06T23:37:39,438 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.jaas.command/4.2.1
+2018-10-06T23:37:39,478 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.jaas.command/4.2.1
+2018-10-06T23:37:39,481 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Updating commands for bundle org.apache.karaf.jaas.command/4.2.1
+2018-10-06T23:37:39,483 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Updating commands for bundle org.apache.karaf.jaas.command/4.2.1
+2018-10-06T23:37:39,484 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.aries.jmx.core/1.1.8
+2018-10-06T23:37:39,489 | INFO  | features-3-thread-1 | core                             | 69 - org.apache.aries.jmx.core - 1.1.8 | Starting JMX OSGi agent
+2018-10-06T23:37:39,506 | INFO  | features-3-thread-1 | core                             | 69 - org.apache.aries.jmx.core - 1.1.8 | Registering MBean with ObjectName [osgi.compendium:service=cm,version=1.3,framework=org.apache.felix.framework,uuid=5247744d-b296-4658-a15a-ef72a93a4b1e] for service with service.id [13]
+2018-10-06T23:37:39,508 | INFO  | features-3-thread-1 | core                             | 69 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.PackageStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1bf01909 with name osgi.core:type=packageState,version=1.5,framework=org.apache.felix.framework,uuid=5247744d-b296-4658-a15a-ef72a93a4b1e
+2018-10-06T23:37:39,509 | INFO  | features-3-thread-1 | core                             | 69 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.ServiceStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1bf01909 with name osgi.core:type=serviceState,version=1.7,framework=org.apache.felix.framework,uuid=5247744d-b296-4658-a15a-ef72a93a4b1e
+2018-10-06T23:37:39,525 | INFO  | features-3-thread-1 | core                             | 69 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.BundleStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1bf01909 with name osgi.core:type=bundleState,version=1.7,framework=org.apache.felix.framework,uuid=5247744d-b296-4658-a15a-ef72a93a4b1e
+2018-10-06T23:37:39,528 | INFO  | features-3-thread-1 | core                             | 69 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.wiring.BundleWiringStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1bf01909 with name osgi.core:type=wiringState,version=1.1,framework=org.apache.felix.framework,uuid=5247744d-b296-4658-a15a-ef72a93a4b1e
+2018-10-06T23:37:39,533 | INFO  | features-3-thread-1 | core                             | 69 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.service.cm.ConfigurationAdminMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1bf01909 with name osgi.compendium:service=cm,version=1.3,framework=org.apache.felix.framework,uuid=5247744d-b296-4658-a15a-ef72a93a4b1e
+2018-10-06T23:37:39,533 | INFO  | features-3-thread-1 | core                             | 69 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.FrameworkMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1bf01909 with name osgi.core:type=framework,version=1.7,framework=org.apache.felix.framework,uuid=5247744d-b296-4658-a15a-ef72a93a4b1e
+2018-10-06T23:37:39,539 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.servicemix.bundles.not-yet-commons-ssl/0.3.11.1
+2018-10-06T23:37:39,540 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.shell.ssh/4.2.1
+2018-10-06T23:37:39,576 | INFO  | pool-3-thread-3  | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | added ServletContainerInitializer: org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer
+2018-10-06T23:37:39,576 | INFO  | pool-3-thread-3  | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | will add org.apache.jasper.servlet.JasperInitializer to ServletContainerInitializers
+2018-10-06T23:37:39,576 | INFO  | pool-3-thread-3  | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | Skipt org.apache.jasper.servlet.JasperInitializer, because specialized handler will be present
+2018-10-06T23:37:39,617 | INFO  | pool-3-thread-3  | HttpServiceContext               | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | registering context DefaultHttpContext [bundle=org.apache.karaf.cave.server.maven [57], contextID=default], with context-name: 
+2018-10-06T23:37:39,618 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Command registration delayed for bundle org.apache.karaf.shell.ssh/4.2.1. Missing dependencies: [org.apache.sshd.server.SshServer]
+2018-10-06T23:37:39,626 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.shell.commands/4.2.1
+2018-10-06T23:37:39,635 | INFO  | pool-3-thread-3  | HttpServiceContext               | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | registering JasperInitializer
+2018-10-06T23:37:39,635 | INFO  | pool-2-thread-3  | HttpServiceContext               | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | registering JasperInitializer
+2018-10-06T23:37:39,648 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.shell.commands/4.2.1
+2018-10-06T23:37:39,649 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.ops4j.pax.web.pax-web-deployer/7.2.3
+2018-10-06T23:37:39,683 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.cxf.cxf-rt-transports-http/3.1.6
+2018-10-06T23:37:39,758 | INFO  | features-3-thread-1 | HttpServiceFactoryImpl           | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | Binding bundle: [org.apache.cxf.cxf-rt-transports-http [78]] to http service
+2018-10-06T23:37:39,940 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]) | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | will add org.eclipse.jetty.websocket.server.NativeWebSocketServletContainerInitializer to ServletContainerInitializers
+2018-10-06T23:37:39,941 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]) | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | added ServletContainerInitializer: org.eclipse.jetty.websocket.server.NativeWebSocketServletContainerInitializer
+2018-10-06T23:37:39,941 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]) | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | will add org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer to ServletContainerInitializers
+2018-10-06T23:37:39,980 | WARN  | features-3-thread-1 | NamespaceHandlerRegisterer       | 71 - org.apache.cxf.cxf-core - 3.1.6 | Aries Blueprint packages not available. So namespaces will not be registered
+2018-10-06T23:37:39,981 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.cxf.cxf-rt-frontend-jaxrs/3.1.6
+2018-10-06T23:37:39,983 | WARN  | features-3-thread-1 | NamespaceHandlerRegisterer       | 71 - org.apache.cxf.cxf-core - 3.1.6 | Aries Blueprint packages not available. So namespaces will not be registered
+2018-10-06T23:37:39,984 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.cxf.cxf-rt-rs-extension-search/3.1.6
+2018-10-06T23:37:39,985 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.cxf.cxf-rt-management/3.1.6
+2018-10-06T23:37:39,987 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.cxf.cxf-rt-rs-client/3.1.6
+2018-10-06T23:37:40,010 | WARN  | features-3-thread-1 | NamespaceHandlerRegisterer       | 71 - org.apache.cxf.cxf-core - 3.1.6 | Aries Blueprint packages not available. So namespaces will not be registered
+2018-10-06T23:37:40,011 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.cxf.cxf-rt-rs-service-description/3.1.6
+2018-10-06T23:37:40,014 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.cxf.cxf-core/3.1.6
+2018-10-06T23:37:40,047 | INFO  | features-3-thread-1 | CXFActivator                     | 71 - org.apache.cxf.cxf-core - 3.1.6 | Adding the extensions from bundle org.apache.cxf.cxf-rt-management (73) [org.apache.cxf.management.InstrumentationManager]
+2018-10-06T23:37:40,045 | INFO  | activator-1-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.shell.ssh/4.2.1
+2018-10-06T23:37:40,054 | INFO  | features-3-thread-1 | CXFActivator                     | 71 - org.apache.cxf.cxf-core - 3.1.6 | Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (78) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+2018-10-06T23:37:40,057 | WARN  | features-3-thread-1 | NamespaceHandlerRegisterer       | 71 - org.apache.cxf.cxf-core - 3.1.6 | Aries Blueprint packages not available. So namespaces will not be registered
+2018-10-06T23:37:40,058 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.cxf.cxf-rt-rs-extension-providers/3.1.6
+2018-10-06T23:37:40,071 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   com.fasterxml.jackson.core.jackson-annotations/2.4.6
+2018-10-06T23:37:40,071 | INFO  | pool-2-thread-3  | session                          | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | DefaultSessionIdManager workerName=node0
+2018-10-06T23:37:40,072 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   com.fasterxml.jackson.core.jackson-core/2.4.6
+2018-10-06T23:37:40,072 | INFO  | pool-2-thread-3  | session                          | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | No SessionScavenger set, using defaults
+2018-10-06T23:37:40,073 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   com.fasterxml.jackson.core.jackson-databind/2.4.6
+2018-10-06T23:37:40,074 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   com.fasterxml.jackson.jaxrs.jackson-jaxrs-base/2.4.6
+2018-10-06T23:37:40,076 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider/2.4.6
+2018-10-06T23:37:40,077 | INFO  | pool-2-thread-3  | session                          | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | node0 Scavenging every 660000ms
+2018-10-06T23:37:40,077 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.cave.server.management/4.1.1
+2018-10-06T23:37:40,104 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.cave.server.command/4.1.1
+2018-10-06T23:37:40,113 | INFO  | pool-3-thread-3  | ContextHandler                   | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=org.apache.karaf.cave.server.maven [57], contextID=default]}
+2018-10-06T23:37:40,115 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.cave.server.command/4.1.1
+2018-10-06T23:37:40,117 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.cave.rest/4.1.1
+2018-10-06T23:37:40,120 | INFO  | pool-2-thread-3  | ContextHandler                   | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=org.apache.karaf.cave.server.http [56], contextID=default]}
+2018-10-06T23:37:40,123 | INFO  | features-3-thread-1 | HttpServiceFactoryImpl           | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | Binding bundle: [org.apache.karaf.cave.rest [82]] to http service
+2018-10-06T23:37:40,160 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]) | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | added ServletContainerInitializer: org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer
+2018-10-06T23:37:40,161 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]) | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | will add org.apache.jasper.servlet.JasperInitializer to ServletContainerInitializers
+2018-10-06T23:37:40,162 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]) | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | Skipt org.apache.jasper.servlet.JasperInitializer, because specialized handler will be present
+2018-10-06T23:37:40,165 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]) | HttpServiceContext               | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | registering context DefaultHttpContext [bundle=org.apache.cxf.cxf-rt-transports-http [78], contextID=default], with context-name: 
+2018-10-06T23:37:40,166 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]) | HttpServiceContext               | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | registering JasperInitializer
+2018-10-06T23:37:40,169 | INFO  | features-3-thread-1 | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | will add org.apache.jasper.servlet.JasperInitializer to ServletContainerInitializers
+2018-10-06T23:37:40,169 | INFO  | features-3-thread-1 | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | Skipt org.apache.jasper.servlet.JasperInitializer, because specialized handler will be present
+2018-10-06T23:37:40,169 | INFO  | features-3-thread-1 | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | will add org.eclipse.jetty.websocket.server.NativeWebSocketServletContainerInitializer to ServletContainerInitializers
+2018-10-06T23:37:40,170 | INFO  | features-3-thread-1 | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | added ServletContainerInitializer: org.eclipse.jetty.websocket.server.NativeWebSocketServletContainerInitializer
+2018-10-06T23:37:40,170 | INFO  | features-3-thread-1 | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | will add org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer to ServletContainerInitializers
+2018-10-06T23:37:40,182 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]) | ContextHandler                   | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=org.apache.cxf.cxf-rt-transports-http [78], contextID=default]}
+2018-10-06T23:37:40,246 | INFO  | features-3-thread-1 | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | added ServletContainerInitializer: org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer
+2018-10-06T23:37:40,248 | INFO  | features-3-thread-1 | HttpServiceContext               | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | registering context DefaultHttpContext [bundle=org.apache.karaf.cave.rest [82], contextID=default], with context-name: 
+2018-10-06T23:37:40,249 | INFO  | features-3-thread-1 | HttpServiceContext               | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | registering JasperInitializer
+2018-10-06T23:37:40,254 | INFO  | pool-2-thread-3  | Server                           | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_181-b13
+2018-10-06T23:37:40,295 | INFO  | pool-2-thread-3  | AbstractConnector                | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | Started default@492d5e60{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2018-10-06T23:37:40,296 | INFO  | pool-2-thread-3  | Server                           | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | Started @8498ms
+2018-10-06T23:37:40,304 | INFO  | features-3-thread-1 | InstrumentationManagerImpl       | 73 - org.apache.cxf.cxf-rt-management - 3.1.6 | registering MBean org.apache.cxf:bus.id=cxf1585503128,type=Bus,instance.id=1585503128: org.apache.cxf.bus.ManagedBus@667b112d
+2018-10-06T23:37:40,315 | INFO  | features-3-thread-1 | InstrumentationManagerImpl       | 73 - org.apache.cxf.cxf-rt-management - 3.1.6 | registering MBean org.apache.cxf:bus.id=cxf1585503128,type=Bus,instance.id=1585503128: javax.management.modelmbean.RequiredModelMBean@1994a2f0
+2018-10-06T23:37:40,316 | INFO  | features-3-thread-1 | InstrumentationManagerImpl       | 73 - org.apache.cxf.cxf-rt-management - 3.1.6 | registered org.apache.cxf:bus.id=cxf1585503128,type=Bus,instance.id=1585503128
+2018-10-06T23:37:40,318 | INFO  | features-3-thread-1 | InstrumentationManagerImpl       | 73 - org.apache.cxf.cxf-rt-management - 3.1.6 | registering MBean org.apache.cxf:bus.id=cxf1585503128,WorkQueueManager=Bus.WorkQueueManager,type=WorkQueueManager,instance.id=1013521395: org.apache.cxf.bus.managers.WorkQueueManagerImplMBeanWrapper@2b6091e2
+2018-10-06T23:37:40,320 | INFO  | features-3-thread-1 | InstrumentationManagerImpl       | 73 - org.apache.cxf.cxf-rt-management - 3.1.6 | registering MBean org.apache.cxf:bus.id=cxf1585503128,WorkQueueManager=Bus.WorkQueueManager,type=WorkQueueManager,instance.id=1013521395: javax.management.modelmbean.RequiredModelMBean@5be2fa52
+2018-10-06T23:37:40,429 | INFO  | features-3-thread-1 | ServerImpl                       | 71 - org.apache.cxf.cxf-core - 3.1.6 | Setting the server's publish address to be /repository
+2018-10-06T23:37:40,431 | INFO  | features-3-thread-1 | InstrumentationManagerImpl       | 73 - org.apache.cxf.cxf-rt-management - 3.1.6 | registering MBean org.apache.cxf:bus.id=cxf1585503128,type=Bus.Service.Endpoint,service="{http://rest.cave.karaf.apache.org/}RepositoryRest",port="RepositoryRest",instance.id=3163326: org.apache.cxf.endpoint.ManagedEndpoint@2320fc4c
+2018-10-06T23:37:40,434 | INFO  | features-3-thread-1 | InstrumentationManagerImpl       | 73 - org.apache.cxf.cxf-rt-management - 3.1.6 | registering MBean org.apache.cxf:bus.id=cxf1585503128,type=Bus.Service.Endpoint,service="{http://rest.cave.karaf.apache.org/}RepositoryRest",port="RepositoryRest",instance.id=3163326: javax.management.modelmbean.RequiredModelMBean@3c809a38
+2018-10-06T23:37:40,505 | INFO  | features-3-thread-1 | ServerImpl                       | 71 - org.apache.cxf.cxf-core - 3.1.6 | Setting the server's publish address to be /deployer
+2018-10-06T23:37:40,506 | INFO  | features-3-thread-1 | InstrumentationManagerImpl       | 73 - org.apache.cxf.cxf-rt-management - 3.1.6 | registering MBean org.apache.cxf:bus.id=cxf1585503128,type=Bus.Service.Endpoint,service="{http://rest.cave.karaf.apache.org/}DeployerRest",port="DeployerRest",instance.id=1419724489: org.apache.cxf.endpoint.ManagedEndpoint@63ba1539
+2018-10-06T23:37:40,507 | INFO  | features-3-thread-1 | InstrumentationManagerImpl       | 73 - org.apache.cxf.cxf-rt-management - 3.1.6 | registering MBean org.apache.cxf:bus.id=cxf1585503128,type=Bus.Service.Endpoint,service="{http://rest.cave.karaf.apache.org/}DeployerRest",port="DeployerRest",instance.id=1419724489: javax.management.modelmbean.RequiredModelMBean@1a2e06e5
+2018-10-06T23:37:40,512 | INFO  | features-3-thread-1 | ContextHandler                   | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=org.apache.karaf.cave.rest [82], contextID=default]}
+2018-10-06T23:37:40,515 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.event/4.2.1
+2018-10-06T23:37:40,522 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.event/4.2.1
+2018-10-06T23:37:40,523 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.cave.deployer.command/4.1.1
+2018-10-06T23:37:40,537 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.cave.deployer.command/4.1.1
+2018-10-06T23:37:40,541 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Done.
+2018-10-06T23:37:48,303 | INFO  | pipe-feature:install rest | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Adding features: rest/[1.0.0.SNAPSHOT,1.0.0.SNAPSHOT]
+2018-10-06T23:37:52,410 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Changes to perform:
+2018-10-06T23:37:52,410 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   Region: root
+2018-10-06T23:37:52,411 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     Bundles to install:
+2018-10-06T23:37:52,411 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |       webbundle:mvn:org.apache.struts/rest-angular/1.0.0/war?Web-ContextPath=rest
+2018-10-06T23:37:52,412 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Stopping bundles:
+2018-10-06T23:37:52,412 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.cave.server.storage/4.1.1
+2018-10-06T23:37:52,419 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Unregistering commands for bundle org.apache.karaf.cave.server.command/4.1.1
+2018-10-06T23:37:52,442 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.cave.deployer.service/4.1.1
+2018-10-06T23:37:52,466 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Unregistering commands for bundle org.apache.karaf.cave.deployer.command/4.1.1
+2018-10-06T23:37:52,473 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.scr.state/4.2.1
+2018-10-06T23:37:52,474 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Unregistering commands for bundle org.apache.karaf.scr.state/4.2.1
+2018-10-06T23:37:52,476 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.scr.management/4.2.1
+2018-10-06T23:37:52,477 | INFO  | features-3-thread-1 | ServiceComponentRuntimeMBeanImpl | 100 - org.apache.karaf.scr.management - 4.2.1 | Deactivating the Apache Karaf ServiceComponentRuntime MBean
+2018-10-06T23:37:52,486 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.features.command/4.2.1
+2018-10-06T23:37:52,486 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Unregistering commands for bundle org.apache.karaf.features.command/4.2.1
+2018-10-06T23:37:52,487 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.diagnostic.core/4.2.1
+2018-10-06T23:37:52,487 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Unregistering commands for bundle org.apache.karaf.diagnostic.core/4.2.1
+2018-10-06T23:37:52,491 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.felix.scr/2.1.2
+2018-10-06T23:37:52,500 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.kar.core/4.2.1
+2018-10-06T23:37:52,501 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Unregistering commands for bundle org.apache.karaf.kar.core/4.2.1
+2018-10-06T23:37:52,513 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.instance.core/4.2.1
+2018-10-06T23:37:52,514 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Unregistering commands for bundle org.apache.karaf.instance.core/4.2.1
+2018-10-06T23:37:52,517 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.deployer.features/4.2.1
+2018-10-06T23:37:52,522 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.deployer.kar/4.2.1
+2018-10-06T23:37:52,522 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Unregistering commands for bundle org.apache.karaf.deployer.kar/4.2.1
+2018-10-06T23:37:52,523 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Installing bundles:
+2018-10-06T23:37:52,524 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   webbundle:mvn:org.apache.struts/rest-angular/1.0.0/war?Web-ContextPath=rest
+2018-10-06T23:37:52,546 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Stopping bundles:
+2018-10-06T23:37:52,553 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.features.core/4.2.1
+2018-10-06T23:37:52,566 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Refreshing bundles:
+2018-10-06T23:37:52,566 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     org.apache.felix.scr/2.1.2 (Should be wired to: biz.aQute.bndlib/3.5.0.201709291849 (through [org.apache.felix.scr/2.1.2] osgi.wiring.package; filter:="(&(osgi.wiring.package=org.osgi.util.function)(version>=1.0.0)(!(version>=2.0.0)))"))
+2018-10-06T23:37:52,566 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     org.apache.karaf.cave.deployer.service/4.1.1 (Wired to org.apache.karaf.features.core/4.2.1 which is being refreshed)
+2018-10-06T23:37:52,567 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     org.apache.karaf.cave.server.storage/4.1.1 (Wired to org.apache.karaf.features.core/4.2.1 which is being refreshed)
+2018-10-06T23:37:52,567 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     org.apache.karaf.deployer.features/4.2.1 (Wired to org.apache.karaf.features.core/4.2.1 which is being refreshed)
+2018-10-06T23:37:52,568 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     org.apache.karaf.deployer.kar/4.2.1 (Wired to org.apache.karaf.kar.core/4.2.1 which is being refreshed)
+2018-10-06T23:37:52,568 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     org.apache.karaf.diagnostic.core/4.2.1 (Wired to org.apache.karaf.features.core/4.2.1 which is being refreshed)
+2018-10-06T23:37:52,569 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     org.apache.karaf.features.command/4.2.1 (Wired to org.apache.karaf.features.core/4.2.1 which is being refreshed)
+2018-10-06T23:37:52,569 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     org.apache.karaf.features.core/4.2.1 (Should be wired to: biz.aQute.bndlib/3.5.0.201709291849 (through [org.apache.karaf.features.core/4.2.1] osgi.wiring.package; filter:="(&(osgi.wiring.package=org.osgi.service.repository)(version>=1.0.0)(!(version>=2.0.0)))"))
+2018-10-06T23:37:52,570 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     org.apache.karaf.instance.core/4.2.1 (Wired to org.apache.karaf.features.command/4.2.1 which is being refreshed)
+2018-10-06T23:37:52,570 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     org.apache.karaf.kar.core/4.2.1 (Wired to org.apache.karaf.features.core/4.2.1 which is being refreshed)
+2018-10-06T23:37:52,570 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     org.apache.karaf.scr.management/4.2.1 (Wired to org.apache.felix.scr/2.1.2 which is being refreshed)
+2018-10-06T23:37:52,570 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |     org.apache.karaf.scr.state/4.2.1 (Wired to org.apache.felix.scr/2.1.2 which is being refreshed)
+2018-10-06T23:37:52,641 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Starting bundles:
+2018-10-06T23:37:52,642 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.deployer.kar/4.2.1
+2018-10-06T23:37:52,647 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.deployer.kar/4.2.1
+2018-10-06T23:37:52,651 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.deployer.features/4.2.1
+2018-10-06T23:37:52,663 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.felix.scr/2.1.2
+2018-10-06T23:37:52,777 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.diagnostic.core/4.2.1
+2018-10-06T23:37:52,789 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.diagnostic.core/4.2.1
+2018-10-06T23:37:52,790 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.scr.state/4.2.1
+2018-10-06T23:37:52,796 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.scr.state/4.2.1
+2018-10-06T23:37:52,797 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.features.command/4.2.1
+2018-10-06T23:37:52,821 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Command registration delayed for bundle org.apache.karaf.features.command/4.2.1. Missing dependencies: [org.apache.karaf.features.FeaturesService, org.eclipse.equinox.region.RegionDigraph]
+2018-10-06T23:37:52,822 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.instance.core/4.2.1
+2018-10-06T23:37:52,844 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.instance.core/4.2.1
+2018-10-06T23:37:52,845 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.scr.management/4.2.1
+2018-10-06T23:37:52,856 | INFO  | features-3-thread-1 | ServiceComponentRuntimeMBeanImpl | 100 - org.apache.karaf.scr.management - 4.2.1 | Activating the Apache Karaf ServiceComponentRuntime MBean
+2018-10-06T23:37:52,858 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.kar.core/4.2.1
+2018-10-06T23:37:52,871 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Command registration delayed for bundle org.apache.karaf.kar.core/4.2.1. Missing dependencies: [org.apache.karaf.kar.KarService]
+2018-10-06T23:37:52,872 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   file__home_bill_.m2_repository_org_apache_struts_rest-angular_1.0.0_rest-angular-1.0.0.war/0.0.0
+2018-10-06T23:37:53,303 | INFO  | features-3-thread-1 | HttpServiceFactoryImpl           | 48 - org.ops4j.pax.web.pax-web-runtime - 7.2.3 | Binding bundle: [file__home_bill_.m2_repository_org_apache_struts_rest-angular_1.0.0_rest-angular-1.0.0.war [137]] to http service
+2018-10-06T23:37:53,307 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.cave.server.storage/4.1.1
+2018-10-06T23:37:53,316 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.cave.deployer.service/4.1.1
+2018-10-06T23:37:53,327 | INFO  | paxweb-extender-3-thread-1 | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | will add org.eclipse.jetty.websocket.server.NativeWebSocketServletContainerInitializer to ServletContainerInitializers
+2018-10-06T23:37:53,349 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.cave.deployer.command/4.1.1
+2018-10-06T23:37:53,352 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 |   org.apache.karaf.features.core/4.2.1
+2018-10-06T23:37:53,363 | INFO  | paxweb-extender-3-thread-1 | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | added ServletContainerInitializer: org.eclipse.jetty.websocket.server.NativeWebSocketServletContainerInitializer
+2018-10-06T23:37:53,363 | INFO  | paxweb-extender-3-thread-1 | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | will add org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer to ServletContainerInitializers
+2018-10-06T23:37:53,543 | INFO  | features-3-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.features.command/4.2.1
+2018-10-06T23:37:53,563 | INFO  | activator-1-thread-2 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.kar.core/4.2.1
+2018-10-06T23:37:53,607 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.1 | Done.
+2018-10-06T23:37:56,627 | INFO  | paxweb-extender-3-thread-1 | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | added ServletContainerInitializer: org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer
+2018-10-06T23:37:56,628 | INFO  | paxweb-extender-3-thread-1 | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | will add org.apache.jasper.servlet.JasperInitializer to ServletContainerInitializers
+2018-10-06T23:37:56,629 | INFO  | paxweb-extender-3-thread-1 | ServletContainerInitializerScanner | 46 - org.ops4j.pax.web.pax-web-api - 7.2.3 | Skipt org.apache.jasper.servlet.JasperInitializer, because specialized handler will be present
+2018-10-06T23:37:56,634 | INFO  | paxweb-extender-3-thread-1 | HttpServiceContext               | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | registering context WebAppHttpContext{file__home_bill_.m2_repository_org_apache_struts_rest-angular_1.0.0_rest-angular-1.0.0.war - 137}, with context-name: rest
+2018-10-06T23:37:56,646 | INFO  | pool-18-thread-1 | CommandExtension                 | 104 - org.apache.karaf.shell.core - 4.2.1 | Registering commands for bundle org.apache.karaf.cave.server.command/4.1.1
+2018-10-06T23:37:56,692 | INFO  | paxweb-extender-3-thread-1 | HttpServiceContext               | 47 - org.ops4j.pax.web.pax-web-jetty - 7.2.3 | registering JasperInitializer
+2018-10-06T23:37:56,713 | INFO  | paxweb-extender-3-thread-1 | TldScanner                       | 134 - org.ops4j.pax.web.pax-web-jsp - 7.2.3 | found TLD bundle://137.0:2/META-INF/struts-tags.tld
+2018-10-06T23:37:56,812 | INFO  | paxweb-extender-3-thread-1 | TldScanner                       | 134 - org.ops4j.pax.web.pax-web-jsp - 7.2.3 | found TLD bundle://134.0:1/META-INF/c-1_0-rt.tld
+2018-10-06T23:37:56,835 | INFO  | paxweb-extender-3-thread-1 | TldScanner                       | 134 - org.ops4j.pax.web.pax-web-jsp - 7.2.3 | found TLD bundle://134.0:1/META-INF/c-1_0.tld
+2018-10-06T23:37:56,843 | INFO  | paxweb-extender-3-thread-1 | TldScanner                       | 134 - org.ops4j.pax.web.pax-web-jsp - 7.2.3 | found TLD bundle://134.0:1/META-INF/c.tld
+2018-10-06T23:37:56,854 | INFO  | paxweb-extender-3-thread-1 | TldScanner                       | 134 - org.ops4j.pax.web.pax-web-jsp - 7.2.3 | found TLD bundle://134.0:1/META-INF/fmt-1_0-rt.tld
+2018-10-06T23:37:56,861 | INFO  | paxweb-extender-3-thread-1 | TldScanner                       | 134 - org.ops4j.pax.web.pax-web-jsp - 7.2.3 | found TLD bundle://134.0:1/META-INF/fmt-1_0.tld
+2018-10-06T23:37:56,865 | INFO  | paxweb-extender-3-thread-1 | TldScanner                       | 134 - org.ops4j.pax.web.pax-web-jsp - 7.2.3 | found TLD bundle://134.0:1/META-INF/fmt.tld
+2018-10-06T23:37:56,868 | INFO  | paxweb-extender-3-thread-1 | TldScanner                       | 134 - org.ops4j.pax.web.pax-web-jsp - 7.2.3 | found TLD bundle://134.0:1/META-INF/fn.tld
+2018-10-06T23:37:56,873 | INFO  | paxweb-extender-3-thread-1 | TldScanner                       | 134 - org.ops4j.pax.web.pax-web-jsp - 7.2.3 | found TLD bundle://134.0:1/META-INF/permittedTaglibs.tld
+2018-10-06T23:37:56,874 | INFO  | paxweb-extender-3-thread-1 | TldScanner                       | 134 - org.ops4j.pax.web.pax-web-jsp - 7.2.3 | found TLD bundle://134.0:1/META-INF/scriptfree.tld
+2018-10-06T23:37:56,875 | INFO  | paxweb-extender-3-thread-1 | TldScanner                       | 134 - org.ops4j.pax.web.pax-web-jsp - 7.2.3 | found TLD bundle://134.0:1/META-INF/sql-1_0-rt.tld
+2018-10-06T23:37:56,880 | INFO  | paxweb-extender-3-thread-1 | TldScanner                       | 134 - org.ops4j.pax.web.pax-web-jsp - 7.2.3 | found TLD bundle://134.0:1/META-INF/sql-1_0.tld
+2018-10-06T23:37:56,883 | INFO  | paxweb-extender-3-thread-1 | TldScanner                       | 134 - org.ops4j.pax.web.pax-web-jsp - 7.2.3 | found TLD bundle://134.0:1/META-INF/sql.tld
+2018-10-06T23:37:56,885 | INFO  | paxweb-extender-3-thread-1 | TldScanner                       | 134 - org.ops4j.pax.web.pax-web-jsp - 7.2.3 | found TLD bundle://134.0:1/META-INF/x-1_0-rt.tld
+2018-10-06T23:37:56,888 | INFO  | paxweb-extender-3-thread-1 | TldScanner                       | 134 - org.ops4j.pax.web.pax-web-jsp - 7.2.3 | found TLD bundle://134.0:1/META-INF/x-1_0.tld
+2018-10-06T23:37:56,890 | INFO  | paxweb-extender-3-thread-1 | TldScanner                       | 134 - org.ops4j.pax.web.pax-web-jsp - 7.2.3 | found TLD bundle://134.0:1/META-INF/x.tld
+2018-10-06T23:37:58,910 | INFO  | paxweb-extender-3-thread-1 | Version                          | 137 - file__home_bill_.m2_repository_org_apache_struts_rest-angular_1.0.0_rest-angular-1.0.0.war - 0.0.0 | HV000001: Hibernate Validator 4.3.2.Final
+2018-10-06T23:37:59,201 | INFO  | paxweb-extender-3-thread-1 | ContextHandler                   | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | Started HttpServiceContext{httpContext=WebAppHttpContext{file__home_bill_.m2_repository_org_apache_struts_rest-angular_1.0.0_rest-angular-1.0.0.war - 137}}
+2018-10-06T23:39:09,500 | WARN  | qtp807975055-128 | HttpChannel                      | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | /rest/index
+javax.servlet.ServletException: javax.servlet.ServletException: java.lang.NoSuchMethodException: com.opensymphony.xwork2.ActionSupport.index()
+	at org.ops4j.pax.web.service.jetty.internal.JettyServerHandlerCollection.handle(JettyServerHandlerCollection.java:88) ~[?:?]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[36:org.eclipse.jetty.server:9.4.11.v20180605]
+	at org.eclipse.jetty.server.Server.handle(Server.java:531) ~[36:org.eclipse.jetty.server:9.4.11.v20180605]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352) [36:org.eclipse.jetty.server:9.4.11.v20180605]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260) [36:org.eclipse.jetty.server:9.4.11.v20180605]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281) [28:org.eclipse.jetty.io:9.4.11.v20180605]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102) [28:org.eclipse.jetty.io:9.4.11.v20180605]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118) [28:org.eclipse.jetty.io:9.4.11.v20180605]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762) [39:org.eclipse.jetty.util:9.4.11.v20180605]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680) [39:org.eclipse.jetty.util:9.4.11.v20180605]
+	at java.lang.Thread.run(Thread.java:748) [?:?]
+Caused by: javax.servlet.ServletException: java.lang.NoSuchMethodException: com.opensymphony.xwork2.ActionSupport.index()
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:589) ~[?:?]
+	at org.apache.struts2.dispatcher.ExecuteOperations.executeAction(ExecuteOperations.java:79) ~[?:?]
+	at org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:141) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.HttpServiceServletHandler.doHandle(HttpServiceServletHandler.java:71) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146) ~[?:?]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548) ~[?:?]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257) ~[?:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255) ~[?:?]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.HttpServiceContext.doHandle(HttpServiceContext.java:293) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473) ~[?:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201) ~[?:?]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.JettyServerHandlerCollection.handle(JettyServerHandlerCollection.java:80) ~[?:?]
+	... 10 more
+Caused by: java.lang.NoSuchMethodException: com.opensymphony.xwork2.ActionSupport.index()
+	at ognl.OgnlRuntime.callAppropriateMethod(OgnlRuntime.java:1497) ~[?:?]
+	at ognl.ObjectMethodAccessor.callMethod(ObjectMethodAccessor.java:68) ~[?:?]
+	at com.opensymphony.xwork2.ognl.accessor.XWorkMethodAccessor.callMethodWithDebugInfo(XWorkMethodAccessor.java:98) ~[?:?]
+	at com.opensymphony.xwork2.ognl.accessor.XWorkMethodAccessor.callMethod(XWorkMethodAccessor.java:90) ~[?:?]
+	at ognl.OgnlRuntime.callMethod(OgnlRuntime.java:1620) ~[?:?]
+	at ognl.ASTMethod.getValueBody(ASTMethod.java:91) ~[?:?]
+	at ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212) ~[?:?]
+	at ognl.SimpleNode.getValue(SimpleNode.java:258) ~[?:?]
+	at ognl.Ognl.getValue(Ognl.java:470) ~[?:?]
+	at ognl.Ognl.getValue(Ognl.java:434) ~[?:?]
+	at com.opensymphony.xwork2.ognl.OgnlUtil$3.execute(OgnlUtil.java:401) ~[?:?]
+	at com.opensymphony.xwork2.ognl.OgnlUtil.compileAndExecuteMethod(OgnlUtil.java:453) ~[?:?]
+	at com.opensymphony.xwork2.ognl.OgnlUtil.callMethod(OgnlUtil.java:399) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:438) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:293) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:254) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:101) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:101) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.doIntercept(ConversionErrorInterceptor.java:142) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:99) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.rest.ContentTypeInterceptor.intercept(ContentTypeInterceptor.java:59) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:137) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:99) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:201) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:89) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:243) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:101) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:142) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:137) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:99) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.ProfilingActivationInterceptor.intercept(ProfilingActivationInterceptor.java:102) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:250) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:160) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:121) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:175) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:99) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.MessageStoreInterceptor.intercept(MessageStoreInterceptor.java:208) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:167) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:203) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:196) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionProxy.execute(DefaultActionProxy.java:157) ~[?:?]
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:574) ~[?:?]
+	at org.apache.struts2.dispatcher.ExecuteOperations.executeAction(ExecuteOperations.java:79) ~[?:?]
+	at org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:141) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.HttpServiceServletHandler.doHandle(HttpServiceServletHandler.java:71) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146) ~[?:?]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548) ~[?:?]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257) ~[?:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255) ~[?:?]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.HttpServiceContext.doHandle(HttpServiceContext.java:293) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473) ~[?:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201) ~[?:?]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.JettyServerHandlerCollection.handle(JettyServerHandlerCollection.java:80) ~[?:?]
+	... 10 more
+2018-10-06T23:53:57,356 | WARN  | qtp807975055-127 | HttpChannel                      | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | /rest/index
+javax.servlet.ServletException: javax.servlet.ServletException: java.lang.NoSuchMethodException: com.opensymphony.xwork2.ActionSupport.index()
+	at org.ops4j.pax.web.service.jetty.internal.JettyServerHandlerCollection.handle(JettyServerHandlerCollection.java:88) ~[?:?]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[36:org.eclipse.jetty.server:9.4.11.v20180605]
+	at org.eclipse.jetty.server.Server.handle(Server.java:531) ~[36:org.eclipse.jetty.server:9.4.11.v20180605]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352) [36:org.eclipse.jetty.server:9.4.11.v20180605]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260) [36:org.eclipse.jetty.server:9.4.11.v20180605]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281) [28:org.eclipse.jetty.io:9.4.11.v20180605]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102) [28:org.eclipse.jetty.io:9.4.11.v20180605]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118) [28:org.eclipse.jetty.io:9.4.11.v20180605]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762) [39:org.eclipse.jetty.util:9.4.11.v20180605]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680) [39:org.eclipse.jetty.util:9.4.11.v20180605]
+	at java.lang.Thread.run(Thread.java:748) [?:?]
+Caused by: javax.servlet.ServletException: java.lang.NoSuchMethodException: com.opensymphony.xwork2.ActionSupport.index()
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:589) ~[?:?]
+	at org.apache.struts2.dispatcher.ExecuteOperations.executeAction(ExecuteOperations.java:79) ~[?:?]
+	at org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:141) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.HttpServiceServletHandler.doHandle(HttpServiceServletHandler.java:71) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146) ~[?:?]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548) ~[?:?]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257) ~[?:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255) ~[?:?]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.HttpServiceContext.doHandle(HttpServiceContext.java:293) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473) ~[?:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201) ~[?:?]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.JettyServerHandlerCollection.handle(JettyServerHandlerCollection.java:80) ~[?:?]
+	... 10 more
+Caused by: java.lang.NoSuchMethodException: com.opensymphony.xwork2.ActionSupport.index()
+	at ognl.OgnlRuntime.callAppropriateMethod(OgnlRuntime.java:1497) ~[?:?]
+	at ognl.ObjectMethodAccessor.callMethod(ObjectMethodAccessor.java:68) ~[?:?]
+	at com.opensymphony.xwork2.ognl.accessor.XWorkMethodAccessor.callMethodWithDebugInfo(XWorkMethodAccessor.java:98) ~[?:?]
+	at com.opensymphony.xwork2.ognl.accessor.XWorkMethodAccessor.callMethod(XWorkMethodAccessor.java:90) ~[?:?]
+	at ognl.OgnlRuntime.callMethod(OgnlRuntime.java:1620) ~[?:?]
+	at ognl.ASTMethod.getValueBody(ASTMethod.java:91) ~[?:?]
+	at ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212) ~[?:?]
+	at ognl.SimpleNode.getValue(SimpleNode.java:258) ~[?:?]
+	at ognl.Ognl.getValue(Ognl.java:470) ~[?:?]
+	at ognl.Ognl.getValue(Ognl.java:434) ~[?:?]
+	at com.opensymphony.xwork2.ognl.OgnlUtil$3.execute(OgnlUtil.java:401) ~[?:?]
+	at com.opensymphony.xwork2.ognl.OgnlUtil.compileAndExecuteMethod(OgnlUtil.java:453) ~[?:?]
+	at com.opensymphony.xwork2.ognl.OgnlUtil.callMethod(OgnlUtil.java:399) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:438) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:293) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:254) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:101) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:101) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.doIntercept(ConversionErrorInterceptor.java:142) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:99) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.rest.ContentTypeInterceptor.intercept(ContentTypeInterceptor.java:59) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:137) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:99) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:201) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:89) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:243) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:101) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:142) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:137) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:99) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.ProfilingActivationInterceptor.intercept(ProfilingActivationInterceptor.java:102) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:250) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:160) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:121) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:175) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:99) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.MessageStoreInterceptor.intercept(MessageStoreInterceptor.java:208) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:167) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:203) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:196) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionProxy.execute(DefaultActionProxy.java:157) ~[?:?]
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:574) ~[?:?]
+	at org.apache.struts2.dispatcher.ExecuteOperations.executeAction(ExecuteOperations.java:79) ~[?:?]
+	at org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:141) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.HttpServiceServletHandler.doHandle(HttpServiceServletHandler.java:71) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146) ~[?:?]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548) ~[?:?]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257) ~[?:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255) ~[?:?]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.HttpServiceContext.doHandle(HttpServiceContext.java:293) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473) ~[?:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201) ~[?:?]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.JettyServerHandlerCollection.handle(JettyServerHandlerCollection.java:80) ~[?:?]
+	... 10 more
+2018-10-06T23:55:16,871 | WARN  | qtp807975055-129 | HttpChannel                      | 39 - org.eclipse.jetty.util - 9.4.11.v20180605 | /rest/index
+javax.servlet.ServletException: javax.servlet.ServletException: java.lang.NoSuchMethodException: com.opensymphony.xwork2.ActionSupport.index()
+	at org.ops4j.pax.web.service.jetty.internal.JettyServerHandlerCollection.handle(JettyServerHandlerCollection.java:88) ~[?:?]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[36:org.eclipse.jetty.server:9.4.11.v20180605]
+	at org.eclipse.jetty.server.Server.handle(Server.java:531) ~[36:org.eclipse.jetty.server:9.4.11.v20180605]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352) [36:org.eclipse.jetty.server:9.4.11.v20180605]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260) [36:org.eclipse.jetty.server:9.4.11.v20180605]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281) [28:org.eclipse.jetty.io:9.4.11.v20180605]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102) [28:org.eclipse.jetty.io:9.4.11.v20180605]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118) [28:org.eclipse.jetty.io:9.4.11.v20180605]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333) [39:org.eclipse.jetty.util:9.4.11.v20180605]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310) [39:org.eclipse.jetty.util:9.4.11.v20180605]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168) [39:org.eclipse.jetty.util:9.4.11.v20180605]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126) [39:org.eclipse.jetty.util:9.4.11.v20180605]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366) [39:org.eclipse.jetty.util:9.4.11.v20180605]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762) [39:org.eclipse.jetty.util:9.4.11.v20180605]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680) [39:org.eclipse.jetty.util:9.4.11.v20180605]
+	at java.lang.Thread.run(Thread.java:748) [?:?]
+Caused by: javax.servlet.ServletException: java.lang.NoSuchMethodException: com.opensymphony.xwork2.ActionSupport.index()
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:589) ~[?:?]
+	at org.apache.struts2.dispatcher.ExecuteOperations.executeAction(ExecuteOperations.java:79) ~[?:?]
+	at org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:141) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.HttpServiceServletHandler.doHandle(HttpServiceServletHandler.java:71) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146) ~[?:?]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548) ~[?:?]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257) ~[?:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255) ~[?:?]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.HttpServiceContext.doHandle(HttpServiceContext.java:293) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473) ~[?:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201) ~[?:?]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.JettyServerHandlerCollection.handle(JettyServerHandlerCollection.java:80) ~[?:?]
+	... 15 more
+Caused by: java.lang.NoSuchMethodException: com.opensymphony.xwork2.ActionSupport.index()
+	at ognl.OgnlRuntime.callAppropriateMethod(OgnlRuntime.java:1497) ~[?:?]
+	at ognl.ObjectMethodAccessor.callMethod(ObjectMethodAccessor.java:68) ~[?:?]
+	at com.opensymphony.xwork2.ognl.accessor.XWorkMethodAccessor.callMethodWithDebugInfo(XWorkMethodAccessor.java:98) ~[?:?]
+	at com.opensymphony.xwork2.ognl.accessor.XWorkMethodAccessor.callMethod(XWorkMethodAccessor.java:90) ~[?:?]
+	at ognl.OgnlRuntime.callMethod(OgnlRuntime.java:1620) ~[?:?]
+	at ognl.ASTMethod.getValueBody(ASTMethod.java:91) ~[?:?]
+	at ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212) ~[?:?]
+	at ognl.SimpleNode.getValue(SimpleNode.java:258) ~[?:?]
+	at ognl.Ognl.getValue(Ognl.java:470) ~[?:?]
+	at ognl.Ognl.getValue(Ognl.java:434) ~[?:?]
+	at com.opensymphony.xwork2.ognl.OgnlUtil$3.execute(OgnlUtil.java:401) ~[?:?]
+	at com.opensymphony.xwork2.ognl.OgnlUtil.compileAndExecuteMethod(OgnlUtil.java:453) ~[?:?]
+	at com.opensymphony.xwork2.ognl.OgnlUtil.callMethod(OgnlUtil.java:399) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:438) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:293) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:254) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:101) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:101) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.doIntercept(ConversionErrorInterceptor.java:142) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:99) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.rest.ContentTypeInterceptor.intercept(ContentTypeInterceptor.java:59) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:137) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:99) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:201) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:89) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:243) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:101) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:142) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:137) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:99) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.ProfilingActivationInterceptor.intercept(ProfilingActivationInterceptor.java:102) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:250) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:160) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:121) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:175) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:99) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.MessageStoreInterceptor.intercept(MessageStoreInterceptor.java:208) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:167) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:203) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:196) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) ~[?:?]
+	at org.apache.struts2.rest.RestActionInvocation.invoke(RestActionInvocation.java:130) ~[?:?]
+	at com.opensymphony.xwork2.DefaultActionProxy.execute(DefaultActionProxy.java:157) ~[?:?]
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:574) ~[?:?]
+	at org.apache.struts2.dispatcher.ExecuteOperations.executeAction(ExecuteOperations.java:79) ~[?:?]
+	at org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:141) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.HttpServiceServletHandler.doHandle(HttpServiceServletHandler.java:71) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146) ~[?:?]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548) ~[?:?]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257) ~[?:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255) ~[?:?]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.HttpServiceContext.doHandle(HttpServiceContext.java:293) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473) ~[?:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201) ~[?:?]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219) ~[?:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144) ~[?:?]
+	at org.ops4j.pax.web.service.jetty.internal.JettyServerHandlerCollection.handle(JettyServerHandlerCollection.java:80) ~[?:?]
+	... 15 more

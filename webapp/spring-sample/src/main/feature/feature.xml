@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="spring-sample-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.4.0">
+
+    <feature name="swissbox" version="${project.version}">
+        <bundle>mvn:biz.aQute.bnd/biz.aQute.bndlib/3.5.0</bundle>
+        <bundle>mvn:org.ops4j.base/ops4j-base-lang/1.5.0</bundle>
+        <bundle>mvn:org.ops4j.pax.swissbox/pax-swissbox-bnd/1.8.2</bundle>
+        <bundle>mvn:org.ops4j.pax.url/pax-url-war/2.5.4</bundle>
+    </feature>
+
+    <feature name="showcase" version="${project.version}">
+        <feature prerequisite="true">war</feature>
+        <bundle>webbundle:mvn:org.springframework.samples/spring-mvc-showcase/1.0.0-BUILD-SNAPSHOT/war?Web-ContextPath=mvc</bundle>
+    </feature>
+
+</features>

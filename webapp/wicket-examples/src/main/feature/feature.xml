@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="wicket-examples-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.4.0">
+
+    <feature name="wicket" version="${project.version}">
+        <feature prerequisite="true">war</feature>
+        <bundle>webbundle:mvn:org.apache.wicket/wicket-examples/7.2.0/war?Web-ContextPath=wicket</bundle>
+    </feature>
+
+    <feature name="struts" version="${project.version}">
+        <feature prerequisite="true">war</feature>
+        <bundle>webbundle:mvn:org.apache.struts/spring-struts/1.0.0/war?Web-ContextPath=/</bundle>
+    </feature>
+
+    <feature name="rest" version="${project.version}">
+        <feature prerequisite="true">war</feature>
+        <bundle>webbundle:mvn:org.apache.struts/rest-angular/1.0.0/war?Web-ContextPath=rest</bundle>
+    </feature>
+
+</features>

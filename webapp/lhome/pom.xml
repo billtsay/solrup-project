@@ -9,8 +9,8 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>home</artifactId>
-    <name>Apache Karaf :: Solrup :: WAR :: HOME</name>
+    <artifactId>lhome</artifactId>
+    <name>Apache Karaf :: Solrup :: WAR :: LHOME</name>
     <packaging>war</packaging>
 
 </project>

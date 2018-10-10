@@ -21,6 +21,7 @@
 
 
   <modules>
+      <module>market</module>
       <module>canvas</module>
       <module>wicket-examples</module>
       <module>spring-sample</module>

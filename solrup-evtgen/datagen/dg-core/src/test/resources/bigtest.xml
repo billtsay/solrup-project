@@ -1,0 +1,48 @@
+<!-- -->
+<!-- Copyright 2014 DataGenerator Contributors -->
+<!-- -->
+<!-- Licensed under the Apache License, Version 2.0 (the "License"); -->
+<!-- you may not use this file except in compliance with the License. -->
+<!-- You may obtain a copy of the License at -->
+<!-- -->
+<!--      http://www.apache.org/licenses/LICENSE-2.0 -->
+<!-- -->
+<!-- Unless required by applicable law or agreed to in writing, software -->
+<!-- distributed under the License is distributed on an "AS IS" BASIS, -->
+<!-- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. -->
+<!-- See the License for the specific language governing permissions and -->
+<!-- limitations under the License. -->
+<!-- -->
+
+<scxml xmlns="http://www.w3.org/2005/07/scxml"
+       xmlns:dg="org.finra.datagenerator"
+       version="1.0"
+       initial="start">
+
+    <state id="start">
+        <transition event="BULK_ASSIGN" target="BULK_ASSIGN"/>
+    </state>
+
+    <state id="BULK_ASSIGN">
+        <onentry>
+            <dg:assign name="var_out_RECORD_TYPE" set="a1,b1,c1,d1,e1,f1,g1"/>
+            <dg:assign name="var_out_RECORD_TYPE_2" set="a2,b2,c2,d2,e2,f2,g2"/>
+            <dg:assign name="var_out_RECORD_TYPE_3" set="a3,b3,c3,d3,e3,f3,g3"/>
+            <assign name="var_out_RECORD_TYPE_4" expr="Lorem"/>
+            <assign name="var_out_RECORD_TYPE_5" expr="Ipsum"/>
+            <assign name="var_out_RECORD_TYPE_6" expr="Doler"/>
+        </onentry>
+        <transition event="ASSIGN_WITH_CONDITIONS" target="ASSIGN_WITH_CONDITIONS"/>
+    </state>
+
+    <state id="ASSIGN_WITH_CONDITIONS">
+        <onentry>
+            <dg:assign name="var_out_RECORD_TYPE_7" set="1,2,3"/>
+            <dg:assign name="var_out_RECORD_TYPE_8" set="1,2,3"/>
+        </onentry>
+        <transition event="end" target="end" cond="${var_out_RECORD_TYPE_7 != var_out_RECORD_TYPE_8}"/>
+    </state>
+
+<state id="end">
+    </state>
+</scxml>

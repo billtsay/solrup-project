@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.solrup</groupId>
+    <artifactId>evtgen-parent</artifactId>
+    <version>1</version>
+    <relativePath>../parent</relativePath>
+  </parent>
+
+  <groupId>com.solrup.evtgen</groupId>
+  <artifactId>feature</artifactId>
+  <version>${evtgen.version}</version>
+  <packaging>feature</packaging>
+
+  <name>solrup-evtgen-feature</name>
+  <description>solrup-evtgen feature details</description>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.core</artifactId>
+      <version>${osgi.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.compendium</artifactId>
+      <version>${osgi.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.karaf</groupId>
+      <artifactId>apache-karaf-minimal</artifactId>
+      <version>${karaf.version}</version>
+      <type>tar.gz</type>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.karaf.tooling</groupId>
+          <artifactId>karaf-maven-plugin</artifactId>
+          <version>${karaf.version}</version>
+          <extensions>true</extensions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.karaf.tooling</groupId>
+        <artifactId>karaf-maven-plugin</artifactId>
+        <configuration>
+          <aggregateFeatures>true</aggregateFeatures>
+          <checkDependencyChange>true</checkDependencyChange>
+          <failOnDependencyChange>false</failOnDependencyChange>
+          <logDependencyChanges>true</logDependencyChanges>
+          <overwriteChangedDependencies>true</overwriteChangedDependencies>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

@@ -1,0 +1,28 @@
+04-15-2019 17:27:44 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+04-15-2019 17:27:44 108 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+04-15-2019 17:27:45 999 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
+04-15-2019 17:27:45 1000 main (DefaultDistributor:116)	DONE
+04-15-2019 17:39:40 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+04-15-2019 17:39:40 11 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+04-15-2019 17:39:41 999 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
+04-15-2019 17:39:41 999 main (DefaultDistributor:116)	DONE
+04-15-2019 17:40:33 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+04-15-2019 17:40:33 12 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+04-15-2019 17:40:34 999 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
+04-15-2019 17:40:34 1000 main (DefaultDistributor:116)	DONE
+04-15-2019 17:41:01 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+04-15-2019 17:41:01 99 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+04-15-2019 17:41:02 999 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
+04-15-2019 17:41:02 1000 main (DefaultDistributor:116)	DONE
+04-15-2019 17:41:53 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+04-15-2019 17:41:53 13 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+04-15-2019 17:41:54 1000 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
+04-15-2019 17:41:54 1000 main (DefaultDistributor:116)	DONE
+04-15-2019 17:42:40 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+04-15-2019 17:42:41 11 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+04-15-2019 17:42:41 999 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
+04-15-2019 17:42:41 1000 main (DefaultDistributor:116)	DONE
+04-15-2019 17:44:55 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+04-15-2019 17:44:55 12 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+04-15-2019 17:44:56 999 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
+04-15-2019 17:44:56 1000 main (DefaultDistributor:116)	DONE

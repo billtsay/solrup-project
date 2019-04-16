@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dg-parent</artifactId>
+        <groupId>org.finra.datagenerator</groupId>
+        <version>2.3-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>dg-core</artifactId>
+    <name>Data Generator Core Library</name>
+    <packaging>bundle</packaging>
+
+    <dependencies>
+        <!-- For logging -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.16</version>
+        </dependency>
+        <!-- For JSON serialization of Java types -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20151123</version>
+        </dependency>
+        <!--For Date Calculations-->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.9.3</version>
+        </dependency>
+
+        <!-- For reusable, generic utilities -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>15.0</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.1</version>
+        </dependency>
+
+        <!-- For SCXML Executor and Parsing Utilities -->
+        <dependency>
+            <groupId>commons-scxml</groupId>
+            <artifactId>commons-scxml</artifactId>
+            <version>0.9</version>
+        </dependency>
+		<dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.0</version>
+        </dependency>
+
+        <!-- For Expression Language (EL) support in models -->
+        <dependency>
+            <groupId>commons-el</groupId>
+            <artifactId>commons-el</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.0</version>
+        </dependency>
+
+        <!-- For unit tests which use Jetty to test HTTP messaging features of DataConsumer -->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>9.2.1.v20140609</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- For use with the spark distributor -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.10</artifactId>
+            <version>1.5.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-launcher_2.10</artifactId>
+            <version>1.5.2</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>4.2.0</version>
+                <extensions>true</extensions>
+                <!--
+                 | the following instructions build a simple set of public/private classes into an OSGi bundle
+                -->
+                <configuration>
+                    <instructions>
+                        <Export-Package>
+                            org.finra.datagenerator.consumer*,
+                            org.finra.datagenerator.distributor*,
+                            org.finra.datagenerator.engine*,
+                            org.finra.datagenerator.exceptions*,
+                            org.finra.datagenerator.exec*,
+                            org.finra.datagenerator.reporting*,
+                            org.finra.datagenerator.writer*
+                        </Export-Package>
+                        <Import-Package>
+                            !org.finra.datagenerator*,
+                            *
+                        </Import-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+
+</project>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.solrup</groupId>
+    <artifactId>evtgen-parent</artifactId>
+    <version>1</version>
+    <relativePath>../parent</relativePath>
+  </parent>
+
+  <groupId>com.solrup.evtgen</groupId>
+  <artifactId>core</artifactId>
+  <packaging>bundle</packaging>
+  <version>${evtgen.version}</version>
+
+  <name>Solrup :: evtgen :: core</name>
+  <url>http://www.evtgen.com</url>
+  <description></description>
+  <inceptionYear>2019</inceptionYear>
+
+  <properties>
+    <osgi.import>*</osgi.import>
+    <osgi.dynamic.import>*</osgi.dynamic.import>
+    <osgi.export>com.solrup.evtgen.core;version="${project.version}";-noimport:=true</osgi.export>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-xml</artifactId>
+      <version>2.9.6</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>2.9.6</version>
+    </dependency>
+    <!-- Testing Dependencies -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <optional>true</optional>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>

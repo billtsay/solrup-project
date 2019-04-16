@@ -1,0 +1,176 @@
+package com.solrup.commons.itest;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.DatagramSocket;
+import java.net.ServerSocket;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import javax.inject.Inject;
+
+import org.apache.karaf.features.FeaturesService;
+import org.osgi.framework.Bundle;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.Filter;
+import org.osgi.util.tracker.ServiceTracker;
+
+import org.junit.Assert;
+import org.ops4j.pax.exam.MavenUtils;
+import org.ops4j.pax.exam.Option;
+import org.ops4j.pax.exam.options.MavenUrlReference;
+
+import static org.ops4j.pax.exam.CoreOptions.composite;
+import static org.ops4j.pax.exam.CoreOptions.maven;
+import static org.ops4j.pax.exam.CoreOptions.mavenBundle;
+import static org.ops4j.pax.exam.CoreOptions.systemProperty;
+import static org.ops4j.pax.exam.CoreOptions.when;
+import static org.ops4j.pax.exam.karaf.options.KarafDistributionOption.editConfigurationFilePut;
+import static org.ops4j.pax.exam.karaf.options.KarafDistributionOption.karafDistributionConfiguration;
+import static org.ops4j.pax.exam.karaf.options.KarafDistributionOption.replaceConfigurationFile;
+
+public class KarafTestSupport {
+
+    @Inject
+    protected BundleContext bundleContext;
+
+    @Inject
+    protected FeaturesService featureService;
+
+    protected ExecutorService executor = Executors.newCachedThreadPool();
+
+    protected MavenUrlReference cxfUrl;
+    protected MavenUrlReference karafUrl;
+    protected MavenUrlReference amqUrl;
+
+    private static String getKarafVersion() {
+        return MavenUtils.getArtifactVersion("org.apache.karaf", "apache-karaf-minimal");
+    }
+
+    protected Option cxfBaseConfig() {
+        karafUrl = maven().groupId("org.apache.karaf").artifactId("apache-karaf-minimal").versionAsInProject().type("tar.gz");
+        cxfUrl = maven().groupId("org.apache.cxf.karaf").artifactId("apache-cxf").versionAsInProject()
+                .type("xml").classifier("features");
+        amqUrl = maven().groupId("org.apache.activemq")
+                .artifactId("activemq-karaf").type("xml").classifier("features").versionAsInProject();
+        String localRepo = System.getProperty("localRepository");
+        Object urp = System.getProperty("cxf.useRandomFirstPort");
+        return composite(karafDistributionConfiguration()
+                        .frameworkUrl(karafUrl)
+                        .karafVersion(getKarafVersion())
+                        .name("Apache Karaf")
+                        .useDeployFolder(false)
+                        .unpackDirectory(new File("target/paxexam/")),
+                //DO NOT COMMIT WITH THIS LINE ENABLED!!!
+                //KarafDistributionOption.keepRuntimeFolder(),
+                //debugConfiguration(), // nor this
+                systemProperty("pax.exam.osgi.unresolved.fail").value("true"),
+                systemProperty("java.awt.headless").value("true"),
+                replaceConfigurationFile("etc/org.ops4j.pax.logging.cfg",
+                        new File("src/test/resources/etc/org.ops4j.pax.logging.cfg")),
+                when(localRepo != null)
+                        .useOptions(editConfigurationFilePut("etc/org.ops4j.pax.url.mvn.cfg",
+                                "org.ops4j.pax.url.mvn.localRepository",
+                                localRepo)),
+                when(urp != null).useOptions(systemProperty("cxf.useRandomFirstPort").value("true")));
+    }
+
+    protected Option testUtils() {
+        return mavenBundle().groupId("org.apache.cxf").artifactId("cxf-testutils").versionAsInProject();
+    }
+
+    protected Bundle getInstalledBundle(String symbolicName) {
+        for (Bundle b : bundleContext.getBundles()) {
+            if (b.getSymbolicName().equals(symbolicName)) {
+                return b;
+            }
+        }
+        for (Bundle b : bundleContext.getBundles()) {
+            System.err.println("Bundle: " + b.getSymbolicName());
+        }
+        throw new RuntimeException("Bundle " + symbolicName + " does not exist");
+    }
+
+    /**
+     * Finds a free port starting from the give port numner.
+     *
+     * @return
+     */
+    protected int getFreePort(int port) {
+        while (!isPortAvailable(port)) {
+            port++;
+        }
+        return port;
+    }
+
+    /**
+     * Returns true if port is available for use.
+     *
+     * @param port
+     * @return
+     */
+    public static boolean isPortAvailable(int port) {
+        ServerSocket ss = null;
+        try (DatagramSocket ds = new DatagramSocket(port)) {
+            ss = new ServerSocket(port);
+            ss.setReuseAddress(true);
+            ds.setReuseAddress(true);
+            return true;
+        } catch (IOException e) {
+            // ignore
+        } finally {
+            if (ss != null) {
+                try {
+                    ss.close();
+                } catch (IOException e) {
+                    /* should not be thrown */
+                }
+            }
+        }
+
+        return false;
+    }
+
+    protected void assertBundleStarted(String name) {
+        Bundle bundle = findBundleByName(name);
+        Assert.assertNotNull("Bundle " + name + " should be installed", bundle);
+        Assert.assertEquals("Bundle " + name + " should be started", Bundle.ACTIVE, bundle.getState());
+    }
+
+    protected Bundle findBundleByName(String symbolicName) {
+        for (Bundle bundle : bundleContext.getBundles()) {
+            if (bundle.getSymbolicName().equals(symbolicName)) {
+                return bundle;
+            }
+        }
+        return null;
+    }
+
+    public void assertServicePublished(String filter, int timeout) {
+        try {
+            Filter serviceFilter = bundleContext.createFilter(filter);
+            ServiceTracker<Object, ?> tracker = new ServiceTracker<>(bundleContext, serviceFilter, null);
+            tracker.open();
+            Object service = tracker.waitForService(timeout);
+            tracker.close();
+            if (service == null) {
+                throw new IllegalStateException("Expected service with filter " + filter + " was not found");
+            }
+        } catch (Exception e) {
+            throw new RuntimeException("Unexpected exception occured", e);
+        }
+    }
+
+    public void assertBlueprintNamespacePublished(String namespace, int timeout) {
+        assertServicePublished(String.format("(&(objectClass=org.apache.aries.blueprint.NamespaceHandler)"
+                + "(osgi.service.blueprint.namespace=%s))", namespace), timeout);
+    }
+
+    public void installFeature(String featureName) throws Exception{
+
+        featureService.installFeature(featureName);
+
+        featureService.uninstallFeature(featureName);
+    }
+
+}

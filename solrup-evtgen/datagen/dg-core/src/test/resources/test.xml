@@ -1,0 +1,54 @@
+<!-- -->
+<!-- Copyright 2014 DataGenerator Contributors -->
+<!-- -->
+<!-- Licensed under the Apache License, Version 2.0 (the "License"); -->
+<!-- you may not use this file except in compliance with the License. -->
+<!-- You may obtain a copy of the License at -->
+<!-- -->
+<!--      http://www.apache.org/licenses/LICENSE-2.0 -->
+<!-- -->
+<!-- Unless required by applicable law or agreed to in writing, software -->
+<!-- distributed under the License is distributed on an "AS IS" BASIS, -->
+<!-- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. -->
+<!-- See the License for the specific language governing permissions and -->
+<!-- limitations under the License. -->
+<!-- -->
+
+<scxml xmlns="http://www.w3.org/2005/07/scxml"
+       xmlns:cs="http://commons.apache.org/scxml"
+       xmlns:dg="org.finra.datagenerator"
+       version="1.0"
+       initial="start">
+
+    <state id="start">
+        <transition event="RECORD_TYPE" target="RECORD_TYPE"/>
+    </state>
+
+    <state id="RECORD_TYPE">
+        <!-- Mandatory -->
+        <onentry>
+            <dg:assign name="var_out_RECORD_TYPE" set="a,b,c"/>
+        </onentry>
+        <transition event="REQUEST_IDENTIFIER" target="REQUEST_IDENTIFIER"/>
+    </state>
+
+    <state id="REQUEST_IDENTIFIER">
+        <!-- Mandatory -->
+        <!-- There's nothing going on here -->
+        <onentry>
+            <dg:assign name="var_out_REQUEST_IDENTIFIER" set="1,2,3"/>
+        </onentry>
+        <transition event="MANIFEST_GENERATION_DATETIME" target="MANIFEST_GENERATION_DATETIME"/>
+    </state>
+
+    <state id="MANIFEST_GENERATION_DATETIME">
+        <!-- Mandatory -->
+        <onentry>
+            <assign name="var_out_MANIFEST_GENERATION_DATETIME" expr="#{nextint}"/>
+        </onentry>
+        <transition target="end"/>
+    </state>
+    
+    <state id="end">
+    </state>
+</scxml>

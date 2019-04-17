@@ -14,8 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.solrup.evtgen;
+package com.solrup.evtgen.core;
 
+import com.solrup.evtgen.StateMachine;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.commons.scxml2.*;
@@ -31,6 +32,7 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.URL;
+import java.util.Map;
 
 /**
  * <p>This class demonstrates one approach for providing the base
@@ -55,7 +57,7 @@ import java.net.URL;
  * are free of <code>ModelException</code>s and the like. Most methods
  * are <code>protected</code> for ease of subclassing.</p>
  */
-public abstract class AbstractStateMachine {
+public class AbstractStateMachine implements StateMachine {
 
     /**
      * The method signature for the activities corresponding to each
@@ -110,7 +112,11 @@ public abstract class AbstractStateMachine {
                                 final SCXMLReader.Configuration configuration) throws ModelException {
         log = LogFactory.getLog(this.getClass());
         try {
-            stateMachine = SCXMLReader.read(scxmlDocument, configuration);
+            if (configuration == null) {
+                stateMachine = SCXMLReader.read(scxmlDocument);
+            } else {
+                stateMachine = SCXMLReader.read(scxmlDocument, configuration);
+            }
         } catch (IOException ioe) {
             logError(ioe);
         } catch (XMLStreamException xse) {
@@ -167,11 +173,13 @@ public abstract class AbstractStateMachine {
                 new SimpleErrorReporter());
         engine.setStateMachine(stateMachine);
         engine.setRootContext(rootCtx);
-        engine.addListener(stateMachine, new EntryListener());
-        go();
     }
 
-    public void go(){
+    public void addListener(SCXMLListener listener){
+        engine.addListener(stateMachine, listener);
+    }
+
+    public void run(){
         try {
             engine.go();
         } catch (ModelException me) {
@@ -179,13 +187,10 @@ public abstract class AbstractStateMachine {
         }
     }
 
-    /**
-     * Fire an event on the SCXML engine.
-     *
-     * @param event The event name.
-     * @return Whether the state machine has reached a &quot;final&quot;
-     * configuration.
-     */
+    public boolean fireEvent(final String event, int type, Map<String, ?> payload) {
+        return fireEvent(event);
+    }
+
     public boolean fireEvent(final String event) {
         TriggerEvent[] evts = {new TriggerEvent(event,
                 TriggerEvent.SIGNAL_EVENT)};
@@ -197,40 +202,19 @@ public abstract class AbstractStateMachine {
         return engine.getCurrentStatus().isFinal();
     }
 
-    /**
-     * Get the SCXML engine driving the &quot;lifecycle&quot; of the
-     * instances of this class.
-     *
-     * @return Returns the engine.
-     */
     public SCXMLExecutor getEngine() {
         return engine;
     }
 
-    /**
-     * Get the log for this class.
-     *
-     * @return Returns the log.
-     */
     public Log getLog() {
         return log;
     }
 
-    /**
-     * Set the log for this class.
-     *
-     * @param log The log to set.
-     */
     public void setLog(final Log log) {
         this.log = log;
     }
 
-    /**
-     * Invoke the no argument method with the following name.
-     *
-     * @param methodName The method to invoke.
-     * @return Whether the invoke was successful.
-     */
+    /*
     public boolean invoke(final String methodName) {
         Class<?> clas = this.getClass();
         try {
@@ -254,12 +238,7 @@ public abstract class AbstractStateMachine {
         }
         return true;
     }
-
-    /**
-     * Reset the state machine.
-     *
-     * @return Whether the reset was successful.
-     */
+*/
     public boolean resetMachine() {
         try {
             engine.reset();
@@ -270,54 +249,10 @@ public abstract class AbstractStateMachine {
         return true;
     }
 
-    /**
-     * Utility method for logging error.
-     *
-     * @param exception The exception leading to this error condition.
-     */
     protected void logError(final Exception exception) {
         if (log.isErrorEnabled()) {
             log.error(exception.getMessage(), exception);
         }
     }
-
-    /**
-     * A SCXMLListener that is only concerned about &quot;onentry&quot;
-     * notifications.
-     */
-    protected class EntryListener implements SCXMLListener {
-
-        /**
-         * {@inheritDoc}
-         */
-        public void onEntry(final EnterableState entered) {
-            invoke(entered.getId());
-        }
-
-        /**
-         * No-op.
-         *
-         * @param from       The &quot;source&quot; transition target.
-         * @param to         The &quot;destination&quot; transition target.
-         * @param transition The transition being followed.
-         * @param event      The event triggering the transition
-         */
-        public void onTransition(final TransitionTarget from,
-                                 final TransitionTarget to,
-                                 final Transition transition,
-                                 final String event) {
-            // nothing to do
-        }
-
-        /**
-         * No-op.
-         *
-         * @param exited The state being exited.
-         */
-        public void onExit(final EnterableState exited) {
-            // nothing to do
-        }
-    }
-
 }
 

@@ -14,35 +14,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.solrup.evtgen;
+package com.solrup.evtgen.core;
 
+import com.solrup.evtgen.Environment;
 import com.solrup.evtgen.annotation.State;
-import com.solrup.evtgen.annotation.StateMachine;
-import com.solrup.evtgen.engine.tags.FileExtension;
-import com.solrup.evtgen.engine.tags.InLineTransformerExtension;
-import com.solrup.evtgen.engine.tags.RangeExtension;
-import com.solrup.evtgen.engine.tags.SetAssignExtension;
-import org.apache.avro.generic.GenericData;
-import org.apache.commons.scxml2.SCXMLListener;
+import com.solrup.evtgen.annotation.Template;
 import org.apache.commons.scxml2.io.SCXMLReader;
 import org.apache.commons.scxml2.model.*;
+import org.finra.datagenerator.engine.scxml.tags.FileExtension;
+import org.finra.datagenerator.engine.scxml.tags.InLineTransformerExtension;
+import org.finra.datagenerator.engine.scxml.tags.RangeExtension;
 
 import java.io.Reader;
 import java.util.*;
 
-/**
- * A SCXML document driven stop watch.
- *
- * Using SCXML makes the StopWatch class simplistic; you are neither
- * managing the stopwatch "lifecycle" nor coding any "transitions",
- * that information is pulled in straight from the behavioral model
- * of the stop watch, which is encapsulated in the SCXML document
- * the constructor points to (which in turn may be generated straight
- * from the UML model).
- */
+import static org.finra.datagenerator.engine.scxml.tags.SetAssignExtension.*;
 
-@StateMachine(name="evtgen", resource="classpath:evtgen.xml")
-public class EventGenerator extends AbstractStateMachine {
+@Template(name="evtgen", environment="evtgen")
+public class EventGenerator {
 
     /** The events for the stop watch. */
     public static final String  EVENT_START     = "evtgen.start",
@@ -62,19 +51,21 @@ public class EventGenerator extends AbstractStateMachine {
     /** The display decorations. */
     private static final String DELIM = ":", DOT = ".", EMPTY = "", ZERO = "0";
 
-    public EventGenerator() throws ModelException {
-        super(EventGenerator.class.getClassLoader().getResource("evtgen.xml"), null);
-    }
-
     // Each method below is the activity corresponding to a state in the
     // SCXML document (see class constructor for pointer to the document).
-    public void reset() {
+    @State(id = "reset")
+    public void reset(Environment env) {
         hr = min = sec = fract = dhr = dmin = dsec = dfract = 0;
         split = false;
     }
 
+    @State(id = "reset", on = State.ON.EXIT)
+    public void log(Environment env){
+        env.logger().info("Leaving RESET state....");
+    }
+
     @State(id = "running")
-    public void running() {
+    public void running(Environment env) {
         split = false;
         if (timer == null) {
             timer = new Timer(true);
@@ -87,11 +78,13 @@ public class EventGenerator extends AbstractStateMachine {
         }
     }
 
-    public void paused() {
+    @State(id = "paused")
+    public void paused(Environment env) {
         split = true;
     }
 
-    public void stopped() {
+    @State(id = "stopped")
+    public void stopped(Environment env) {
         timer.cancel();
         timer = null;
     }
@@ -103,11 +96,6 @@ public class EventGenerator extends AbstractStateMachine {
         return new StringBuffer().append(padhr).append(dhr).append(DELIM).
             append(padmin).append(dmin).append(DELIM).append(padsec).
             append(dsec).append(DOT).append(dfract).toString();
-    }
-
-    // used by the demonstration (see StopWatchDisplay usecase)
-    public String getCurrentState() {
-        return getEngine().getCurrentStatus().getStates().iterator().next().getId();
     }
 
     private void increment() {
@@ -144,7 +132,7 @@ public class EventGenerator extends AbstractStateMachine {
         List<CustomAction> customActions = new ArrayList<CustomAction>();
         CustomAction assign =
                 new CustomAction("org.finra.datagenerator",
-                        "assign", SetAssignExtension.SetAssignTag.class);
+                        "assign", SetAssignTag.class);
         customActions.add(assign);
 
         CustomAction range =
@@ -173,8 +161,6 @@ public class EventGenerator extends AbstractStateMachine {
 
         SCXML stateMachine = gen.getEngine().getStateMachine();
 
-        gen.go();
-
         Map<String, TransitionTarget> targets = stateMachine.getTargets();
 
         SimpleTransition transition = stateMachine.getInitialTransition();
@@ -190,8 +176,8 @@ public class EventGenerator extends AbstractStateMachine {
                     if (action instanceof Assign) {
                         String variable = ((Assign) action).getName();
                         variables.add(variable);
-                    } else if (action instanceof SetAssignExtension.SetAssignTag) {
-                        String variable = ((SetAssignExtension.SetAssignTag) action).getName();
+                    } else if (action instanceof SetAssignTag) {
+                        String variable = ((SetAssignTag) action).getName();
                         variables.add(variable);
                     }
                 }

@@ -1,209 +1,368 @@
-04-16-2019 12:22:30 0 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 5 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 5 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 8 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 8 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 10 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 10 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 11 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 11 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 13 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 13 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 15 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 15 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 16 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 16 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 17 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 19 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 20 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 20 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 21 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 21 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 22 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 22 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 23 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 24 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 24 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 25 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 26 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 26 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 27 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 27 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 28 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 29 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 30 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 30 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 31 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 31 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 32 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 32 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 34 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 34 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 35 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 35 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 36 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 36 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 37 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 37 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 38 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 38 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 40 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 40 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 41 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 41 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 42 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 42 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 43 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 43 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 43 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 44 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 44 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 45 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 46 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 46 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 46 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 47 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 47 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 48 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 48 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 49 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 49 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 49 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 50 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 50 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 50 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 51 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 51 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 52 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 52 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 52 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 53 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 53 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 53 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 54 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 54 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 54 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:30 55 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:30 55 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 56 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 56 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 56 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 57 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 57 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 57 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 58 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 58 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 59 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 59 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 60 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 60 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 61 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 61 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 61 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 61 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 62 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 62 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 63 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 63 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 63 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 63 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 64 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 64 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 64 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 65 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 65 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 65 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 66 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 66 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 66 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 67 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 67 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 67 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 68 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 68 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 69 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 69 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 69 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 69 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 70 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 70 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 71 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 71 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 72 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 72 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 72 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 73 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 73 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 73 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 74 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 74 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 75 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 75 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 75 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 75 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 75 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 75 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 76 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 76 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 76 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 76 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 76 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 77 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 77 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 77 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 78 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 78 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 78 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 78 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 78 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 78 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 79 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 79 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 79 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 80 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 80 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 80 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 81 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 81 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 81 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 81 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 81 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 82 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 82 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 82 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 83 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 83 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 83 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 83 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 84 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 84 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
-04-16-2019 12:22:31 85 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
-04-16-2019 12:22:31 1000 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
-04-16-2019 12:22:31 1001 main (DefaultDistributor:116)	DONE
-04-16-2019 19:49:09 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
-04-16-2019 19:49:10 1000 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
-04-16-2019 19:49:10 1000 main (DefaultDistributor:116)	DONE
-04-16-2019 19:50:16 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
-04-16-2019 19:56:33 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
-04-16-2019 20:08:53 740159 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
-04-16-2019 20:08:53 740160 main (DefaultDistributor:116)	DONE
-04-16-2019 20:10:36 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
-04-16-2019 20:10:47 11252 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
-04-16-2019 20:10:47 11253 main (DefaultDistributor:116)	DONE
-04-16-2019 20:18:43 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
-04-16-2019 22:11:44 0 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
-04-16-2019 22:11:44 2 main (DefaultDistributor:116)	DONE
-04-16-2019 22:12:13 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
-04-16-2019 22:12:16 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
-04-16-2019 22:12:17 1000 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
-04-16-2019 22:12:17 1001 main (DefaultDistributor:116)	DONE
-04-16-2019 22:15:21 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
-04-16-2019 22:15:21 104 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
-04-16-2019 22:15:22 1000 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
-04-16-2019 22:15:22 1000 main (DefaultDistributor:116)	DONE
-04-16-2019 22:15:40 0 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
-04-16-2019 22:15:40 1 main (DefaultDistributor:116)	DONE
-04-16-2019 22:16:11 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
-04-16-2019 22:16:11 110 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
-04-16-2019 22:16:12 1000 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
-04-16-2019 22:16:12 1000 main (DefaultDistributor:116)	DONE
+04-17-2019 06:09:50 0 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
+04-17-2019 06:09:50 2 main (DefaultDistributor:116)	DONE
+04-17-2019 06:16:50 0 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
+04-17-2019 06:16:50 4 main (DefaultDistributor:116)	DONE
+04-17-2019 06:18:17 1 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 14 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 14 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 17 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 17 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 18 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 19 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 20 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 20 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 21 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 22 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 23 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 23 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 24 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 24 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 25 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 27 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 28 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 29 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 29 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 29 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 30 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 30 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 31 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 31 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 32 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 32 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 32 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 32 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 34 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 35 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 35 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 35 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 36 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 36 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 37 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 37 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 37 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 37 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 38 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 38 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 39 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 39 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 39 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 40 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 40 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 40 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 41 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 41 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 42 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 42 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 43 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 43 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 43 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 43 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 44 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 44 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 45 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 45 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 45 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 45 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 46 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 46 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 47 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 47 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 47 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 47 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 48 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 48 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 48 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 48 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 49 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 49 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 50 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 50 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 50 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 50 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 51 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 51 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 51 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 51 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 52 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 52 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 53 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 53 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 53 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 54 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 54 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 54 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 55 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 55 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 55 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 55 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 56 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 56 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 56 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 57 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 57 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 57 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 58 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 58 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 59 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 59 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 59 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 59 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 60 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 60 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 61 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 61 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 61 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 62 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 62 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 62 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 63 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 63 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 64 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 64 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 64 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 64 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 65 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 65 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 65 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 66 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 66 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 67 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 67 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 68 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 68 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 68 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 69 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 69 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 69 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 70 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 70 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 70 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 70 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 71 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 71 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 71 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 71 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 71 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 72 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 72 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 73 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 73 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 74 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 74 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 74 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 74 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 75 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 75 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 75 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 75 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 76 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 76 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 76 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 76 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 77 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 77 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 77 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 77 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 78 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 78 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 78 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 79 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 79 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 79 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 80 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 80 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 80 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 80 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 81 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 81 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 81 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 82 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 82 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 82 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 83 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:17 83 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:18:17 83 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:18:18 1001 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
+04-17-2019 06:18:18 1001 main (DefaultDistributor:116)	DONE
+04-17-2019 06:22:38 0 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 4 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 4 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 6 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 7 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 8 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 8 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 10 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 11 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 12 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 12 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 13 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 13 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 14 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 14 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 15 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 17 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 17 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 18 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 18 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 19 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 19 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 19 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 20 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 20 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 21 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 21 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 22 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 22 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 22 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 22 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 23 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 23 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 24 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 24 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 25 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 25 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 26 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 26 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 26 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 27 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 27 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 27 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 28 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 28 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 29 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 29 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 30 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 30 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 31 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 32 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 32 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 32 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 33 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 33 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 35 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 36 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 36 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 36 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 37 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 37 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 38 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 38 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 38 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 38 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 39 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 39 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 40 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 40 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 40 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 40 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 41 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 41 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 41 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 42 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 42 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 42 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 43 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 43 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 43 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 44 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 44 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 44 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 45 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 45 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 45 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 45 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 46 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 46 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 46 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 47 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 47 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 47 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 48 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 48 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 49 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 49 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 49 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 49 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 50 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 50 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 50 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 50 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 51 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 51 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 51 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 51 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 51 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 52 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 52 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 52 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 53 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 53 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 53 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 53 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 54 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 54 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 54 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 54 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 55 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 55 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 56 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 56 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 57 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 57 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 57 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 57 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 58 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 58 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 58 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 58 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 59 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 59 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 59 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 59 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 60 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 60 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 60 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 60 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 60 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 60 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 61 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 61 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 61 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 61 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 62 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 62 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 63 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 63 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 63 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 63 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 64 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 64 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 65 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 65 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 65 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 66 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 66 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 66 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 67 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 67 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 67 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 68 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 68 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 68 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 69 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 69 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 69 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 69 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 70 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 70 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 70 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 70 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 71 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 71 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 71 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 72 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 72 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:38 72 pool-3-thread-1 (SearchWorker:54)	pool-3-thread-1 is starting DFS
+04-17-2019 06:22:38 73 pool-3-thread-1 (SearchWorker:56)	pool-3-thread-1 is done with DFS
+04-17-2019 06:22:39 1000 Thread-0 (DefaultDistributor:142)	Exiting, search exit flag is true
+04-17-2019 06:22:39 1000 main (DefaultDistributor:116)	DONE

@@ -206,9 +206,9 @@ public class SCXMLEngine extends SCXMLExecutor implements Engine {
 
                         //transition condition satisfied, add to bootstrap list
                         if (pass) {
-                            List<EnterableState> states = ((State) nextState).getChildren();
-                            if (states.size()>0) {
-                                PossibleState result = new PossibleState(states.get(0), p);
+                            Set<TransitionTarget> targets = transition.getTargets();
+                            if (targets.size()>0) {
+                                PossibleState result = new PossibleState(targets.iterator().next(), p);
                                 bootStrap.add(result);
                             }
                         }

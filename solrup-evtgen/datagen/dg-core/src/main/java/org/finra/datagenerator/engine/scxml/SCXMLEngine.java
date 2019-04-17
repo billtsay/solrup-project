@@ -16,20 +16,14 @@
 
 package org.finra.datagenerator.engine.scxml;
 
-import org.apache.commons.scxml.Context;
-import org.apache.commons.scxml.SCXMLExecutor;
-import org.apache.commons.scxml.SCXMLExpressionException;
-import org.apache.commons.scxml.env.jsp.ELContext;
-import org.apache.commons.scxml.env.jsp.ELEvaluator;
-import org.apache.commons.scxml.io.SCXMLParser;
-import org.apache.commons.scxml.model.Action;
-import org.apache.commons.scxml.model.Assign;
-import org.apache.commons.scxml.model.CustomAction;
-import org.apache.commons.scxml.model.ModelException;
-import org.apache.commons.scxml.model.OnEntry;
-import org.apache.commons.scxml.model.SCXML;
-import org.apache.commons.scxml.model.Transition;
-import org.apache.commons.scxml.model.TransitionTarget;
+import org.apache.commons.scxml2.Context;
+import org.apache.commons.scxml2.SCXMLExecutor;
+import org.apache.commons.scxml2.SCXMLExpressionException;
+import org.apache.commons.scxml2.env.jexl.JexlContext;
+import org.apache.commons.scxml2.env.jexl.JexlEvaluator;
+import org.apache.commons.scxml2.io.SCXMLReader;
+import org.apache.commons.scxml2.io.SCXMLReader.Configuration;
+import org.apache.commons.scxml2.model.*;
 import org.finra.datagenerator.distributor.SearchDistributor;
 import org.finra.datagenerator.engine.Engine;
 import org.finra.datagenerator.engine.Frontier;
@@ -39,9 +33,7 @@ import org.finra.datagenerator.engine.scxml.tags.FileExtension;
 import org.finra.datagenerator.engine.scxml.tags.RangeExtension;
 import org.finra.datagenerator.engine.scxml.tags.SingleValueAssignExtension;
 
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
-
+import javax.xml.stream.XMLStreamException;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -73,10 +65,14 @@ public class SCXMLEngine extends SCXMLExecutor implements Engine {
         tagExtensionList.add(new FileExtension());
         tagExtensionList.add(new RangeExtension());
 
-        ELEvaluator elEvaluator = new ELEvaluator();
-        ELContext context = new ELContext();
+        JexlEvaluator elEvaluator = new JexlEvaluator();
+        JexlContext context = new JexlContext();
 
-        this.setEvaluator(elEvaluator);
+        try {
+            this.setEvaluator(elEvaluator);
+        } catch (ModelException e) {
+            e.printStackTrace();
+        }
         this.setRootContext(context);
     }
 
@@ -114,19 +110,20 @@ public class SCXMLEngine extends SCXMLExecutor implements Engine {
      * @return the default variable assignment map
      */
     private Map<String, String> fillInitialVariables() {
-        Map<String, TransitionTarget> targets = model.getChildren();
+        List<EnterableState> targets = model.getChildren();
 
         Set<String> variables = new HashSet<>();
-        for (TransitionTarget target : targets.values()) {
-            OnEntry entry = target.getOnEntry();
-            List<Action> actions = entry.getActions();
-            for (Action action : actions) {
-                if (action instanceof Assign) {
-                    String variable = ((Assign) action).getName();
-                    variables.add(variable);
-                } else if (action instanceof SetAssignExtension.SetAssignTag) {
-                    String variable = ((SetAssignExtension.SetAssignTag) action).getName();
-                    variables.add(variable);
+        for (EnterableState state: targets){
+            for (OnEntry entry: state.getOnEntries()){
+                List<Action> actions = entry.getActions();
+                for (Action action : actions) {
+                    if (action instanceof Assign) {
+                        String variable = ((Assign) action).getName();
+                        variables.add(variable);
+                    } else if (action instanceof SetAssignExtension.SetAssignTag) {
+                        String variable = ((SetAssignExtension.SetAssignTag) action).getName();
+                        variables.add(variable);
+                    }
                 }
             }
         }
@@ -149,11 +146,12 @@ public class SCXMLEngine extends SCXMLExecutor implements Engine {
     public List<PossibleState> bfs(int min) throws ModelException {
         List<PossibleState> bootStrap = new LinkedList<>();
 
-        TransitionTarget initial = model.getInitialTarget();
+        TransitionTarget initial = model.getTargets().get(model.getInitial());
+
         PossibleState initialState = new PossibleState(initial, fillInitialVariables());
         bootStrap.add(initialState);
 
-        while (bootStrap.size() < min) {
+        while (bootStrap.size() > 0 && bootStrap.size() < min) {
             PossibleState state = bootStrap.remove(0);
             TransitionTarget nextState = state.nextState;
 
@@ -164,52 +162,56 @@ public class SCXMLEngine extends SCXMLExecutor implements Engine {
             //run every action in series
             List<Map<String, String>> product = new LinkedList<>();
             product.add(new HashMap<>(state.variables));
+            if (nextState instanceof State) {
+                for (OnEntry entry : ((State) nextState).getOnEntries()) {
 
-            OnEntry entry = nextState.getOnEntry();
-            List<Action> actions = entry.getActions();
+                    List<Action> actions = entry.getActions();
 
-            for (Action action : actions) {
-                for (CustomTagExtension tagExtension : tagExtensionList) {
-                    if (tagExtension.getTagActionClass().isInstance(action)) {
-                        product = tagExtension.pipelinePossibleStates(action, product);
+                    for (Action action : actions) {
+                        for (CustomTagExtension tagExtension : tagExtensionList) {
+                            if (tagExtension.getTagActionClass().isInstance(action)) {
+                                product = tagExtension.pipelinePossibleStates(action, product);
+                            }
+                        }
                     }
                 }
-            }
 
-            //go through every transition and see which of the products are valid, adding them to the list
-            List<Transition> transitions = nextState.getTransitionsList();
+                //go through every transition and see which of the products are valid, adding them to the list
+                List<Transition> transitions = ((State) nextState).getTransitionsList();
+                for (Transition transition : transitions) {
+                    String condition = transition.getCond();
 
-            for (Transition transition : transitions) {
-                String condition = transition.getCond();
-                TransitionTarget target = ((List<TransitionTarget>) transition.getTargets()).get(0);
+                    for (Map<String, String> p : product) {
+                        Boolean pass;
 
-                for (Map<String, String> p : product) {
-                    Boolean pass;
+                        if (condition == null) {
+                            pass = true;
+                        } else {
+                            //scrub the context clean so we may use it to evaluate transition conditional
+                            Context context = this.getRootContext();
+                            context.reset();
 
-                    if (condition == null) {
-                        pass = true;
-                    } else {
-                        //scrub the context clean so we may use it to evaluate transition conditional
-                        Context context = this.getRootContext();
-                        context.reset();
+                            //set up new context
+                            for (Map.Entry<String, String> e : p.entrySet()) {
+                                context.set(e.getKey(), e.getValue());
+                            }
 
-                        //set up new context
-                        for (Map.Entry<String, String> e : p.entrySet()) {
-                            context.set(e.getKey(), e.getValue());
+                            //evaluate condition
+                            try {
+                                pass = (Boolean) this.getEvaluator().eval(context, condition);
+                            } catch (SCXMLExpressionException ex) {
+                                pass = false;
+                            }
                         }
 
-                        //evaluate condition
-                        try {
-                            pass = (Boolean) this.getEvaluator().eval(context, condition);
-                        } catch (SCXMLExpressionException ex) {
-                            pass = false;
+                        //transition condition satisfied, add to bootstrap list
+                        if (pass) {
+                            List<EnterableState> states = ((State) nextState).getChildren();
+                            if (states.size()>0) {
+                                PossibleState result = new PossibleState(states.get(0), p);
+                                bootStrap.add(result);
+                            }
                         }
-                    }
-
-                    //transition condition satisfied, add to bootstrap list
-                    if (pass) {
-                        PossibleState result = new PossibleState(target, p);
-                        bootStrap.add(result);
                     }
                 }
             }
@@ -261,9 +263,11 @@ public class SCXMLEngine extends SCXMLExecutor implements Engine {
      */
     public void setModelByInputFileStream(InputStream inputFileStream) {
         try {
-            this.model = SCXMLParser.parse(new InputSource(inputFileStream), null, customActionsFromTagExtensions());
+            this.model = SCXMLReader.read(inputFileStream,
+                        new Configuration(null, null, customActionsFromTagExtensions()));
+
             this.setStateMachine(this.model);
-        } catch (IOException | SAXException | ModelException e) {
+        } catch (IOException | ModelException | XMLStreamException e) {
             e.printStackTrace();
         }
     }
@@ -276,9 +280,9 @@ public class SCXMLEngine extends SCXMLExecutor implements Engine {
     public void setModelByText(String model) {
         try {
             InputStream is = new ByteArrayInputStream(model.getBytes());
-            this.model = SCXMLParser.parse(new InputSource(is), null, customActionsFromTagExtensions());
+            this.model = SCXMLReader.read(is, new Configuration(null, null, customActionsFromTagExtensions()));
             this.setStateMachine(this.model);
-        } catch (IOException | SAXException | ModelException e) {
+        } catch (IOException | ModelException | XMLStreamException e) {
             e.printStackTrace();
         }
     }

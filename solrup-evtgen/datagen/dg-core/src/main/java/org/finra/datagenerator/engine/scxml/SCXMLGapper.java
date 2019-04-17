@@ -16,20 +16,16 @@
 
 package org.finra.datagenerator.engine.scxml;
 
-import org.apache.commons.scxml.io.SCXMLParser;
-import org.apache.commons.scxml.model.CustomAction;
-import org.apache.commons.scxml.model.ModelException;
-import org.apache.commons.scxml.model.SCXML;
-import org.apache.commons.scxml.model.TransitionTarget;
+import org.apache.commons.scxml2.io.SCXMLReader;
+import org.apache.commons.scxml2.model.*;
 import org.finra.datagenerator.engine.Frontier;
 import org.finra.datagenerator.engine.scxml.tags.CustomTagExtension;
 import org.finra.datagenerator.engine.scxml.tags.FileExtension;
 import org.finra.datagenerator.engine.scxml.tags.RangeExtension;
 import org.finra.datagenerator.engine.scxml.tags.SetAssignExtension;
 import org.finra.datagenerator.engine.scxml.tags.SingleValueAssignExtension;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
 
+import javax.xml.stream.XMLStreamException;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -58,8 +54,8 @@ public class SCXMLGapper {
 
         try {
             InputStream is = new ByteArrayInputStream(model.getBytes());
-            this.model = SCXMLParser.parse(new InputSource(is), null, customActions);
-        } catch (IOException | SAXException | ModelException e) {
+            this.model = SCXMLReader.read(is, new SCXMLReader.Configuration(null, null, customActions));
+        } catch (IOException | ModelException | XMLStreamException e) {
             e.printStackTrace();
         }
     }
@@ -122,7 +118,7 @@ public class SCXMLGapper {
         tagExtensionList.add(new RangeExtension());
 
         setModel(decomposition.get("model"), tagExtensionList);
-        TransitionTarget target = (TransitionTarget) model.getTargets().get(decomposition.get("target"));
+        TransitionTarget target = model.getTargets().get(model.getInitial());
 
         Map<String, String> variables = new HashMap<>();
         String[] assignments = decomposition.get("variables").split(";");

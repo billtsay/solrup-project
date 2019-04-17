@@ -16,7 +16,7 @@
 
 package org.finra.datagenerator.engine.scxml.tags;
 
-import org.apache.commons.scxml.model.Assign;
+import org.apache.commons.scxml2.model.Assign;
 
 import java.util.List;
 import java.util.Map;

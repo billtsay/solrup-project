@@ -16,8 +16,8 @@
 
 package org.finra.datagenerator.engine.scxml.tags;
 
-import org.apache.commons.scxml.SCXMLExpressionException;
-import org.apache.commons.scxml.model.ModelException;
+import org.apache.commons.scxml2.SCXMLExpressionException;
+import org.apache.commons.scxml2.model.ModelException;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -70,7 +70,7 @@ public class SetAssignExtensionTest {
         setAssignTag.setSet("A,B,C,D,E");
 
         try {
-            setAssignTag.execute(null, null, null, null, null);
+            setAssignTag.execute(null);
         } catch (SCXMLExpressionException | ModelException e) {
             Assert.fail("Exceptions should never be thrown");
         }

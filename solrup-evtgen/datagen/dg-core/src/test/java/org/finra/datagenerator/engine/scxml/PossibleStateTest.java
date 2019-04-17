@@ -16,8 +16,9 @@
 
 package org.finra.datagenerator.engine.scxml;
 
+import org.apache.commons.scxml2.model.SimpleTransition;
 import org.junit.Assert;
-import org.apache.commons.scxml.model.TransitionTarget;
+import org.apache.commons.scxml2.model.TransitionTarget;
 import org.junit.Test;
 
 import java.util.HashMap;

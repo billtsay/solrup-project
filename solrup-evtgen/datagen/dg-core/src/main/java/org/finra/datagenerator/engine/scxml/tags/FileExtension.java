@@ -30,12 +30,9 @@ import java.util.Map;
 import java.util.Set;
 
 import org.apache.commons.logging.Log;
-import org.apache.commons.scxml.ErrorReporter;
-import org.apache.commons.scxml.EventDispatcher;
-import org.apache.commons.scxml.SCInstance;
-import org.apache.commons.scxml.SCXMLExpressionException;
-import org.apache.commons.scxml.model.Action;
-import org.apache.commons.scxml.model.ModelException;
+import org.apache.commons.scxml2.*;
+import org.apache.commons.scxml2.model.Action;
+import org.apache.commons.scxml2.model.ModelException;
 import org.apache.log4j.Logger;
 
 /**
@@ -70,11 +67,11 @@ public class FileExtension implements CustomTagExtension<FileExtension.FileTag> 
                                                             List<Map<String, String>> possibleStateList) {
         String variable = action.getName();
         String fileName = action.getFileName();
-        String fileSeparator = action.getFileSeparator();
+        String separator = action.getSeparator();
 
         Set<String> domain = new HashSet<String>();
         if (fileName != null && fileName.length() > 0) {
-            generateFileValues(domain, fileName, fileSeparator);
+            generateFileValues(domain, fileName, separator);
         }
 
         //take the product
@@ -90,14 +87,14 @@ public class FileExtension implements CustomTagExtension<FileExtension.FileTag> 
         return productTemp;
     }
 
-    private void generateFileValues(Set<String> domain, String fileName, String fileSeparator) {
+    private void generateFileValues(Set<String> domain, String fileName, String separator) {
         if (fileName != null && !fileName.equals("")) {
             // check cache with data file's data, maybe this file already cached
             Set<String> data;
             if (cachedDataFiles.containsKey(fileName)) {
                 domain.addAll(cachedDataFiles.get(fileName));
             } else {
-                data = cacheAndReturnDataFile(fileName, fileSeparator);
+                data = cacheAndReturnDataFile(fileName, separator);
                 if (data != null) {
                     domain.addAll(data);
                 }
@@ -105,7 +102,7 @@ public class FileExtension implements CustomTagExtension<FileExtension.FileTag> 
         }
     }
 
-    private Set<String> cacheAndReturnDataFile(String fileName, String fileSeparator) {
+    private Set<String> cacheAndReturnDataFile(String fileName, String separator) {
         InputStream inputStream = FileExtension.class.getResourceAsStream("/" + fileName);
         if (inputStream != null) {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
@@ -120,10 +117,10 @@ public class FileExtension implements CustomTagExtension<FileExtension.FileTag> 
                 
                 Set<String> data = new HashSet<String>();
                 if (lines.size() == 1) {
-                    if (fileSeparator == null || fileSeparator.equals("")) {
-                        fileSeparator = ",";
+                    if (separator == null || separator.equals("")) {
+                        separator = ",";
                     }
-                    String[] lineSplitted = lines.get(0).split(fileSeparator);
+                    String[] lineSplitted = lines.get(0).split(separator);
                     for (String value : lineSplitted) {
                         data.add(value);
                     }
@@ -147,7 +144,7 @@ public class FileExtension implements CustomTagExtension<FileExtension.FileTag> 
     public static class FileTag extends Action {
         private String name;
         private String fileName;
-        private String fileSeparator;
+        private String separator;
 
         public String getName() {
             return name;
@@ -165,28 +162,17 @@ public class FileExtension implements CustomTagExtension<FileExtension.FileTag> 
             this.fileName = fileName;
         }
 
-        public String getFileSeparator() {
-            return fileSeparator;
+        public String getSeparator() {
+            return separator;
         }
 
-        public void setFileSeparator(String fileSeparator) {
-            this.fileSeparator = fileSeparator;
+        public void setSeparator(String separator) {
+            this.separator = separator;
         }
 
-        /**
-         * Required implementation of an abstract method in Action
-         *
-         * @param eventDispatcher unused
-         * @param errorReporter   unused
-         * @param scInstance      unused
-         * @param log             unused
-         * @param collection      unused
-         * @throws ModelException           never
-         * @throws SCXMLExpressionException never
-         */
-        public void execute(EventDispatcher eventDispatcher, ErrorReporter errorReporter, SCInstance scInstance,
-                            Log log, Collection collection) throws ModelException, SCXMLExpressionException {
-            //Handled manually
+        @Override
+        public void execute(ActionExecutionContext exctx) throws ModelException, SCXMLExpressionException {
+
         }
     }
 }

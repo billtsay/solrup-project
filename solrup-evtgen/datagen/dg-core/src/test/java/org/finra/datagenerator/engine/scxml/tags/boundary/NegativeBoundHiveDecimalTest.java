@@ -15,8 +15,8 @@
  */
 package org.finra.datagenerator.engine.scxml.tags.boundary;
 
-import org.apache.commons.scxml.SCXMLExpressionException;
-import org.apache.commons.scxml.model.ModelException;
+import org.apache.commons.scxml2.SCXMLExpressionException;
+import org.apache.commons.scxml2.model.ModelException;
 import org.junit.Assert;
 import org.junit.Test;
 import java.util.HashMap;
@@ -79,7 +79,7 @@ public class NegativeBoundHiveDecimalTest {
     public void actionTest() {
         NegativeBoundHiveDecimal.NegativeBoundHiveDecimalTag neg = new NegativeBoundHiveDecimal.NegativeBoundHiveDecimalTag();
         try {
-            neg.execute(null, null, null, null, null);
+            neg.execute(null);
         } catch (SCXMLExpressionException | ModelException e) {
             Assert.fail("Exceptions should never be thrown");
         }

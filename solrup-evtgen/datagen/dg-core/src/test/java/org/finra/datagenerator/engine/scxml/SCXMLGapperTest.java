@@ -16,14 +16,13 @@
 
 package org.finra.datagenerator.engine.scxml;
 
-import org.apache.commons.scxml.io.SCXMLParser;
-import org.apache.commons.scxml.model.ModelException;
-import org.apache.commons.scxml.model.SCXML;
+import org.apache.commons.scxml2.io.SCXMLReader;
+import org.apache.commons.scxml2.model.ModelException;
+import org.apache.commons.scxml2.model.SCXML;
 import org.junit.Assert;
 import org.junit.Test;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
 
+import javax.xml.stream.XMLStreamException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
@@ -81,7 +80,7 @@ public class SCXMLGapperTest {
 
             try {
                 InputStream is = SCXMLEngineTest.class.getResourceAsStream("/bigtest.xml");
-                SCXML model = SCXMLParser.parse(new InputSource(is), null);
+                SCXML model = SCXMLReader.read(is, null);
 
                 SCXMLFrontier frontier = new SCXMLFrontier(p, model);
                 SCXMLGapper gapper = new SCXMLGapper();
@@ -99,7 +98,7 @@ public class SCXMLGapperTest {
                 Assert.assertEquals(p.variables.get("var_out_RECORD_TYPE_7"), "");
                 Assert.assertEquals(p.variables.get("var_out_RECORD_TYPE_8"), "");
                 Assert.assertEquals(p.variables.keySet().size(), 8);
-            } catch (IOException | SAXException ex) {
+            } catch (IOException | XMLStreamException ex) {
                 Assert.fail();
             }
         } catch (ModelException ex) {
@@ -121,7 +120,7 @@ public class SCXMLGapperTest {
 
             try {
                 InputStream is = SCXMLEngineTest.class.getResourceAsStream("/bigtest.xml");
-                SCXML model = SCXMLParser.parse(new InputSource(is), null);
+                SCXML model = SCXMLReader.read(is, null);
 
                 SCXMLFrontier frontier = new SCXMLFrontier(p, model);
                 SCXMLGapper gapper = new SCXMLGapper();
@@ -130,7 +129,8 @@ public class SCXMLGapperTest {
                 frontier = (SCXMLFrontier) gapper.reproduce(gapper.decompose(frontier, bigTest));
                 PossibleState after = frontier.getRoot();
 
-                Assert.assertEquals(after.nextState.getId(), before.nextState.getId());
+                Assert.assertEquals(after.nextState.getId(),
+                        before.nextState.getId());
 
                 for (String key: before.variables.keySet()) {
                     Assert.assertEquals(before.variables.get(key), after.variables.get(key));
@@ -139,7 +139,7 @@ public class SCXMLGapperTest {
                 for (String key: after.variables.keySet()) {
                     Assert.assertEquals(before.variables.get(key), after.variables.get(key));
                 }
-            } catch (IOException | SAXException ex) {
+            } catch (IOException | XMLStreamException ex) {
                 Assert.fail();
             }
         } catch (ModelException ex) {

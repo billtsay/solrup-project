@@ -20,8 +20,8 @@
     <modules>
         <module>dg-common</module>
         <module>dg-core</module>
-        <!--
         <module>dg-example-default</module>
+        <!--
         <module>dg-example-hadoop</module>
         <module>dg-simple-csv</module>
         <module>rubber-scaffolding/rubber-commons</module>
@@ -167,33 +167,6 @@
                     <execution>
                         <id>test</id>
                         <phase>test</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>2.12.1</version>
-                <executions>
-                    <execution>
-                        <id>test</id>
-                        <phase>test</phase>
-                        <configuration>
-                            <configLocation>config/sun_checkstyle.xml</configLocation>
-                            <headerLocation>config/java.header</headerLocation>
-                            <includeTestSourceDirectory>true</includeTestSourceDirectory>
-                            <includeResources>true</includeResources>
-                            <includeTestResources>true</includeTestResources>
-                            <resourceIncludes>**/*.*</resourceIncludes>
-                            <encoding>UTF-8</encoding>
-                            <consoleOutput>true</consoleOutput>
-                            <failOnViolation>true</failOnViolation>
-                            <failsOnError>true</failsOnError>
-                        </configuration>
                         <goals>
                             <goal>check</goal>
                         </goals>

@@ -16,25 +16,18 @@
 
 package org.finra.datagenerator.engine.scxml;
 
-import org.apache.commons.scxml.Context;
-import org.apache.commons.scxml.SCXMLExecutor;
-import org.apache.commons.scxml.SCXMLExpressionException;
-import org.apache.commons.scxml.env.jsp.ELContext;
-import org.apache.commons.scxml.env.jsp.ELEvaluator;
-import org.apache.commons.scxml.model.Action;
-import org.apache.commons.scxml.model.OnEntry;
-import org.apache.commons.scxml.model.SCXML;
-import org.apache.commons.scxml.model.Transition;
-import org.apache.commons.scxml.model.TransitionTarget;
+import org.apache.commons.scxml2.Context;
+import org.apache.commons.scxml2.SCXMLExecutor;
+import org.apache.commons.scxml2.SCXMLExpressionException;
+import org.apache.commons.scxml2.env.jexl.JexlContext;
+import org.apache.commons.scxml2.env.jexl.JexlEvaluator;
+import org.apache.commons.scxml2.model.*;
 import org.apache.log4j.Logger;
 import org.finra.datagenerator.distributor.ProcessingStrategy;
 import org.finra.datagenerator.engine.Frontier;
 import org.finra.datagenerator.engine.scxml.tags.CustomTagExtension;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
@@ -57,12 +50,20 @@ public class SCXMLFrontier extends SCXMLExecutor implements Frontier {
                          final List<CustomTagExtension> tagExtensionList) {
         root = possibleState;
         this.tagExtensionList = tagExtensionList;
-        this.setStateMachine(model);
+        try {
+            this.setStateMachine(model);
+        } catch (ModelException e) {
+            e.printStackTrace();
+        }
 
-        ELEvaluator elEvaluator = new ELEvaluator();
-        ELContext context = new ELContext();
+        JexlEvaluator elEvaluator = new JexlEvaluator();
+        JexlContext context = new JexlContext();
 
-        this.setEvaluator(elEvaluator);
+        try {
+            this.setEvaluator(elEvaluator);
+        } catch (ModelException e) {
+            e.printStackTrace();
+        }
         this.setRootContext(context);
     }
 
@@ -105,51 +106,57 @@ public class SCXMLFrontier extends SCXMLExecutor implements Frontier {
         List<Map<String, String>> product = new LinkedList<>();
         product.add(new HashMap<>(state.variables));
 
-        OnEntry entry = nextState.getOnEntry();
-        List<Action> actions = entry.getActions();
+        if (nextState instanceof State) {
+            for (OnEntry entry : ((State) nextState).getOnEntries()) {
 
-        for (Action action : actions) {
-            for (CustomTagExtension tagExtension : tagExtensionList) {
-                if (tagExtension.getTagActionClass().isInstance(action)) {
-                    product = tagExtension.pipelinePossibleStates(action, product);
+                List<Action> actions = entry.getActions();
+
+                for (Action action : actions) {
+                    for (CustomTagExtension tagExtension : tagExtensionList) {
+                        if (tagExtension.getTagActionClass().isInstance(action)) {
+                            product = tagExtension.pipelinePossibleStates(action, product);
+                        }
+                    }
                 }
             }
-        }
 
-        //go through every transition and see which of the products are valid, recursive searching on them
-        List<Transition> transitions = nextState.getTransitionsList();
+            //go through every transition and see which of the products are valid, recursive searching on them
+            List<Transition> transitions = ((State) nextState).getTransitionsList();
 
-        for (Transition transition : transitions) {
-            String condition = transition.getCond();
-            TransitionTarget target = ((List<TransitionTarget>) transition.getTargets()).get(0);
+            for (Transition transition : transitions) {
+                String condition = transition.getCond();
 
-            for (Map<String, String> p : product) {
-                Boolean pass;
+                for (Map<String, String> p : product) {
+                    Boolean pass;
 
-                if (condition == null) {
-                    pass = true;
-                } else {
-                    //scrub the context clean so we may use it to evaluate transition conditional
-                    Context context = this.getRootContext();
-                    context.reset();
+                    if (condition == null) {
+                        pass = true;
+                    } else {
+                        //scrub the context clean so we may use it to evaluate transition conditional
+                        Context context = this.getRootContext();
+                        context.reset();
 
-                    //set up new context
-                    for (Map.Entry<String, String> e : p.entrySet()) {
-                        context.set(e.getKey(), e.getValue());
+                        //set up new context
+                        for (Map.Entry<String, String> e : p.entrySet()) {
+                            context.set(e.getKey(), e.getValue());
+                        }
+
+                        //evaluate condition
+                        try {
+                            pass = (Boolean) this.getEvaluator().eval(context, condition);
+                        } catch (SCXMLExpressionException ex) {
+                            pass = false;
+                        }
                     }
 
-                    //evaluate condition
-                    try {
-                        pass = (Boolean) this.getEvaluator().eval(context, condition);
-                    } catch (SCXMLExpressionException ex) {
-                        pass = false;
+                    //transition condition satisfied, continue search recursively
+                    if (pass) {
+                        Set<TransitionTarget> targets = transition.getTargets();
+                        if (targets.size()>0) {
+                            PossibleState result = new PossibleState(targets.iterator().next(), p);
+                            dfs(processingStrategy, flag, result);
+                        }
                     }
-                }
-
-                //transition condition satisfied, continue search recursively
-                if (pass) {
-                    PossibleState result = new PossibleState(target, p);
-                    dfs(processingStrategy, flag, result);
                 }
             }
         }

@@ -16,10 +16,11 @@
 
 package org.finra.datagenerator.engine.scxml;
 
-import org.apache.commons.scxml.io.SCXMLParser;
-import org.apache.commons.scxml.model.CustomAction;
-import org.apache.commons.scxml.model.ModelException;
-import org.apache.commons.scxml.model.SCXML;
+import org.apache.commons.scxml2.io.SCXMLReader;
+import org.apache.commons.scxml2.io.SCXMLReader.Configuration;
+import org.apache.commons.scxml2.model.CustomAction;
+import org.apache.commons.scxml2.model.ModelException;
+import org.apache.commons.scxml2.model.SCXML;
 import org.finra.datagenerator.distributor.multithreaded.QueueResultsProcessing;
 import org.finra.datagenerator.engine.scxml.tags.CustomTagExtension;
 import org.finra.datagenerator.engine.scxml.tags.FileExtension;
@@ -31,6 +32,7 @@ import org.junit.Test;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
+import javax.xml.stream.XMLStreamException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -87,8 +89,8 @@ public class SCXMLFrontierTest {
 
             try {
                 is = SCXMLEngineTest.class.getResourceAsStream("/bigtest.xml");
-                SCXML model = SCXMLParser.parse(new InputSource(is), null,
-                        customActionsFromTagExtensions(tagExtensionList));
+                SCXML model = SCXMLReader.read(is,
+                        new Configuration(null, null, customActionsFromTagExtensions(tagExtensionList)));
 
                 SCXMLFrontier frontier = new SCXMLFrontier(p, model, tagExtensionList);
                 Queue<Map<String, String>> queue = new LinkedList<>();
@@ -96,7 +98,7 @@ public class SCXMLFrontierTest {
                 frontier.searchForScenarios(new QueueResultsProcessing(queue), flag);
 
                 Assert.assertEquals(queue.size(), 6);
-            } catch (IOException | SAXException ex) {
+            } catch (IOException | XMLStreamException ex) {
                 Assert.fail();
             }
         } catch (ModelException ex) {
@@ -121,8 +123,8 @@ public class SCXMLFrontierTest {
 
             try {
                 is = SCXMLEngineTest.class.getResourceAsStream("/bigtest.xml");
-                SCXML model = SCXMLParser.parse(new InputSource(is), null,
-                        customActionsFromTagExtensions(tagExtensionList));
+                SCXML model = SCXMLReader.read(is, new Configuration(null, null,
+                        customActionsFromTagExtensions(tagExtensionList)));
 
                 SCXMLFrontier frontier = new SCXMLFrontier(p, model, tagExtensionList);
                 Queue<Map<String, String>> queue = new LinkedList<>();
@@ -130,7 +132,7 @@ public class SCXMLFrontierTest {
                 frontier.searchForScenarios(new QueueResultsProcessing(queue), flag);
 
                 Assert.assertEquals(queue.isEmpty(), true);
-            } catch (IOException | SAXException ex) {
+            } catch (IOException | XMLStreamException ex) {
                 Assert.fail();
             }
         } catch (ModelException ex) {

@@ -16,7 +16,7 @@
 
 package org.finra.datagenerator.engine.scxml;
 
-import org.apache.commons.scxml.model.ModelException;
+import org.apache.commons.scxml2.model.ModelException;
 import org.junit.Assert;
 import org.junit.Test;
 

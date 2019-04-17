@@ -16,7 +16,7 @@
 
 package org.finra.datagenerator.engine.scxml.tags;
 
-import org.apache.commons.scxml.model.Action;
+import org.apache.commons.scxml2.model.Action;
 
 import java.io.Serializable;
 import java.util.List;

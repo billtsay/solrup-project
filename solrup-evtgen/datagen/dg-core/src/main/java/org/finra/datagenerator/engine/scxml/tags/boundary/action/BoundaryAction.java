@@ -16,12 +16,9 @@
 package org.finra.datagenerator.engine.scxml.tags.boundary.action;
 
 import org.apache.commons.logging.Log;
-import org.apache.commons.scxml.ErrorReporter;
-import org.apache.commons.scxml.EventDispatcher;
-import org.apache.commons.scxml.SCInstance;
-import org.apache.commons.scxml.SCXMLExpressionException;
-import org.apache.commons.scxml.model.Action;
-import org.apache.commons.scxml.model.ModelException;
+import org.apache.commons.scxml2.*;
+import org.apache.commons.scxml2.model.Action;
+import org.apache.commons.scxml2.model.ModelException;
 
 import java.util.Collection;
 
@@ -51,9 +48,7 @@ public class BoundaryAction extends Action {
     }
 
     @Override
-    public void execute(EventDispatcher eventDispatcher, ErrorReporter errorReporter,
-                        SCInstance scInstance, Log log, Collection collection)
-        throws ModelException, SCXMLExpressionException {
+    public void execute(ActionExecutionContext exctx) throws ModelException, SCXMLExpressionException {
 
     }
 }

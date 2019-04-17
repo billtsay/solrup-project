@@ -16,7 +16,7 @@
 
 package org.finra.datagenerator.engine.scxml.tags;
 
-import org.apache.commons.scxml.model.Assign;
+import org.apache.commons.scxml2.model.Assign;
 import org.junit.Assert;
 import org.junit.Test;
 

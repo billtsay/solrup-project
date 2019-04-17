@@ -16,7 +16,8 @@
 
 package org.finra.datagenerator.engine.scxml;
 
-import org.apache.commons.scxml.model.TransitionTarget;
+import org.apache.commons.scxml2.model.SimpleTransition;
+import org.apache.commons.scxml2.model.TransitionTarget;
 
 import java.io.Serializable;
 import java.util.Map;

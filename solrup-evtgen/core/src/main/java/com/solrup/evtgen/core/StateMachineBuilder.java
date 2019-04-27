@@ -1,6 +1,7 @@
 package com.solrup.evtgen.core;
 
 import com.solrup.evtgen.Environment;
+import com.solrup.evtgen.FactoryStateMachine;
 import com.solrup.evtgen.StateMachine;
 import com.solrup.evtgen.annotation.State;
 import com.solrup.evtgen.annotation.Template;
@@ -15,11 +16,7 @@ import org.apache.commons.scxml2.model.EnterableState;
 import org.apache.commons.scxml2.model.Transition;
 import org.apache.commons.scxml2.model.TransitionTarget;
 
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -77,37 +74,8 @@ public class StateMachineBuilder {
         return stateMachine;
     }
 
-    enum TYPE {
-        ONENTRY, ONEXIT, ONTRANS;
-    }
-
-    Map<TYPE, Set<Method>> buildMethodMap(Class template){
-        Set<Method> onEntry = new HashSet<Method>();
-        Set<Method> onExit = new HashSet<Method>();
-        Set<Method> onTrans = new HashSet<Method>();
-
-        for (Method m : template.getDeclaredMethods()){
-            if (m.isAnnotationPresent(State.class)){
-                State state = m.getAnnotation(State.class);
-                if (state.on().equals(State.ON.ENTRY)){
-                    onEntry.add(m);
-                }
-                if (state.on().equals(State.ON.EXIT)){
-                    onExit.add(m);
-                }
-            }
-
-            if (m.isAnnotationPresent(com.solrup.evtgen.annotation.Transition.class)){
-                onTrans.add(m);
-            }
-        }
-
-        Map<TYPE, Set<Method>> map = new HashMap<TYPE, Set<Method>>();
-        map.put(TYPE.ONENTRY, onEntry);
-        map.put(TYPE.ONEXIT, onExit);
-        map.put(TYPE.ONTRANS, onTrans);
-
-        return map;
+    protected FactoryStateMachine buildFactory() throws Exception {
+        return null;
     }
 
     protected Environment buildEnvironment(Class template){
@@ -131,8 +99,10 @@ public class StateMachineBuilder {
     class EntryListener implements SCXMLListener {
         Environment environment;
         Object instance;
+        TemplateReflect info;
 
         EntryListener(Class template) {
+            info = new TemplateReflect(template);
             this.environment = buildEnvironment(template);
             try {
                 instance = buildInstance(template);
@@ -142,7 +112,7 @@ public class StateMachineBuilder {
         }
 
         public void onEntry(EnterableState entered) {
-            Set<Method> set = findStateMethods(entered, State.ON.ENTRY);
+            Set<Method> set = info.getMethods(entered, State.ON.ENTRY);
             for (Method m : set) invoke(m);
         }
 
@@ -153,7 +123,7 @@ public class StateMachineBuilder {
         }
 
         public void onExit(EnterableState exited) {
-            Set<Method> set = findStateMethods(exited, State.ON.EXIT);
+            Set<Method> set = info.getMethods(exited, State.ON.EXIT);
             for (Method m : set) invoke(m);
         }
 
@@ -168,42 +138,6 @@ public class StateMachineBuilder {
             return true;
         }
 
-        Set<Method> findStateMethods(EnterableState state, State.ON type){
-            Set<Method> set = new HashSet<Method>();
-
-            for (Method m : template.getDeclaredMethods()){
-                if (m.isAnnotationPresent(State.class)){
-                    State[] ss = m.getAnnotationsByType(State.class);
-                    for (State s : ss) {
-                        if (s.id().equals(state.getId())) {
-                            if (type.equals(s.on())) {
-                                set.add(m);
-                            }
-                        }
-                    }
-                }
-            }
-
-            return set;
-        }
-
-        Set<Method> findTransitionMethods(Transition trans){
-            Set<Method> set = new HashSet<Method>();
-
-            for (Method m : template.getDeclaredMethods()){
-                if (m.isAnnotationPresent(com.solrup.evtgen.annotation.Transition.class)){
-                    com.solrup.evtgen.annotation.Transition[] ts
-                            = m.getAnnotationsByType(com.solrup.evtgen.annotation.Transition.class);
-                    for (com.solrup.evtgen.annotation.Transition t : ts) {
-                        if (t.event().equals(trans.getEvent())) {
-                            set.add(m);
-                        }
-                    }
-                }
-            }
-
-            return set;
-        }
     }
 
     public static void main(String[] args) {
@@ -214,13 +148,10 @@ public class StateMachineBuilder {
             StateMachine stateMachine = builder.build();
             stateMachine.run();
 
-
             stateMachine.fireEvent(EventGenerator.EVENT_START);
             stateMachine.fireEvent(EventGenerator.EVENT_SPLIT);
             stateMachine.fireEvent(EventGenerator.EVENT_UNSPLIT);
             stateMachine.fireEvent(EventGenerator.EVENT_STOP);
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }

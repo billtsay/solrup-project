@@ -1,0 +1,19 @@
+/evtgen/v1
+
+GET:
+  /{template}/-/status
+  /{template}/${uuid}/info
+  /{template}/${uuid}/status
+  /{template}/${uuid}/details
+
+PUT:
+
+
+
+POST:   body:payload
+  /{template}/${uuid}/${event}
+  /{template}/-/${event}
+
+
+
+
